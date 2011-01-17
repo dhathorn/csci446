@@ -11,7 +11,7 @@
 				font-family: Helvetica, sans-serif;
     		}
 			#object{
-				width: 90%;
+				width: 95%;
 				border: 1px solid black;
 				margin: 0 auto;
 				
@@ -38,6 +38,11 @@
 				background-color: black;
 				height: 30px;
 			}
+			.formbox{
+				float: left;
+				width: 13em;
+				margin: 10px 0;
+			}
 			#linkbar a:link {text-decoration: none; color: white;}
 			#linkbar a:visited {text-decoration: none; color: white;}
 			#linkbar a:hover {text-decoration: none; color: red;}
@@ -45,17 +50,17 @@
 			#linkbar a:active {text-decoration: none; color: #009900;}
 			#mainbody{
 				background-color: #fcfcfc;
-				float: none;
-				padding: 4px;
+				clear: all;
 				text-align: left;
 				margin: 0px;
 				padding-left: 1%;
+				height: 230px;
 			}
 			#rfloater{
 				background-color: #f0f1ff;
 				float: right;
-				margin: 6px;
-				padding: 3px;
+				margin: 10px;
+				padding: 3px 30px 3px 3px;
 			}
 			#closer{
 				background-color: #f0f0f0;
@@ -97,7 +102,7 @@
 				<div class="linkbox"><a href='#' title="find your mental health state"> Health</a></div>
 				<div class="linkbox"><a href='#' title="major figure-outer"> Academic</a></div> 
 				<div class="linkbox"><a href='#' title="career figure-outer"> Professional</a></div> 
-				<div class="linkbox"><a href='#' title="hobbies and such"> Fun</a></div> 
+				<div class="linkbox"><a href='#' title="facebook page figure-outer"> Fun</a></div>
 				<div class="linkbox"><a href='#' title="simpsons already did it"> Evil</a></div> 
 			</div>
 			<div id=rfloater> 
@@ -106,6 +111,20 @@
 			</div>
 			<div id='mainbody'>
 				<h2>Lorem Ipsum Dolor Sit Amet.</h2>
+				<form action="" method="" accept-charset="utf-8">
+					<div class="formbox">How do you feel today?</div> <div class="formbox"><input type="text" value="" /></div>
+					<div class="formbox" style="clear: left;">How would you like to feel? <br /> (choose all that apply)</div>
+					<div class="formbox">
+						<select multiple name="feelmenu" size=4>
+							<option value="Comfortably">Comfortably numb</option>
+							<option value="Grumpy">Grumpy as poop, you jerk</option>
+							<option value="Happy">Happy like I'm on controlled substances</option>
+							<option value="Normal">Normal. Absolutely Normal.</option>
+						</select>
+					</div>
+					<div class="formbox" style="clear: left;"></div>
+					<div class="formbox"> <input type="submit" value="Feel me!" /></div>
+				</form>
 
 			</div>
 			<div id='closer'> ©2011 Borg-Like Monstrosity of Mind Control, Inc. All rights reserved.</div>
