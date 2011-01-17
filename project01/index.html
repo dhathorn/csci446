@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="formanswer.js"></script>
     	<style type="text/css">
     		body {
     			background-color: #aaaaaa;
@@ -42,6 +43,7 @@
 				float: left;
 				width: 13em;
 				margin: 10px 0;
+				line-height: 1.1em;
 			}
 			#linkbar a:link {text-decoration: none; color: white;}
 			#linkbar a:visited {text-decoration: none; color: white;}
@@ -54,6 +56,7 @@
 				text-align: left;
 				margin: 0px;
 				padding-left: 1%;
+				padding-top: 0.3em;
 				height: 230px;
 			}
 			#rfloater{
@@ -70,14 +73,14 @@
 				padding-bottom: 0.78em;
 			}
 			h6{
-				color:#66666f;
+				color:#666666;
 				margin: 0;
 				font-size: .78em;
 				text-decoration: none;
 				font-weight: normal;
 			}
 			h2{
-				margin: 0;
+				margin: 0 0 0.3em;
 			}
 			h3{
 				margin: 0;
@@ -111,8 +114,8 @@
 			</div>
 			<div id='mainbody'>
 				<h2>Lorem Ipsum Dolor Sit Amet.</h2>
-				<form action="" method="" accept-charset="utf-8">
-					<div class="formbox">How do you feel today?</div> <div class="formbox"><input type="text" value="" /></div>
+				<form name="happinessform"action="" method="" accept-charset="utf-8">
+					<div class="formbox">How do you feel today?</div> <div class="formbox"><input type="text" value="" name="itext"/></div>
 					<div class="formbox" style="clear: left;">How would you like to feel? <br /> (choose all that apply)</div>
 					<div class="formbox">
 						<select multiple name="feelmenu" size=4>
@@ -123,11 +126,11 @@
 						</select>
 					</div>
 					<div class="formbox" style="clear: left;"></div>
-					<div class="formbox"> <input type="submit" value="Feel me!" /></div>
+					<div class="formbox"> <input type="submit" value="Feel me!" onclick="formanswer(this.form)" /></div>
 				</form>
 
 			</div>
-			<div id='closer'> ©2011 Borg-Like Monstrosity of Mind Control, Inc. All rights reserved.</div>
+			<div id='closer'> © 2011 Borg-Like Monstrosity of Mind Control, Inc. All rights reserved.</div>
 		</div>
     </body>
 </html>
