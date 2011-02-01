@@ -19,6 +19,9 @@
 				<p><%= Time.new.strftime("%I:%M %p %Z") %></p>
 			</div>
 			<div id="main">
+				<% if flash[:notice] -%>
+					<div id="notice"><%= flash[:notice] %></div>
+				<% end -%>
 				<%= yield :layout %>
 			</div>
 		</div>
