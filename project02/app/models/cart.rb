@@ -6,6 +6,11 @@ class Cart
 	end
 
 	def add_product(product)
-		@items << product
+		current_item = @items.find { |i| i.product == product }
+		if current_item then
+			current_item.increment_quantity
+		else
+			@items << CartItem.new(product)
+		end
 	end
 end
