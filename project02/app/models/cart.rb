@@ -15,6 +15,9 @@ class Cart
 		end
 		current_item
 	end
+	def total_items
+		@items.sum {|i| i.quantity}
+	end
 	def total_price
 		@items.sum { |i| i.price }
 	end
