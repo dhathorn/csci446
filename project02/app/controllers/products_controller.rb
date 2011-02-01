@@ -65,9 +65,7 @@ class ProductsController < ApplicationController
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @product.errors, :status => :unprocessable_entity }
-      end
-    end
-  end
+      end end end
 
   # DELETE /products/1
   # DELETE /products/1.xml
