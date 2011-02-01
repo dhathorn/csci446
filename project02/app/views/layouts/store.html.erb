@@ -16,6 +16,7 @@
 				<a href="http://www....">Questions</a><br />
 				<a href="http://www....">News</a><br />
 				<a href="http://www....">Contact</a><br />
+				<p><%= Time.new.strftime("%I:%M %p %Z") %></p>
 			</div>
 			<div id="main">
 				<%= yield :layout %>
