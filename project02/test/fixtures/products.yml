@@ -1,11 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  tile: MyString
-  description: MyText
-  image_url: MyString
+ruby_book:
+  title: Programming in Ruby
+  description: yup
+  price: 1000
+  image_url: ruby.png
 
-two:
-  tile: MyString
-  description: MyText
-  image_url: MyString
+rails_book:
+  title: Agile
+  description: great book man
+  price: 1000 
+  image_url: rails.png
