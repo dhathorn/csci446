@@ -53,4 +53,7 @@ class StoreController < ApplicationController
 	  end
 	  session[:cart]
   end
+  protected
+  def authorize
+  end
 end

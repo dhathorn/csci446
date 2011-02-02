@@ -3,7 +3,6 @@ class AdminController < ApplicationController
 	  if request.post?
 		  user = User.authenticate(params[:name], params[:password])
 		  if user
-			  @uname = :name
 			  session[:user_id] = user.id
 			  redirect_to(:action => "index")
 		  else
