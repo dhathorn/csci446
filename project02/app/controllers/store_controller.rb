@@ -1,4 +1,5 @@
 class StoreController < ApplicationController
+  before_filter :find_cart, :except => :empty_cart
   def save_order
 	  @cart = find_cart
 	  @order = Order.new(params[:order])
@@ -48,10 +49,7 @@ class StoreController < ApplicationController
   end
 
   def find_cart
-	  unless session[:cart]
-		 session[:cart] = Cart.new
-	  end
-	  session[:cart]
+	  @cart =(session[:cart] ||= Cart.new)
   end
   protected
   def authorize

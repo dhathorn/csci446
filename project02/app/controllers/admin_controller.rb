@@ -12,9 +12,13 @@ class AdminController < ApplicationController
   end
 
   def logout
+	  session[:user_id] = nil
+	  flash[:notice] = "Logged out"
+	  redirect_to(:action => "login")
   end
 
   def index
+	  @uname = User.find_by_id(session[:user_id]).name
 	  @total_orders = Order.count
   end
 

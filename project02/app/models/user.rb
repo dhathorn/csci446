@@ -6,6 +6,12 @@ class User < ActiveRecord::Base
 	validates_confirmation_of :password
 	validate :password_non_blank
 
+	def after_destroy
+		if User.count.zero?
+			raise "Can't delete last user"
+		end
+	end
+
 	def self.authenticate(name, password)
 		user = self.find_by_name(name)
 		if user
@@ -42,4 +48,6 @@ class User < ActiveRecord::Base
 		string_to_hash = "please" + pass + "the" + salt
 		Digest::SHA1.hexdigest(string_to_hash)
 	end
+	
+
 end
