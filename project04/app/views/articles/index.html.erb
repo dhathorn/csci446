@@ -6,14 +6,16 @@
     <th>Author</th>
     <th>Body</th>
     <th>Edit count</th>
+    <th>Creatation Date</th>
   </tr>
 
 <% @articles.each do |article| %>
   <tr>
     <td><%=h article.title %></td>
     <td><%=h article.author %></td>
-    <td><%=h article.body %></td>
+    <td><%=h truncate(article.body, :length => 42) %></td>
     <td><%=h article.edit_count %></td>
+    <td><%=h article.created_at %></td>
     <td><%= link_to 'Show', article %></td>
     <td><%= link_to 'Edit', edit_article_path(article) %></td>
     <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
@@ -24,3 +26,4 @@
 <br />
 
 <%= link_to 'New article', new_article_path %>
+<%= pluralize(@articles.count, "article") %>
