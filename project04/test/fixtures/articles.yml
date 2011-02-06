@@ -2,10 +2,12 @@
 
 one:
   title: MyString
-  body: MyString
-  author: MyString
+  Author: MyString
+  body: MyText
+  edit_count: 1
 
 two:
   title: MyString
-  body: MyString
-  author: MyString
+  Author: MyString
+  body: MyText
+  edit_count: 1

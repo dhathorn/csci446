@@ -1,44 +1,6 @@
-  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
- FROM sqlite_master
- WHERE type = 'table' AND NOT name = 'sqlite_sequence'
-[0m
-  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
-  [4;36;1mSQL (139.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
-  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
-  [4;36;1mSQL (63.3ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
-  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
- FROM sqlite_master
- WHERE type = 'table' AND NOT name = 'sqlite_sequence'
-[0m
-  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
- FROM sqlite_master
- WHERE type = 'table' AND NOT name = 'sqlite_sequence'
-[0m
-  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
-  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
- FROM sqlite_master
- WHERE type = 'table' AND NOT name = 'sqlite_sequence'
-[0m
 
 
-Processing ApplicationController#index (for 127.0.0.1 at 2011-02-05 18:38:59) [GET]
-
-ActionController::RoutingError (No route matches "/article" with {:method=>:get}):
-  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
-  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
-  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
-  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
-  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
-  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
-  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
-  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
-  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
-  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
-
-Rendering rescues/layout (not_found)
-
-
-Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 18:39:01) [GET]
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 21:33:34) [GET]
   [4;36;1mArticle Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: articles: SELECT * FROM "articles" [0m
 
 ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: articles: SELECT * FROM "articles" ):
@@ -54,18 +16,25 @@ ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: articles: 
   /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
   /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
-Rendered rescues/_trace (25.6ms)
+Rendered rescues/_trace (26.5ms)
 Rendered rescues/_request_and_response (1.1ms)
 Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
-  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
-Migrating to CreateArticles (20110206013811)
-  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
-  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" varchar(255), "author" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
-  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110206013811')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (101.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (69.4ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20110206043312)
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "Author" varchar(255), "body" text, "edit_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110206043312')[0m
   [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
@@ -78,103 +47,26 @@ Migrating to CreateArticles (20110206013811)
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
 
 
-Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 18:41:09) [GET]
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 21:33:45) [GET]
   [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
 Rendering template within layouts/articles
 Rendering articles/index
-Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/articles]
 
 
-Processing ArticlesController#new (for 127.0.0.1 at 2011-02-05 18:41:11) [GET]
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-05 21:34:10) [GET]
 Rendering template within layouts/articles
 Rendering articles/new
-Completed in 43ms (View: 39, DB: 0) | 200 OK [http://localhost/articles/new]
+Completed in 21ms (View: 16, DB: 0) | 200 OK [http://localhost/articles/new]
 
 
-Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 18:41:17) [POST]
-  Parameters: {"article"=>{"author"=>"teest", "body"=>"test", "title"=>"test"}, "commit"=>"Create", "authenticity_token"=>"zImbqiOreRVj1T49tbn0h51bUPWK8//uWM2//QkZlws="}
-  [4;36;1mArticle Create (0.3ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "author", "updated_at") VALUES('2011-02-06 01:41:17', 'test', 'test', 'teest', '2011-02-06 01:41:17')[0m
-Redirected to http://localhost:3000/articles/1
-Completed in 102ms (DB: 0) | 302 Found [http://localhost/articles]
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 21:34:17) [POST]
+  Parameters: {"article"=>{"body"=>"", "title"=>"", "Author"=>"Sally", "edit_count"=>""}, "commit"=>"Create", "authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y="}
 
-
-Processing ArticlesController#show (for 127.0.0.1 at 2011-02-05 18:41:17) [GET]
-  Parameters: {"id"=>"1"}
-  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
-Rendering template within layouts/articles
-Rendering articles/show
-Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/1]
-
-
-Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 18:41:20) [GET]
-  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
-Rendering template within layouts/articles
-Rendering articles/index
-Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
-
-
-Processing ArticlesController#new (for 127.0.0.1 at 2011-02-05 18:46:12) [GET]
-Rendering template within layouts/articles
-Rendering articles/new
-Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/new]
-
-
-Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 18:46:15) [POST]
-  Parameters: {"article"=>{"author"=>"", "body"=>"", "title"=>"as"}, "commit"=>"Create", "authenticity_token"=>"zImbqiOreRVj1T49tbn0h51bUPWK8//uWM2//QkZlws="}
-Rendering template within layouts/articles
-Rendering articles/new
-Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
-
-
-Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 18:46:22) [GET]
-  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
-Rendering template within layouts/articles
-Rendering articles/index
-Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
-
-
-Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-05 18:46:44) [GET]
-  Parameters: {"id"=>"1"}
-  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
-Rendering template within layouts/articles
-Rendering articles/edit
-Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/1/edit]
-
-
-Processing ArticlesController#update (for 127.0.0.1 at 2011-02-05 18:46:46) [PUT]
-  Parameters: {"article"=>{"author"=>"teest", "body"=>"", "title"=>"test"}, "commit"=>"Update", "authenticity_token"=>"zImbqiOreRVj1T49tbn0h51bUPWK8//uWM2//QkZlws=", "id"=>"1"}
-  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
-Rendering template within layouts/articles
-Rendering articles/edit
-Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/1]
-
-
-Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 18:46:49) [GET]
-  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
-Rendering template within layouts/articles
-Rendering articles/index
-Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
-
-
-Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-05 18:46:52) [DELETE]
-  Parameters: {"authenticity_token"=>"zImbqiOreRVj1T49tbn0h51bUPWK8//uWM2//QkZlws=", "id"=>"1"}
-  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
-  [4;36;1mArticle Destroy (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 1[0m
-Redirected to http://localhost:3000/articles
-Completed in 149ms (DB: 0) | 302 Found [http://localhost/articles/1]
-
-
-Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 18:46:52) [GET]
-  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
-Rendering template within layouts/articles
-Rendering articles/index
-Completed in 53ms (View: 1, DB: 0) | 200 OK [http://localhost/articles]
-
-
-Processing ArticlesController#new (for 127.0.0.1 at 2011-02-05 18:57:23) [GET]
-
-SyntaxError (/home/dan/Documents/School/spring11/csci446/src/project04/app/models/article.rb:9: syntax error, unexpected $end, expecting kEND):
-  app/controllers/articles_controller.rb:27:in `new'
+NameError (undefined local variable or method `author' for #<Article:0xb5f62560>):
+  app/models/article.rb:8:in `no_sally'
+  app/controllers/articles_controller.rb:46
+  app/controllers/articles_controller.rb:45:in `create'
   /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
   /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
   /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
@@ -186,140 +78,469 @@ SyntaxError (/home/dan/Documents/School/spring11/csci446/src/project04/app/model
   /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
   /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
-Rendered rescues/_trace (23.5ms)
-Rendered rescues/_request_and_response (0.2ms)
+Rendered rescues/_trace (83.1ms)
+Rendered rescues/_request_and_response (0.4ms)
 Rendering rescues/layout (internal_server_error)
 
 
-Processing ArticlesController#new (for 127.0.0.1 at 2011-02-05 18:57:36) [GET]
-Rendering template within layouts/articles
-Rendering articles/new
-Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/new]
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 21:34:55) [POST]
+  Parameters: {"article"=>{"body"=>"", "title"=>"", "Author"=>"Sally", "edit_count"=>""}, "commit"=>"Create", "authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y="}
+
+NameError (undefined local variable or method `author' for #<Article:0xb60bb498>):
+  app/models/article.rb:8:in `no_sally'
+  app/controllers/articles_controller.rb:46
+  app/controllers/articles_controller.rb:45:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
 
 
-Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 18:57:40) [POST]
-  Parameters: {"article"=>{"author"=>"test", "body"=>"test", "title"=>"test"}, "commit"=>"Create", "authenticity_token"=>"zImbqiOreRVj1T49tbn0h51bUPWK8//uWM2//QkZlws="}
-  [4;36;1mArticle Create (0.2ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "author", "updated_at") VALUES('2011-02-06 01:57:40', 'test', 'test', 'test', '2011-02-06 01:57:40')[0m
-Redirected to http://localhost:3000/articles/2
-Completed in 115ms (DB: 0) | 302 Found [http://localhost/articles]
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 21:35:17) [POST]
+  Parameters: {"article"=>{"body"=>"", "title"=>"", "Author"=>"Sally", "edit_count"=>""}, "commit"=>"Create", "authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y="}
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at", "Author", "edit_count") VALUES('2011-02-06 04:35:17', '', '', '2011-02-06 04:35:17', 'Sally', NULL)[0m
+Redirected to http://localhost:3000/articles/1
+Completed in 126ms (DB: 0) | 302 Found [http://localhost/articles]
 
 
-Processing ArticlesController#show (for 127.0.0.1 at 2011-02-05 18:57:40) [GET]
-  Parameters: {"id"=>"2"}
-  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-05 21:35:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
 Rendering template within layouts/articles
 Rendering articles/show
-Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/articles/2]
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/1]
 
 
-Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 18:57:42) [GET]
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 21:35:19) [GET]
   [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
 Rendering template within layouts/articles
 Rendering articles/index
 Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
 
 
-Processing ArticlesController#new (for 127.0.0.1 at 2011-02-05 18:57:44) [GET]
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-05 21:35:21) [GET]
 Rendering template within layouts/articles
 Rendering articles/new
-Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/new]
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
 
 
-Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 18:57:52) [POST]
-  Parameters: {"article"=>{"author"=>"Sally", "body"=>"asdf", "title"=>"sally test"}, "commit"=>"Create", "authenticity_token"=>"zImbqiOreRVj1T49tbn0h51bUPWK8//uWM2//QkZlws="}
-  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "author", "updated_at") VALUES('2011-02-06 01:57:52', 'sally test', 'asdf', 'Sally', '2011-02-06 01:57:52')[0m
-Redirected to http://localhost:3000/articles/3
-Completed in 74ms (DB: 0) | 302 Found [http://localhost/articles]
-
-
-Processing ArticlesController#show (for 127.0.0.1 at 2011-02-05 18:57:52) [GET]
-  Parameters: {"id"=>"3"}
-  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-05 21:35:32) [GET]
 Rendering template within layouts/articles
-Rendering articles/show
-Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/articles/3]
+Rendering articles/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
 
 
-Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 18:58:59) [GET]
-  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 21:35:35) [POST]
+  Parameters: {"article"=>{"body"=>"", "title"=>"", "Author"=>"", "edit_count"=>""}, "commit"=>"Create", "authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y="}
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 21:35:41) [POST]
+  Parameters: {"article"=>{"body"=>"", "title"=>"", "Author"=>"asdf", "edit_count"=>""}, "commit"=>"Create", "authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y="}
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 21:35:46) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
 Rendering template within layouts/articles
 Rendering articles/index
-Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles]
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
 
 
-Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-05 18:59:01) [DELETE]
-  Parameters: {"authenticity_token"=>"zImbqiOreRVj1T49tbn0h51bUPWK8//uWM2//QkZlws=", "id"=>"3"}
-  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
-  [4;35;1mArticle Destroy (0.2ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 3[0m
-Redirected to http://localhost:3000/articles
-Completed in 82ms (DB: 0) | 302 Found [http://localhost/articles/3]
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-05 21:35:48) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
 
 
-Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 18:59:01) [GET]
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 21:35:51) [POST]
+  Parameters: {"article"=>{"body"=>"test", "title"=>"test", "Author"=>"test", "edit_count"=>""}, "commit"=>"Create", "authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y="}
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/articles]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20110206043312)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20110206043312)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "articles"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20110206043312'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20110206043312)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "author" varchar(255), "body" text, "edit_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110206043312')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 21:40:26) [POST]
+  Parameters: {"article"=>{"body"=>"test", "title"=>"test", "Author"=>"test", "edit_count"=>""}, "commit"=>"Create", "authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y="}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: Author):
+  app/controllers/articles_controller.rb:43:in `new'
+  app/controllers/articles_controller.rb:43:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (22.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 21:42:10) [GET]
   [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
 Rendering template within layouts/articles
 Rendering articles/index
-Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
+Completed in 51ms (View: 46, DB: 0) | 200 OK [http://localhost/articles]
 
 
-Processing ArticlesController#new (for 127.0.0.1 at 2011-02-05 18:59:02) [GET]
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-05 21:42:12) [GET]
 Rendering template within layouts/articles
 Rendering articles/new
-Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/new]
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/new]
 
 
-Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 18:59:12) [POST]
-  Parameters: {"article"=>{"author"=>"Sally", "body"=>"asdf", "title"=>"tests"}, "commit"=>"Create", "authenticity_token"=>"zImbqiOreRVj1T49tbn0h51bUPWK8//uWM2//QkZlws="}
-  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "author", "updated_at") VALUES('2011-02-06 01:59:12', 'tests', 'asdf', 'Sally', '2011-02-06 01:59:12')[0m
-Redirected to http://localhost:3000/articles/4
-Completed in 95ms (DB: 0) | 302 Found [http://localhost/articles]
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 21:42:20) [POST]
+  Parameters: {"article"=>{"body"=>"la", "author"=>"la", "title"=>"fa", "edit_count"=>""}, "commit"=>"Create", "authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y="}
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-06 04:42:20', 'fa', 'la', 'la', '2011-02-06 04:42:20', NULL)[0m
+Redirected to http://localhost:3000/articles/1
+Completed in 137ms (DB: 0) | 302 Found [http://localhost/articles]
 
 
-Processing ArticlesController#show (for 127.0.0.1 at 2011-02-05 18:59:12) [GET]
-  Parameters: {"id"=>"4"}
-  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-05 21:42:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
 Rendering template within layouts/articles
 Rendering articles/show
-Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/articles/4]
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/1]
 
 
-Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 18:59:14) [GET]
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 21:42:21) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-05 21:42:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/1/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-05 21:42:26) [PUT]
+  Parameters: {"article"=>{"body"=>"la", "author"=>"laa", "title"=>"fa", "edit_count"=>""}, "commit"=>"Update", "authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y=", "id"=>"1"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+  [4;36;1mArticle Update (0.2ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-06 04:42:26', "author" = 'laa' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/articles/1
+Completed in 113ms (DB: 0) | 302 Found [http://localhost/articles/1]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-05 21:42:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 21:42:33) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-05 21:42:35) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 21:42:39) [POST]
+  Parameters: {"article"=>{"body"=>"", "author"=>"Sally ride", "title"=>"", "edit_count"=>""}, "commit"=>"Create", "authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y="}
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 21:43:10) [POST]
+  Parameters: {"article"=>{"body"=>"", "author"=>"mary ride", "title"=>"", "edit_count"=>""}, "commit"=>"Create", "authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y="}
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 20ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 21:43:23) [POST]
+  Parameters: {"article"=>{"body"=>"for kids", "author"=>"mary round", "title"=>"Swings and things"}, "commit"=>"Create", "authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y="}
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-06 04:43:23', 'Swings and things', 'mary round', 'for kids', '2011-02-06 04:43:23', NULL)[0m
+Redirected to http://localhost:3000/articles/2
+Completed in 119ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-05 21:43:23) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/articles/2]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 21:43:27) [GET]
   [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
 Rendering template within layouts/articles
 Rendering articles/index
 Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles]
 
 
-Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-05 19:07:08) [DELETE]
-  Parameters: {"authenticity_token"=>"zImbqiOreRVj1T49tbn0h51bUPWK8//uWM2//QkZlws=", "id"=>"4"}
-  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
-  [4;35;1mArticle Destroy (0.2ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 4[0m
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-05 21:43:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 21:46:48) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-05 21:46:53) [DELETE]
+  Parameters: {"authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y=", "id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+  [4;35;1mArticle Destroy (0.2ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 1[0m
 Redirected to http://localhost:3000/articles
-Completed in 120ms (DB: 0) | 302 Found [http://localhost/articles/4]
+Completed in 116ms (DB: 0) | 302 Found [http://localhost/articles/1]
 
 
-Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 19:07:08) [GET]
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 21:46:53) [GET]
   [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
 Rendering template within layouts/articles
 Rendering articles/index
-Completed in 54ms (View: 50, DB: 0) | 200 OK [http://localhost/articles]
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
 
 
-Processing ArticlesController#new (for 127.0.0.1 at 2011-02-05 19:07:09) [GET]
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-05 21:46:54) [DELETE]
+  Parameters: {"authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y=", "id"=>"2"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+  [4;36;1mArticle Destroy (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/articles
+Completed in 104ms (DB: 0) | 302 Found [http://localhost/articles/2]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 21:46:54) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-05 21:46:55) [GET]
 Rendering template within layouts/articles
 Rendering articles/new
-Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/new]
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/new]
 
 
-Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 19:07:13) [POST]
-  Parameters: {"article"=>{"author"=>"Sally", "body"=>"", "title"=>""}, "commit"=>"Create", "authenticity_token"=>"zImbqiOreRVj1T49tbn0h51bUPWK8//uWM2//QkZlws="}
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 21:47:03) [POST]
+  Parameters: {"article"=>{"body"=>"Lorum", "author"=>"Me!", "title"=>"Test"}, "commit"=>"Create", "authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y="}
+  [4;36;1mArticle Create (0.2ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-06 04:47:03', 'Test', 'Me!', 'Lorum', '2011-02-06 04:47:03', 0)[0m
+Redirected to http://localhost:3000/articles/3
+Completed in 117ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-05 21:47:03) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/articles/3]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 21:47:06) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-05 21:47:07) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles/3/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-05 21:47:11) [PUT]
+  Parameters: {"article"=>{"body"=>"Lorum Ipsum", "author"=>"Me!", "title"=>"Test"}, "commit"=>"Update", "authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y=", "id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mArticle Update (0.2ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-06 04:47:11', "body" = 'Lorum Ipsum' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/articles/3
+Completed in 92ms (DB: 0) | 302 Found [http://localhost/articles/3]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-05 21:47:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/articles/3]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 21:47:13) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-05 21:47:35) [DELETE]
+  Parameters: {"authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y=", "id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mArticle Destroy (0.2ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/articles
+Completed in 96ms (DB: 0) | 302 Found [http://localhost/articles/3]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 21:47:35) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-05 21:47:36) [GET]
 Rendering template within layouts/articles
 Rendering articles/new
-Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/new]
 
 
-Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 19:07:57) [POST]
-  Parameters: {"article"=>{"author"=>"Sally", "body"=>"", "title"=>""}, "commit"=>"Create", "authenticity_token"=>"zImbqiOreRVj1T49tbn0h51bUPWK8//uWM2//QkZlws="}
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-05 21:47:43) [POST]
+  Parameters: {"article"=>{"body"=>"Lorum", "author"=>"Dan", "title"=>"Test"}, "commit"=>"Create", "authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y="}
+  [4;35;1mArticle Create (0.4ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-06 04:47:43', 'Test', 'Dan', 'Lorum', '2011-02-06 04:47:43', 0)[0m
+Redirected to http://localhost:3000/articles/4
+Completed in 131ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-05 21:47:44) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
 Rendering template within layouts/articles
-Rendering articles/new
-Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+Rendering articles/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/articles/4]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 21:47:45) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-05 21:47:47) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/4/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-05 21:47:50) [PUT]
+  Parameters: {"article"=>{"body"=>"Lorum Ipsum", "author"=>"Dan", "title"=>"Test"}, "commit"=>"Update", "authenticity_token"=>"qmXh6ZSlnrIvxOOD+xZnfRDmCjCJIZ9hig/UtM6cC2Y=", "id"=>"4"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;36;1mArticle Update (0.2ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-06 04:47:50', "edit_count" = 1, "body" = 'Lorum Ipsum' WHERE "id" = 4[0m
+Redirected to http://localhost:3000/articles/4
+Completed in 95ms (DB: 0) | 302 Found [http://localhost/articles/4]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-05 21:47:50) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/articles/4]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-05 21:47:52) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]

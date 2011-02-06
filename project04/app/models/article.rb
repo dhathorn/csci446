@@ -5,6 +5,6 @@ class Article < ActiveRecord::Base
 	protected
 
 	def no_sally
-		errors.add(:author, 'cannot be named Sally') if author =~ /\bSally\b/i 
+		errors.add(:author, 'cannot be named Sally') if author =~ /\bsally\b/i 
 	end
 end

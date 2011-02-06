@@ -3,15 +3,17 @@
 <table>
   <tr>
     <th>Title</th>
-    <th>Body</th>
     <th>Author</th>
+    <th>Body</th>
+    <th>Edit count</th>
   </tr>
 
 <% @articles.each do |article| %>
   <tr>
     <td><%=h article.title %></td>
-    <td><%=h article.body %></td>
     <td><%=h article.author %></td>
+    <td><%=h article.body %></td>
+    <td><%=h article.edit_count %></td>
     <td><%= link_to 'Show', article %></td>
     <td><%= link_to 'Edit', edit_article_path(article) %></td>
     <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
