@@ -9594,3 +9594,137 @@ Rendering template within layouts/articles
 Rendering articles/show
 Rendered articles/_titlebar (5.3ms)
 Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/43]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 00:23:39) [GET]
+  Parameters: {"id"=>"43"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 43) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.2ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/43]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:24:21) [GET]
+  [4;35;1mArticle Load (1.1ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 91ms (View: 81, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 00:24:24) [GET]
+  Parameters: {"id"=>"33"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 33) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/33/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-07 00:24:26) [PUT]
+  Parameters: {"article"=>{"body"=>"A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.", "author"=>"Leo Tolstoy", "title"=>"Anna Karenina"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"33"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 33) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/models/article.rb:10:in `plus_edit_count'
+  app/controllers/articles_controller.rb:65
+  app/controllers/articles_controller.rb:64:in `update'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-07 00:25:00) [PUT]
+  Parameters: {"article"=>{"body"=>"A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.", "author"=>"Leo Tolstoy", "title"=>"Anna Karenina"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"33"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 33) [0m
+  [4;35;1mArticle Update (0.2ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-07 07:25:00', "edit_count" = 1 WHERE "id" = 33[0m
+Redirected to http://localhost:3000/articles
+Completed in 127ms (DB: 0) | 302 Found [http://localhost/articles/33]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:25:00) [GET]
+  [4;36;1mArticle Load (1.1ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 88ms (View: 82, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 00:25:03) [GET]
+  Parameters: {"id"=>"33"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 33) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/33/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-07 00:25:05) [PUT]
+  Parameters: {"article"=>{"body"=>"A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.", "author"=>"Leo Tolstoy", "title"=>"Anna Karenina"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"33"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 33) [0m
+  [4;35;1mArticle Update (0.2ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-07 07:25:05', "edit_count" = 2 WHERE "id" = 33[0m
+Redirected to http://localhost:3000/articles
+Completed in 108ms (DB: 0) | 302 Found [http://localhost/articles/33]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:25:05) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 86ms (View: 79, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 00:30:00) [GET]
+  Parameters: {"id"=>"33"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 33) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/33/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-07 00:30:01) [PUT]
+  Parameters: {"article"=>{"body"=>"A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.", "author"=>"Leo Tolstoy", "title"=>"Anna Karenina"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"33"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 33) [0m
+  [4;35;1mArticle Update (0.2ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-07 07:30:01', "edit_count" = 3 WHERE "id" = 33[0m
+Redirected to http://localhost:3000/articles
+Completed in 128ms (DB: 0) | 302 Found [http://localhost/articles/33]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:30:02) [GET]
+  [4;36;1mArticle Load (1.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 148ms (View: 138, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 00:30:04) [GET]
+  Parameters: {"id"=>"34"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 34) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/34/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-07 00:30:06) [PUT]
+  Parameters: {"article"=>{"body"=>"A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.", "author"=>"Leo Tolstoy", "title"=>"Anna Karenina"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"34"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 34) [0m
+  [4;35;1mArticle Update (0.2ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-07 07:30:06', "edit_count" = 1 WHERE "id" = 34[0m
+Redirected to http://localhost:3000/articles
+Completed in 109ms (DB: 0) | 302 Found [http://localhost/articles/34]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:30:06) [GET]
+  [4;36;1mArticle Load (1.2ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 87ms (View: 81, DB: 1) | 200 OK [http://localhost/articles]

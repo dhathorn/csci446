@@ -59,7 +59,7 @@ class ArticlesController < ApplicationController
   # PUT /articles/1.xml
   def update
     @article = Article.find(params[:id])
-    @article.edit_count += 1
+   # @article.edit_count += 1
 
     respond_to do |format|
       if @article.update_attributes(params[:article])
