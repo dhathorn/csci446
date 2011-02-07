@@ -7,8 +7,8 @@ body {
 	margin: 0px;
 	padding-left: 40px;
 	padding-right: 40px;
-	width: 880px;
-	min-height: 1280px;
+	width: 920px;
+	min-height: 800px;
 	height: 100%;
 	background-color: #CDCDCD;
 	margin: auto
@@ -51,7 +51,7 @@ table {
 }
 #tablecontainer{
 	max-height:442px;
-	width: 880px;
+	width: 920px;
 	overflow: auto;
 }
 #table {
@@ -60,9 +60,8 @@ table {
 }
 #content {
 	margin: auto;
-	width: 880px;
+	width: 920px;
 	padding-bottom: 30px;
-	height: 1000px;
 }
 #footer {
 	padding-left: 40px;
