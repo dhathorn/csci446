@@ -8133,3 +8133,1185 @@ Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 21:58:27) [GET]
 Rendering template within layouts/articles
 Rendering articles/new
 Completed in 15ms (View: 10, DB: 0) | 200 OK [http://127.0.0.1/articles/new]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 22:02:18) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 76ms (View: 71, DB: 0) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 22:02:43) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/articles/new]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 22:02:47) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/articles/5/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 22:02:55) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 29ms (View: 24, DB: 0) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-06 22:03:21) [DELETE]
+  Parameters: {"authenticity_token"=>"1snq1g5/aje+hojz+Uy+ZFu0YFyBGwKeibUs9hwvkIU=", "id"=>"6"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+  [4;36;1mArticle Destroy (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 6[0m
+Redirected to http://127.0.0.1:3000/articles
+Completed in 143ms (DB: 0) | 302 Found [http://127.0.0.1/articles/6]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 22:03:22) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 25ms (View: 20, DB: 0) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-06 22:08:08) [DELETE]
+  Parameters: {"authenticity_token"=>"1snq1g5/aje+hojz+Uy+ZFu0YFyBGwKeibUs9hwvkIU=", "id"=>"7"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 7) [0m
+  [4;35;1mArticle Destroy (0.2ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 7[0m
+Redirected to http://127.0.0.1:3000/articles
+Completed in 95ms (DB: 0) | 302 Found [http://127.0.0.1/articles/7]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 22:08:09) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 69ms (View: 63, DB: 0) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-06 22:08:12) [DELETE]
+  Parameters: {"authenticity_token"=>"1snq1g5/aje+hojz+Uy+ZFu0YFyBGwKeibUs9hwvkIU=", "id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;36;1mArticle Destroy (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 5[0m
+Redirected to http://127.0.0.1:3000/articles
+Completed in 106ms (DB: 0) | 302 Found [http://127.0.0.1/articles/5]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 22:08:12) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-06 22:08:15) [DELETE]
+  Parameters: {"authenticity_token"=>"1snq1g5/aje+hojz+Uy+ZFu0YFyBGwKeibUs9hwvkIU=", "id"=>"8"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+  [4;35;1mArticle Destroy (0.2ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 8[0m
+Redirected to http://127.0.0.1:3000/articles
+Completed in 146ms (DB: 0) | 302 Found [http://127.0.0.1/articles/8]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 22:08:16) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 35ms (View: 23, DB: 0) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-06 22:08:21) [DELETE]
+  Parameters: {"authenticity_token"=>"1snq1g5/aje+hojz+Uy+ZFu0YFyBGwKeibUs9hwvkIU=", "id"=>"9"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 9) [0m
+  [4;36;1mArticle Destroy (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 9[0m
+Redirected to http://127.0.0.1:3000/articles
+Completed in 164ms (DB: 0) | 302 Found [http://127.0.0.1/articles/9]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 22:08:21) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 22:08:55) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 10) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/articles/10/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 22:09:05) [PUT]
+  Parameters: {"article"=>{"body"=>"dan enjoys sasha's cooking", "author"=>"sasha", "title"=>"go dan"}, "commit"=>"Save Changes", "authenticity_token"=>"1snq1g5/aje+hojz+Uy+ZFu0YFyBGwKeibUs9hwvkIU=", "id"=>"10"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 10) [0m
+  [4;36;1mArticle Update (0.2ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-07 05:09:05', "edit_count" = 2 WHERE "id" = 10[0m
+Redirected to http://127.0.0.1:3000/articles
+Completed in 157ms (DB: 0) | 302 Found [http://127.0.0.1/articles/10]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 22:09:05) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 22:09:09) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 10) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.2ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/articles/10]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 22:09:11) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 10) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/articles/10/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 22:09:14) [PUT]
+  Parameters: {"article"=>{"body"=>"dan enjoys sasha's cooking", "author"=>"sasha", "title"=>"go dan"}, "commit"=>"Save Changes", "authenticity_token"=>"1snq1g5/aje+hojz+Uy+ZFu0YFyBGwKeibUs9hwvkIU=", "id"=>"10"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 10) [0m
+  [4;35;1mArticle Update (0.2ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-07 05:09:14', "edit_count" = 3 WHERE "id" = 10[0m
+Redirected to http://127.0.0.1:3000/articles/10
+Completed in 95ms (DB: 0) | 302 Found [http://127.0.0.1/articles/10]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 22:09:14) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 10) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.0ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/articles/10]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 22:09:30) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 10) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/articles/10/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 22:09:40) [PUT]
+  Parameters: {"article"=>{"body"=>"dan enjoys sasha's cooking", "author"=>"sasha", "title"=>"go dan"}, "commit"=>"Save Changes", "authenticity_token"=>"1snq1g5/aje+hojz+Uy+ZFu0YFyBGwKeibUs9hwvkIU=", "id"=>"10"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 10) [0m
+  [4;35;1mArticle Update (0.2ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-07 05:09:40', "edit_count" = 4 WHERE "id" = 10[0m
+Redirected to http://127.0.0.1:3000/articles/10
+Completed in 120ms (DB: 0) | 302 Found [http://127.0.0.1/articles/10]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 22:09:41) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 10) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.1ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/articles/10]
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:27:04', 'A Tale of Two Cities', 'Charles Dickens', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non pellentesque massa. Vestibulum in congue metus. Phasellus malesuada scelerisque dui vitae pretium. Phasellus quam nulla, mollis id ultricies quis, dictum at mi. Nunc gravida eros non odio congue non vehicula eros ultrices. Nam nec rutrum magna. In eu sem tellus, at sodales odio. Maecenas placerat, neque et ornare varius, ipsum ante tincidunt dolor, vel tincidunt risus orci at quam. Suspendisse potenti. Morbi dapibus libero quam. Etiam ac dui a nulla adipiscing suscipit eu in eros. Nam a quam ut sem volutpat sagittis eu eu neque. Fusce auctor, diam a laoreet auctor, leo quam adipiscing sapien, et consequat lectus tortor in mauris. Nulla enim nisl, pharetra id congue a, fermentum a est. Fusce dictum faucibus urna, in cursus justo imperdiet vitae. Praesent nulla lectus, consectetur nec cursus eleifend, molestie viverra quam. Ut dictum pellentesque ante, ut egestas risus tristique a. Duis eget lorem blandit augue ornare volutpat. Curabitur ac justo nisi, in mattis sapien.
+
+Donec bibendum tempor nibh. Nunc posuere, eros at hendrerit dapibus, mauris velit congue sapien, non varius dolor mauris et libero. Aliquam id quam lacus, et luctus nisi. Duis sit amet nibh a nisl dapibus faucibus eu sit amet purus. Curabitur malesuada volutpat malesuada. In hac habitasse platea dictumst. Mauris iaculis turpis sit amet massa fringilla condimentum. Ut eget arcu nulla. Vestibulum ut sem et urna molestie suscipit. Mauris dapibus, magna et iaculis ornare, felis felis hendrerit nibh, vitae consequat orci erat a nisi. Nunc ut diam dolor, quis consectetur augue. Praesent auctor euismod elit quis ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse ut felis non ante placerat auctor. Nulla a ligula nunc. In at massa quis diam commodo placerat at sit amet orci. Pellentesque velit turpis, rutrum id semper id, volutpat sed lacus.
+
+Fusce dapibus volutpat erat, vel facilisis neque rhoncus eget. Aliquam sodales sollicitudin libero a condimentum. Phasellus eu risus sit amet erat rhoncus consequat id quis mauris. Nam sed risus urna. Donec urna enim, aliquet at adipiscing id, rhoncus eu eros. Morbi vestibulum cursus lectus eget dapibus. Sed fermentum erat a quam vehicula id semper nunc volutpat. Phasellus nisl erat, hendrerit eget iaculis id, accumsan ut quam. Sed viverra sem eget metus commodo eget pretium metus sodales. Maecenas elit neque, tincidunt sit amet eleifend mattis, viverra non enim. Proin molestie venenatis massa, quis facilisis ipsum vulputate ut. Nulla ut purus lectus, ac faucibus ante. Phasellus adipiscing rhoncus dolor, in tristique metus blandit vitae. Vestibulum interdum, metus lacinia semper imperdiet, purus neque vulputate arcu, quis tempus augue purus et turpis. Donec augue purus, porttitor in facilisis non, posuere ac velit.
+
+Donec erat eros, hendrerit ac ultricies vitae, feugiat at massa. Nam non dolor in elit vestibulum interdum. In hac habitasse platea dictumst. In imperdiet, quam sit amet auctor molestie, lectus augue dictum nibh, eget porta erat turpis sit amet diam. Etiam nec erat quis quam placerat placerat eu quis sem. Quisque tincidunt turpis eu nibh pulvinar at rhoncus lectus faucibus. Suspendisse potenti. Nunc placerat auctor pulvinar. Morbi tincidunt velit eu augue suscipit sit amet iaculis enim luctus. Curabitur auctor lectus sed arcu condimentum et malesuada nunc sodales. Curabitur molestie, tortor non scelerisque porta, odio nisi auctor orci, id elementum dui massa at nulla. In porta tellus ac nulla vestibulum tempus a eu sem. Ut pharetra diam mauris. Quisque eu ligula erat. In hac habitasse platea dictumst. Vivamus egestas facilisis libero, at placerat lorem scelerisque at. In vehicula neque vel sapien imperdiet sodales. Fusce at pulvinar odio.
+
+Donec ipsum nunc, vulputate at interdum in, suscipit ac augue. Quisque leo tellus, accumsan interdum rhoncus non, feugiat in neque. Praesent lobortis dui nec magna euismod iaculis. Vestibulum malesuada rhoncus lacus, ac pretium ipsum feugiat ut. Curabitur malesuada lorem eu sem ultrices nec imperdiet odio semper. Sed tristique gravida neque, non imperdiet metus consequat non. Aliquam mattis tempor dignissim. Sed vulputate sollicitudin posuere. Maecenas tincidunt tellus et arcu ullamcorper lobortis. Donec iaculis scelerisque euismod. Fusce urna leo, tincidunt sed dignissim eget, varius et dui. Nullam vestibulum, tellus sed dictum laoreet, lorem dolor mattis odio, sit amet consequat diam arcu et risus. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id volutpat turpis. Duis ac nunc eget neque posuere elementum sed non ipsum. In hac habitasse platea dictumst. Donec ipsum mi, porttitor in elementum non, placerat ut nulla.
+
+Sed facilisis faucibus nisl vitae vulputate. Integer dictum diam a enim egestas facilisis. Nulla in eros et felis venenatis adipiscing quis vitae est. Integer sollicitudin felis eu sem vulputate sit amet sodales augue congue. In vehicula egestas malesuada. Suspendisse congue, magna a ultricies euismod, neque nibh rhoncus lorem, a congue tortor magna sit amet velit. Proin est magna, ornare eget posuere at, sagittis sit amet tellus. Vivamus eleifend lorem diam. Sed vel neque ligula, ut pulvinar velit. Donec vel rutrum dolor. Nulla bibendum diam eu mi pretium aliquam. Donec at elit et ipsum posuere varius. Curabitur mi lectus, bibendum viverra sodales vel, fringilla vitae lectus. Praesent quis lacus massa. Sed sagittis sem eget risus gravida ut suscipit turpis porttitor. Maecenas ac eros vehicula libero semper auctor.
+
+Aliquam laoreet auctor suscipit. Quisque laoreet justo id dolor egestas ornare fringilla tellus egestas. Phasellus eu porta velit. Mauris porttitor nunc nec leo tincidunt scelerisque. Donec placerat odio at metus hendrerit rhoncus. Vivamus eleifend volutpat lorem eu dapibus. Vivamus semper imperdiet faucibus. Etiam ante felis, placerat a mollis nec, elementum et dui. Mauris pellentesque, odio vel viverra vehicula, odio dui eleifend sapien, in fringilla mauris enim a ligula. Nunc quis odio eu ipsum congue ultricies. Integer in odio odio. Phasellus et nibh quam. In sodales dignissim metus, ac pulvinar justo sodales id.
+
+Nulla massa libero, vulputate et tempor eget, fringilla eu eros. Maecenas ultricies viverra condimentum. Ut nisl enim, vulputate a tempor a, iaculis vel enim. Cras vel metus eu magna blandit pulvinar eget ut nunc. Fusce eget semper nisi. Quisque elementum justo dapibus neque dapibus non aliquet quam viverra. Proin in turpis vehicula velit hendrerit commodo. Aliquam elit libero, scelerisque a dapibus sed, adipiscing dapibus purus. Fusce at diam vitae purus imperdiet pellentesque. Aenean posuere varius arcu, et accumsan sem porttitor vitae. Quisque libero leo, gravida eget dictum id, bibendum eget nisl.
+
+Aenean metus nibh, pretium id lobortis id, faucibus eget mauris. Suspendisse tempus, sem ut auctor molestie, nulla velit consectetur nibh, nec egestas eros velit vitae eros. Maecenas cursus quam eget lorem sodales nec aliquam libero tincidunt. Quisque libero tortor, iaculis at convallis eu, facilisis in mi. Integer adipiscing magna vitae justo viverra tincidunt. Sed vel lacus consectetur enim malesuada gravida sit amet et erat. Sed metus sapien, imperdiet in sodales a, gravida eu tellus. Nam facilisis felis eu ipsum aliquet commodo. Nunc ullamcorper auctor cursus. Etiam congue urna in tellus feugiat malesuada. Nullam consectetur est in nisi porttitor pharetra consectetur libero sollicitudin. Nulla scelerisque eleifend arcu vitae dapibus. Donec ac dictum dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed faucibus, felis quis aliquet elementum, tellus enim pellentesque ante, eget sollicitudin mi tellus sit amet odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Pellentesque pharetra libero sed urna consequat id tincidunt turpis sollicitudin. Integer vulputate massa nec sem ultrices feugiat. Phasellus ullamcorper, augue eget sodales aliquam, leo quam lacinia est, ac bibendum velit nunc vitae lacus. Phasellus fringilla, augue non varius pharetra, velit mi vulputate magna, sit amet luctus velit mauris at urna. In eleifend venenatis leo, sed eleifend urna commodo et. Sed tortor nisi, rutrum a dictum sit amet, auctor lacinia sapien. Suspendisse vestibulum enim vitae lorem tempor eget tincidunt urna luctus. Proin feugiat dolor ut elit laoreet quis pellentesque purus rhoncus. Nullam in feugiat nisi. Vestibulum nec vehicula nibh. Morbi dignissim pellentesque erat, non tempor ante lobortis et. Phasellus massa risus, adipiscing quis viverra ac, consectetur vitae lacus. Aliquam eleifend nulla at lectus sollicitudin congue. Praesent luctus, ipsum suscipit egestas condimentum, libero risus consequat turpis, venenatis venenatis lorem nisl id sapien. Etiam nec sem at tellus vestibulum lobortis. Ut vel tellus et ligula congue hendrerit facilisis vitae ipsum. Sed quis convallis velit. 
+', '2011-02-07 06:27:04', 0)[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:27:11) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 23:27:18) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 11) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/11/edit]
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:31:26', 'A Tale of Two Cities', 'Charles Dickens', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non pellentesque massa. Vestibulum in congue metus. Phasellus malesuada scelerisque dui vitae pretium. Phasellus quam nulla, mollis id ultricies quis, dictum at mi. Nunc gravida eros non odio congue non vehicula eros ultrices. Nam nec rutrum magna. In eu sem tellus, at sodales odio. Maecenas placerat, neque et ornare varius, ipsum ante tincidunt dolor, vel tincidunt risus orci at quam. Suspendisse potenti. Morbi dapibus libero quam. Etiam ac dui a nulla adipiscing suscipit eu in eros. Nam a quam ut sem volutpat sagittis eu eu neque. Fusce auctor, diam a laoreet auctor, leo quam adipiscing sapien, et consequat lectus tortor in mauris. Nulla enim nisl, pharetra id congue a, fermentum a est. Fusce dictum faucibus urna, in cursus justo imperdiet vitae. Praesent nulla lectus, consectetur nec cursus eleifend, molestie viverra quam. Ut dictum pellentesque ante, ut egestas risus tristique a. Duis eget lorem blandit augue ornare volutpat. Curabitur ac justo nisi, in mattis sapien.
+
+Donec bibendum tempor nibh. Nunc posuere, eros at hendrerit dapibus, mauris velit congue sapien, non varius dolor mauris et libero. Aliquam id quam lacus, et luctus nisi. Duis sit amet nibh a nisl dapibus faucibus eu sit amet purus. Curabitur malesuada volutpat malesuada. In hac habitasse platea dictumst. Mauris iaculis turpis sit amet massa fringilla condimentum. Ut eget arcu nulla. Vestibulum ut sem et urna molestie suscipit. Mauris dapibus, magna et iaculis ornare, felis felis hendrerit nibh, vitae consequat orci erat a nisi. Nunc ut diam dolor, quis consectetur augue. Praesent auctor euismod elit quis ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse ut felis non ante placerat auctor. Nulla a ligula nunc. In at massa quis diam commodo placerat at sit amet orci. Pellentesque velit turpis, rutrum id semper id, volutpat sed lacus.
+
+Fusce dapibus volutpat erat, vel facilisis neque rhoncus eget. Aliquam sodales sollicitudin libero a condimentum. Phasellus eu risus sit amet erat rhoncus consequat id quis mauris. Nam sed risus urna. Donec urna enim, aliquet at adipiscing id, rhoncus eu eros. Morbi vestibulum cursus lectus eget dapibus. Sed fermentum erat a quam vehicula id semper nunc volutpat. Phasellus nisl erat, hendrerit eget iaculis id, accumsan ut quam. Sed viverra sem eget metus commodo eget pretium metus sodales. Maecenas elit neque, tincidunt sit amet eleifend mattis, viverra non enim. Proin molestie venenatis massa, quis facilisis ipsum vulputate ut. Nulla ut purus lectus, ac faucibus ante. Phasellus adipiscing rhoncus dolor, in tristique metus blandit vitae. Vestibulum interdum, metus lacinia semper imperdiet, purus neque vulputate arcu, quis tempus augue purus et turpis. Donec augue purus, porttitor in facilisis non, posuere ac velit.
+
+Donec erat eros, hendrerit ac ultricies vitae, feugiat at massa. Nam non dolor in elit vestibulum interdum. In hac habitasse platea dictumst. In imperdiet, quam sit amet auctor molestie, lectus augue dictum nibh, eget porta erat turpis sit amet diam. Etiam nec erat quis quam placerat placerat eu quis sem. Quisque tincidunt turpis eu nibh pulvinar at rhoncus lectus faucibus. Suspendisse potenti. Nunc placerat auctor pulvinar. Morbi tincidunt velit eu augue suscipit sit amet iaculis enim luctus. Curabitur auctor lectus sed arcu condimentum et malesuada nunc sodales. Curabitur molestie, tortor non scelerisque porta, odio nisi auctor orci, id elementum dui massa at nulla. In porta tellus ac nulla vestibulum tempus a eu sem. Ut pharetra diam mauris. Quisque eu ligula erat. In hac habitasse platea dictumst. Vivamus egestas facilisis libero, at placerat lorem scelerisque at. In vehicula neque vel sapien imperdiet sodales. Fusce at pulvinar odio.
+
+Donec ipsum nunc, vulputate at interdum in, suscipit ac augue. Quisque leo tellus, accumsan interdum rhoncus non, feugiat in neque. Praesent lobortis dui nec magna euismod iaculis. Vestibulum malesuada rhoncus lacus, ac pretium ipsum feugiat ut. Curabitur malesuada lorem eu sem ultrices nec imperdiet odio semper. Sed tristique gravida neque, non imperdiet metus consequat non. Aliquam mattis tempor dignissim. Sed vulputate sollicitudin posuere. Maecenas tincidunt tellus et arcu ullamcorper lobortis. Donec iaculis scelerisque euismod. Fusce urna leo, tincidunt sed dignissim eget, varius et dui. Nullam vestibulum, tellus sed dictum laoreet, lorem dolor mattis odio, sit amet consequat diam arcu et risus. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id volutpat turpis. Duis ac nunc eget neque posuere elementum sed non ipsum. In hac habitasse platea dictumst. Donec ipsum mi, porttitor in elementum non, placerat ut nulla.
+
+Sed facilisis faucibus nisl vitae vulputate. Integer dictum diam a enim egestas facilisis. Nulla in eros et felis venenatis adipiscing quis vitae est. Integer sollicitudin felis eu sem vulputate sit amet sodales augue congue. In vehicula egestas malesuada. Suspendisse congue, magna a ultricies euismod, neque nibh rhoncus lorem, a congue tortor magna sit amet velit. Proin est magna, ornare eget posuere at, sagittis sit amet tellus. Vivamus eleifend lorem diam. Sed vel neque ligula, ut pulvinar velit. Donec vel rutrum dolor. Nulla bibendum diam eu mi pretium aliquam. Donec at elit et ipsum posuere varius. Curabitur mi lectus, bibendum viverra sodales vel, fringilla vitae lectus. Praesent quis lacus massa. Sed sagittis sem eget risus gravida ut suscipit turpis porttitor. Maecenas ac eros vehicula libero semper auctor.
+
+Aliquam laoreet auctor suscipit. Quisque laoreet justo id dolor egestas ornare fringilla tellus egestas. Phasellus eu porta velit. Mauris porttitor nunc nec leo tincidunt scelerisque. Donec placerat odio at metus hendrerit rhoncus. Vivamus eleifend volutpat lorem eu dapibus. Vivamus semper imperdiet faucibus. Etiam ante felis, placerat a mollis nec, elementum et dui. Mauris pellentesque, odio vel viverra vehicula, odio dui eleifend sapien, in fringilla mauris enim a ligula. Nunc quis odio eu ipsum congue ultricies. Integer in odio odio. Phasellus et nibh quam. In sodales dignissim metus, ac pulvinar justo sodales id.
+
+Nulla massa libero, vulputate et tempor eget, fringilla eu eros. Maecenas ultricies viverra condimentum. Ut nisl enim, vulputate a tempor a, iaculis vel enim. Cras vel metus eu magna blandit pulvinar eget ut nunc. Fusce eget semper nisi. Quisque elementum justo dapibus neque dapibus non aliquet quam viverra. Proin in turpis vehicula velit hendrerit commodo. Aliquam elit libero, scelerisque a dapibus sed, adipiscing dapibus purus. Fusce at diam vitae purus imperdiet pellentesque. Aenean posuere varius arcu, et accumsan sem porttitor vitae. Quisque libero leo, gravida eget dictum id, bibendum eget nisl.
+
+Aenean metus nibh, pretium id lobortis id, faucibus eget mauris. Suspendisse tempus, sem ut auctor molestie, nulla velit consectetur nibh, nec egestas eros velit vitae eros. Maecenas cursus quam eget lorem sodales nec aliquam libero tincidunt. Quisque libero tortor, iaculis at convallis eu, facilisis in mi. Integer adipiscing magna vitae justo viverra tincidunt. Sed vel lacus consectetur enim malesuada gravida sit amet et erat. Sed metus sapien, imperdiet in sodales a, gravida eu tellus. Nam facilisis felis eu ipsum aliquet commodo. Nunc ullamcorper auctor cursus. Etiam congue urna in tellus feugiat malesuada. Nullam consectetur est in nisi porttitor pharetra consectetur libero sollicitudin. Nulla scelerisque eleifend arcu vitae dapibus. Donec ac dictum dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed faucibus, felis quis aliquet elementum, tellus enim pellentesque ante, eget sollicitudin mi tellus sit amet odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Pellentesque pharetra libero sed urna consequat id tincidunt turpis sollicitudin. Integer vulputate massa nec sem ultrices feugiat. Phasellus ullamcorper, augue eget sodales aliquam, leo quam lacinia est, ac bibendum velit nunc vitae lacus. Phasellus fringilla, augue non varius pharetra, velit mi vulputate magna, sit amet luctus velit mauris at urna. In eleifend venenatis leo, sed eleifend urna commodo et. Sed tortor nisi, rutrum a dictum sit amet, auctor lacinia sapien. Suspendisse vestibulum enim vitae lorem tempor eget tincidunt urna luctus. Proin feugiat dolor ut elit laoreet quis pellentesque purus rhoncus. Nullam in feugiat nisi. Vestibulum nec vehicula nibh. Morbi dignissim pellentesque erat, non tempor ante lobortis et. Phasellus massa risus, adipiscing quis viverra ac, consectetur vitae lacus. Aliquam eleifend nulla at lectus sollicitudin congue. Praesent luctus, ipsum suscipit egestas condimentum, libero risus consequat turpis, venenatis venenatis lorem nisl id sapien. Etiam nec sem at tellus vestibulum lobortis. Ut vel tellus et ligula congue hendrerit facilisis vitae ipsum. Sed quis convallis velit. 
+', '2011-02-07 06:31:26', 0)[0m
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:32:33', 'A Tale of Two Cities', 'Charles Dickens', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non pellentesque massa. Vestibulum in congue metus. Phasellus malesuada scelerisque dui vitae pretium. Phasellus quam nulla, mollis id ultricies quis, dictum at mi. Nunc gravida eros non odio congue non vehicula eros ultrices. Nam nec rutrum magna. In eu sem tellus, at sodales odio. Maecenas placerat, neque et ornare varius, ipsum ante tincidunt dolor, vel tincidunt risus orci at quam. Suspendisse potenti. Morbi dapibus libero quam. Etiam ac dui a nulla adipiscing suscipit eu in eros. Nam a quam ut sem volutpat sagittis eu eu neque. Fusce auctor, diam a laoreet auctor, leo quam adipiscing sapien, et consequat lectus tortor in mauris. Nulla enim nisl, pharetra id congue a, fermentum a est. Fusce dictum faucibus urna, in cursus justo imperdiet vitae. Praesent nulla lectus, consectetur nec cursus eleifend, molestie viverra quam. Ut dictum pellentesque ante, ut egestas risus tristique a. Duis eget lorem blandit augue ornare volutpat. Curabitur ac justo nisi, in mattis sapien.
+
+Donec bibendum tempor nibh. Nunc posuere, eros at hendrerit dapibus, mauris velit congue sapien, non varius dolor mauris et libero. Aliquam id quam lacus, et luctus nisi. Duis sit amet nibh a nisl dapibus faucibus eu sit amet purus. Curabitur malesuada volutpat malesuada. In hac habitasse platea dictumst. Mauris iaculis turpis sit amet massa fringilla condimentum. Ut eget arcu nulla. Vestibulum ut sem et urna molestie suscipit. Mauris dapibus, magna et iaculis ornare, felis felis hendrerit nibh, vitae consequat orci erat a nisi. Nunc ut diam dolor, quis consectetur augue. Praesent auctor euismod elit quis ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse ut felis non ante placerat auctor. Nulla a ligula nunc. In at massa quis diam commodo placerat at sit amet orci. Pellentesque velit turpis, rutrum id semper id, volutpat sed lacus.
+
+Fusce dapibus volutpat erat, vel facilisis neque rhoncus eget. Aliquam sodales sollicitudin libero a condimentum. Phasellus eu risus sit amet erat rhoncus consequat id quis mauris. Nam sed risus urna. Donec urna enim, aliquet at adipiscing id, rhoncus eu eros. Morbi vestibulum cursus lectus eget dapibus. Sed fermentum erat a quam vehicula id semper nunc volutpat. Phasellus nisl erat, hendrerit eget iaculis id, accumsan ut quam. Sed viverra sem eget metus commodo eget pretium metus sodales. Maecenas elit neque, tincidunt sit amet eleifend mattis, viverra non enim. Proin molestie venenatis massa, quis facilisis ipsum vulputate ut. Nulla ut purus lectus, ac faucibus ante. Phasellus adipiscing rhoncus dolor, in tristique metus blandit vitae. Vestibulum interdum, metus lacinia semper imperdiet, purus neque vulputate arcu, quis tempus augue purus et turpis. Donec augue purus, porttitor in facilisis non, posuere ac velit.
+
+Donec erat eros, hendrerit ac ultricies vitae, feugiat at massa. Nam non dolor in elit vestibulum interdum. In hac habitasse platea dictumst. In imperdiet, quam sit amet auctor molestie, lectus augue dictum nibh, eget porta erat turpis sit amet diam. Etiam nec erat quis quam placerat placerat eu quis sem. Quisque tincidunt turpis eu nibh pulvinar at rhoncus lectus faucibus. Suspendisse potenti. Nunc placerat auctor pulvinar. Morbi tincidunt velit eu augue suscipit sit amet iaculis enim luctus. Curabitur auctor lectus sed arcu condimentum et malesuada nunc sodales. Curabitur molestie, tortor non scelerisque porta, odio nisi auctor orci, id elementum dui massa at nulla. In porta tellus ac nulla vestibulum tempus a eu sem. Ut pharetra diam mauris. Quisque eu ligula erat. In hac habitasse platea dictumst. Vivamus egestas facilisis libero, at placerat lorem scelerisque at. In vehicula neque vel sapien imperdiet sodales. Fusce at pulvinar odio.
+
+Donec ipsum nunc, vulputate at interdum in, suscipit ac augue. Quisque leo tellus, accumsan interdum rhoncus non, feugiat in neque. Praesent lobortis dui nec magna euismod iaculis. Vestibulum malesuada rhoncus lacus, ac pretium ipsum feugiat ut. Curabitur malesuada lorem eu sem ultrices nec imperdiet odio semper. Sed tristique gravida neque, non imperdiet metus consequat non. Aliquam mattis tempor dignissim. Sed vulputate sollicitudin posuere. Maecenas tincidunt tellus et arcu ullamcorper lobortis. Donec iaculis scelerisque euismod. Fusce urna leo, tincidunt sed dignissim eget, varius et dui. Nullam vestibulum, tellus sed dictum laoreet, lorem dolor mattis odio, sit amet consequat diam arcu et risus. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id volutpat turpis. Duis ac nunc eget neque posuere elementum sed non ipsum. In hac habitasse platea dictumst. Donec ipsum mi, porttitor in elementum non, placerat ut nulla.
+
+Sed facilisis faucibus nisl vitae vulputate. Integer dictum diam a enim egestas facilisis. Nulla in eros et felis venenatis adipiscing quis vitae est. Integer sollicitudin felis eu sem vulputate sit amet sodales augue congue. In vehicula egestas malesuada. Suspendisse congue, magna a ultricies euismod, neque nibh rhoncus lorem, a congue tortor magna sit amet velit. Proin est magna, ornare eget posuere at, sagittis sit amet tellus. Vivamus eleifend lorem diam. Sed vel neque ligula, ut pulvinar velit. Donec vel rutrum dolor. Nulla bibendum diam eu mi pretium aliquam. Donec at elit et ipsum posuere varius. Curabitur mi lectus, bibendum viverra sodales vel, fringilla vitae lectus. Praesent quis lacus massa. Sed sagittis sem eget risus gravida ut suscipit turpis porttitor. Maecenas ac eros vehicula libero semper auctor.
+
+Aliquam laoreet auctor suscipit. Quisque laoreet justo id dolor egestas ornare fringilla tellus egestas. Phasellus eu porta velit. Mauris porttitor nunc nec leo tincidunt scelerisque. Donec placerat odio at metus hendrerit rhoncus. Vivamus eleifend volutpat lorem eu dapibus. Vivamus semper imperdiet faucibus. Etiam ante felis, placerat a mollis nec, elementum et dui. Mauris pellentesque, odio vel viverra vehicula, odio dui eleifend sapien, in fringilla mauris enim a ligula. Nunc quis odio eu ipsum congue ultricies. Integer in odio odio. Phasellus et nibh quam. In sodales dignissim metus, ac pulvinar justo sodales id.
+
+Nulla massa libero, vulputate et tempor eget, fringilla eu eros. Maecenas ultricies viverra condimentum. Ut nisl enim, vulputate a tempor a, iaculis vel enim. Cras vel metus eu magna blandit pulvinar eget ut nunc. Fusce eget semper nisi. Quisque elementum justo dapibus neque dapibus non aliquet quam viverra. Proin in turpis vehicula velit hendrerit commodo. Aliquam elit libero, scelerisque a dapibus sed, adipiscing dapibus purus. Fusce at diam vitae purus imperdiet pellentesque. Aenean posuere varius arcu, et accumsan sem porttitor vitae. Quisque libero leo, gravida eget dictum id, bibendum eget nisl.
+
+Aenean metus nibh, pretium id lobortis id, faucibus eget mauris. Suspendisse tempus, sem ut auctor molestie, nulla velit consectetur nibh, nec egestas eros velit vitae eros. Maecenas cursus quam eget lorem sodales nec aliquam libero tincidunt. Quisque libero tortor, iaculis at convallis eu, facilisis in mi. Integer adipiscing magna vitae justo viverra tincidunt. Sed vel lacus consectetur enim malesuada gravida sit amet et erat. Sed metus sapien, imperdiet in sodales a, gravida eu tellus. Nam facilisis felis eu ipsum aliquet commodo. Nunc ullamcorper auctor cursus. Etiam congue urna in tellus feugiat malesuada. Nullam consectetur est in nisi porttitor pharetra consectetur libero sollicitudin. Nulla scelerisque eleifend arcu vitae dapibus. Donec ac dictum dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed faucibus, felis quis aliquet elementum, tellus enim pellentesque ante, eget sollicitudin mi tellus sit amet odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Pellentesque pharetra libero sed urna consequat id tincidunt turpis sollicitudin. Integer vulputate massa nec sem ultrices feugiat. Phasellus ullamcorper, augue eget sodales aliquam, leo quam lacinia est, ac bibendum velit nunc vitae lacus. Phasellus fringilla, augue non varius pharetra, velit mi vulputate magna, sit amet luctus velit mauris at urna. In eleifend venenatis leo, sed eleifend urna commodo et. Sed tortor nisi, rutrum a dictum sit amet, auctor lacinia sapien. Suspendisse vestibulum enim vitae lorem tempor eget tincidunt urna luctus. Proin feugiat dolor ut elit laoreet quis pellentesque purus rhoncus. Nullam in feugiat nisi. Vestibulum nec vehicula nibh. Morbi dignissim pellentesque erat, non tempor ante lobortis et. Phasellus massa risus, adipiscing quis viverra ac, consectetur vitae lacus. Aliquam eleifend nulla at lectus sollicitudin congue. Praesent luctus, ipsum suscipit egestas condimentum, libero risus consequat turpis, venenatis venenatis lorem nisl id sapien. Etiam nec sem at tellus vestibulum lobortis. Ut vel tellus et ligula congue hendrerit facilisis vitae ipsum. Sed quis convallis velit. 
+', '2011-02-07 06:32:33', 0)[0m
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:32:34', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:32:34', 0)[0m
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:32:34', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:32:34', 0)[0m
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:32:34', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:32:34', 0)[0m
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:32:34', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:32:34', 0)[0m
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:32:34', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:32:34', 0)[0m
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:32:34', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:32:34', 0)[0m
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:32:34', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:32:34', 0)[0m
+  [4;36;1mArticle Create (0.6ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:32:34', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:32:34', 0)[0m
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:32:34', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:32:34', 0)[0m
+  [4;36;1mArticle Create (0.6ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:32:35', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:32:35', 0)[0m
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:32:35', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:32:35', 0)[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:32:43) [GET]
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 61ms (View: 55, DB: 1) | 200 OK [http://localhost/articles]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20110206043312)
+Migrating to CreateSessions (20110206053849)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110206053849')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("articles")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20110206043312)
+Migrating to CreateSessions (20110206053849)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("sessions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_sessions_on_session_id')[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:33:25) [GET]
+  [4;36;1mArticle Load (0.9ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 113ms (View: 107, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:33:26) [GET]
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 61ms (View: 55, DB: 1) | 200 OK [http://localhost/articles]
+  [4;36;1mArticle Load (0.9ms)[0m   [0;1mSELECT * FROM "articles" [0m
+  [4;35;1mArticle Load (1.9ms)[0m   [0mSELECT * FROM "articles" [0m
+  [4;36;1mArticle Load (2.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (115.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (88.7ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20110206043312)
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "author" varchar(255), "body" text, "edit_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110206043312')[0m
+Migrating to CreateSessions (20110206053849)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110206053849')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("articles")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_session_id')[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:36:10) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/articles]
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:36:16', 'A Tale of Two Cities', 'Charles Dickens', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non pellentesque massa. Vestibulum in congue metus. Phasellus malesuada scelerisque dui vitae pretium. Phasellus quam nulla, mollis id ultricies quis, dictum at mi. Nunc gravida eros non odio congue non vehicula eros ultrices. Nam nec rutrum magna. In eu sem tellus, at sodales odio. Maecenas placerat, neque et ornare varius, ipsum ante tincidunt dolor, vel tincidunt risus orci at quam. Suspendisse potenti. Morbi dapibus libero quam. Etiam ac dui a nulla adipiscing suscipit eu in eros. Nam a quam ut sem volutpat sagittis eu eu neque. Fusce auctor, diam a laoreet auctor, leo quam adipiscing sapien, et consequat lectus tortor in mauris. Nulla enim nisl, pharetra id congue a, fermentum a est. Fusce dictum faucibus urna, in cursus justo imperdiet vitae. Praesent nulla lectus, consectetur nec cursus eleifend, molestie viverra quam. Ut dictum pellentesque ante, ut egestas risus tristique a. Duis eget lorem blandit augue ornare volutpat. Curabitur ac justo nisi, in mattis sapien.
+
+Donec bibendum tempor nibh. Nunc posuere, eros at hendrerit dapibus, mauris velit congue sapien, non varius dolor mauris et libero. Aliquam id quam lacus, et luctus nisi. Duis sit amet nibh a nisl dapibus faucibus eu sit amet purus. Curabitur malesuada volutpat malesuada. In hac habitasse platea dictumst. Mauris iaculis turpis sit amet massa fringilla condimentum. Ut eget arcu nulla. Vestibulum ut sem et urna molestie suscipit. Mauris dapibus, magna et iaculis ornare, felis felis hendrerit nibh, vitae consequat orci erat a nisi. Nunc ut diam dolor, quis consectetur augue. Praesent auctor euismod elit quis ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse ut felis non ante placerat auctor. Nulla a ligula nunc. In at massa quis diam commodo placerat at sit amet orci. Pellentesque velit turpis, rutrum id semper id, volutpat sed lacus.
+
+Fusce dapibus volutpat erat, vel facilisis neque rhoncus eget. Aliquam sodales sollicitudin libero a condimentum. Phasellus eu risus sit amet erat rhoncus consequat id quis mauris. Nam sed risus urna. Donec urna enim, aliquet at adipiscing id, rhoncus eu eros. Morbi vestibulum cursus lectus eget dapibus. Sed fermentum erat a quam vehicula id semper nunc volutpat. Phasellus nisl erat, hendrerit eget iaculis id, accumsan ut quam. Sed viverra sem eget metus commodo eget pretium metus sodales. Maecenas elit neque, tincidunt sit amet eleifend mattis, viverra non enim. Proin molestie venenatis massa, quis facilisis ipsum vulputate ut. Nulla ut purus lectus, ac faucibus ante. Phasellus adipiscing rhoncus dolor, in tristique metus blandit vitae. Vestibulum interdum, metus lacinia semper imperdiet, purus neque vulputate arcu, quis tempus augue purus et turpis. Donec augue purus, porttitor in facilisis non, posuere ac velit.
+
+Donec erat eros, hendrerit ac ultricies vitae, feugiat at massa. Nam non dolor in elit vestibulum interdum. In hac habitasse platea dictumst. In imperdiet, quam sit amet auctor molestie, lectus augue dictum nibh, eget porta erat turpis sit amet diam. Etiam nec erat quis quam placerat placerat eu quis sem. Quisque tincidunt turpis eu nibh pulvinar at rhoncus lectus faucibus. Suspendisse potenti. Nunc placerat auctor pulvinar. Morbi tincidunt velit eu augue suscipit sit amet iaculis enim luctus. Curabitur auctor lectus sed arcu condimentum et malesuada nunc sodales. Curabitur molestie, tortor non scelerisque porta, odio nisi auctor orci, id elementum dui massa at nulla. In porta tellus ac nulla vestibulum tempus a eu sem. Ut pharetra diam mauris. Quisque eu ligula erat. In hac habitasse platea dictumst. Vivamus egestas facilisis libero, at placerat lorem scelerisque at. In vehicula neque vel sapien imperdiet sodales. Fusce at pulvinar odio.
+
+Donec ipsum nunc, vulputate at interdum in, suscipit ac augue. Quisque leo tellus, accumsan interdum rhoncus non, feugiat in neque. Praesent lobortis dui nec magna euismod iaculis. Vestibulum malesuada rhoncus lacus, ac pretium ipsum feugiat ut. Curabitur malesuada lorem eu sem ultrices nec imperdiet odio semper. Sed tristique gravida neque, non imperdiet metus consequat non. Aliquam mattis tempor dignissim. Sed vulputate sollicitudin posuere. Maecenas tincidunt tellus et arcu ullamcorper lobortis. Donec iaculis scelerisque euismod. Fusce urna leo, tincidunt sed dignissim eget, varius et dui. Nullam vestibulum, tellus sed dictum laoreet, lorem dolor mattis odio, sit amet consequat diam arcu et risus. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id volutpat turpis. Duis ac nunc eget neque posuere elementum sed non ipsum. In hac habitasse platea dictumst. Donec ipsum mi, porttitor in elementum non, placerat ut nulla.
+
+Sed facilisis faucibus nisl vitae vulputate. Integer dictum diam a enim egestas facilisis. Nulla in eros et felis venenatis adipiscing quis vitae est. Integer sollicitudin felis eu sem vulputate sit amet sodales augue congue. In vehicula egestas malesuada. Suspendisse congue, magna a ultricies euismod, neque nibh rhoncus lorem, a congue tortor magna sit amet velit. Proin est magna, ornare eget posuere at, sagittis sit amet tellus. Vivamus eleifend lorem diam. Sed vel neque ligula, ut pulvinar velit. Donec vel rutrum dolor. Nulla bibendum diam eu mi pretium aliquam. Donec at elit et ipsum posuere varius. Curabitur mi lectus, bibendum viverra sodales vel, fringilla vitae lectus. Praesent quis lacus massa. Sed sagittis sem eget risus gravida ut suscipit turpis porttitor. Maecenas ac eros vehicula libero semper auctor.
+
+Aliquam laoreet auctor suscipit. Quisque laoreet justo id dolor egestas ornare fringilla tellus egestas. Phasellus eu porta velit. Mauris porttitor nunc nec leo tincidunt scelerisque. Donec placerat odio at metus hendrerit rhoncus. Vivamus eleifend volutpat lorem eu dapibus. Vivamus semper imperdiet faucibus. Etiam ante felis, placerat a mollis nec, elementum et dui. Mauris pellentesque, odio vel viverra vehicula, odio dui eleifend sapien, in fringilla mauris enim a ligula. Nunc quis odio eu ipsum congue ultricies. Integer in odio odio. Phasellus et nibh quam. In sodales dignissim metus, ac pulvinar justo sodales id.
+
+Nulla massa libero, vulputate et tempor eget, fringilla eu eros. Maecenas ultricies viverra condimentum. Ut nisl enim, vulputate a tempor a, iaculis vel enim. Cras vel metus eu magna blandit pulvinar eget ut nunc. Fusce eget semper nisi. Quisque elementum justo dapibus neque dapibus non aliquet quam viverra. Proin in turpis vehicula velit hendrerit commodo. Aliquam elit libero, scelerisque a dapibus sed, adipiscing dapibus purus. Fusce at diam vitae purus imperdiet pellentesque. Aenean posuere varius arcu, et accumsan sem porttitor vitae. Quisque libero leo, gravida eget dictum id, bibendum eget nisl.
+
+Aenean metus nibh, pretium id lobortis id, faucibus eget mauris. Suspendisse tempus, sem ut auctor molestie, nulla velit consectetur nibh, nec egestas eros velit vitae eros. Maecenas cursus quam eget lorem sodales nec aliquam libero tincidunt. Quisque libero tortor, iaculis at convallis eu, facilisis in mi. Integer adipiscing magna vitae justo viverra tincidunt. Sed vel lacus consectetur enim malesuada gravida sit amet et erat. Sed metus sapien, imperdiet in sodales a, gravida eu tellus. Nam facilisis felis eu ipsum aliquet commodo. Nunc ullamcorper auctor cursus. Etiam congue urna in tellus feugiat malesuada. Nullam consectetur est in nisi porttitor pharetra consectetur libero sollicitudin. Nulla scelerisque eleifend arcu vitae dapibus. Donec ac dictum dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed faucibus, felis quis aliquet elementum, tellus enim pellentesque ante, eget sollicitudin mi tellus sit amet odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Pellentesque pharetra libero sed urna consequat id tincidunt turpis sollicitudin. Integer vulputate massa nec sem ultrices feugiat. Phasellus ullamcorper, augue eget sodales aliquam, leo quam lacinia est, ac bibendum velit nunc vitae lacus. Phasellus fringilla, augue non varius pharetra, velit mi vulputate magna, sit amet luctus velit mauris at urna. In eleifend venenatis leo, sed eleifend urna commodo et. Sed tortor nisi, rutrum a dictum sit amet, auctor lacinia sapien. Suspendisse vestibulum enim vitae lorem tempor eget tincidunt urna luctus. Proin feugiat dolor ut elit laoreet quis pellentesque purus rhoncus. Nullam in feugiat nisi. Vestibulum nec vehicula nibh. Morbi dignissim pellentesque erat, non tempor ante lobortis et. Phasellus massa risus, adipiscing quis viverra ac, consectetur vitae lacus. Aliquam eleifend nulla at lectus sollicitudin congue. Praesent luctus, ipsum suscipit egestas condimentum, libero risus consequat turpis, venenatis venenatis lorem nisl id sapien. Etiam nec sem at tellus vestibulum lobortis. Ut vel tellus et ligula congue hendrerit facilisis vitae ipsum. Sed quis convallis velit. 
+', '2011-02-07 06:36:16', 0)[0m
+  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:36:16', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:36:16', 0)[0m
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:36:16', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:36:16', 0)[0m
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:36:16', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:36:16', 0)[0m
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:36:16', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:36:16', 0)[0m
+  [4;35;1mArticle Create (0.6ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:36:16', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:36:16', 0)[0m
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:36:16', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:36:16', 0)[0m
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:36:16', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:36:16', 0)[0m
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:36:16', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:36:16', 0)[0m
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:36:16', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:36:16', 0)[0m
+  [4;36;1mArticle Create (0.6ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:36:16', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:36:16', 0)[0m
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:36:17', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:36:17', 0)[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:36:19) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 98ms (View: 92, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:38:11) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 50ms (View: 44, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:38:12) [GET]
+  [4;35;1mArticle Load (1.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 52ms (View: 46, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:38:20) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 100ms (View: 94, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:38:22) [GET]
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 51ms (View: 45, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:40:03) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 52ms (View: 47, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:40:15) [GET]
+  [4;35;1mArticle Load (0.9ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 105ms (View: 99, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-06 23:42:15) [DELETE]
+  Parameters: {"authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+  [4;35;1mArticle Destroy (0.3ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 1[0m
+Redirected to http://localhost:3000/articles
+Completed in 133ms (DB: 0) | 302 Found [http://localhost/articles/1]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:42:15) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 47ms (View: 42, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-06 23:42:19) [DELETE]
+  Parameters: {"authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"2"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+  [4;36;1mArticle Destroy (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/articles
+Completed in 81ms (DB: 0) | 302 Found [http://localhost/articles/2]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:42:19) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 45ms (View: 39, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:42:43) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 43ms (View: 37, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:42:58) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 43ms (View: 37, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 23:43:02) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 12) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.5ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/12]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:43:05) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 42ms (View: 37, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 23:43:08) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/3/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:43:10) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 43ms (View: 37, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 23:43:11) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 23:43:17) [POST]
+  Parameters: {"article"=>{"body"=>"ssss", "author"=>"s", "title"=>"test"}, "commit"=>"Create", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64="}
+  [4;36;1mArticle Create (0.2ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:43:17', 'test', 's', 'ssss', '2011-02-07 06:43:17', 0)[0m
+Redirected to http://localhost:3000/articles/13
+Completed in 84ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 23:43:17) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 13) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.7ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/13]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:43:18) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 46ms (View: 40, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:43:55) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 48ms (View: 43, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 23:44:21) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 23:44:31) [POST]
+  Parameters: {"article"=>{"body"=>"a", "author"=>"Really Long Author name aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "title"=>"asdf"}, "commit"=>"Create", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64="}
+  [4;36;1mArticle Create (0.2ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:44:31', 'asdf', 'Really Long Author name aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'a', '2011-02-07 06:44:31', 0)[0m
+Redirected to http://localhost:3000/articles/14
+Completed in 123ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 23:44:32) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 14) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.6ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/14]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:44:33) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 64ms (View: 58, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:45:02) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 54ms (View: 47, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:45:11) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 101ms (View: 95, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:45:22) [GET]
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 53ms (View: 47, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:45:37) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 52ms (View: 46, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:45:44) [GET]
+  [4;35;1mArticle Load (0.9ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 104ms (View: 98, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:45:50) [GET]
+  [4;36;1mArticle Load (2.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 66ms (View: 51, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:46:07) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 73ms (View: 67, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:46:27) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 53ms (View: 48, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:46:28) [GET]
+  [4;35;1mArticle Load (0.9ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 51ms (View: 45, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 23:46:33) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 13) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/13/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 23:46:36) [PUT]
+  Parameters: {"article"=>{"body"=>"ssss", "author"=>"s", "title"=>"testaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"13"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 13) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-07 06:46:36', "title" = 'testaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', "edit_count" = 1 WHERE "id" = 13[0m
+Redirected to http://localhost:3000/articles
+Completed in 113ms (DB: 0) | 302 Found [http://localhost/articles/13]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:46:36) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 50ms (View: 44, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:46:46) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 112ms (View: 106, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:46:55) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 54ms (View: 49, DB: 1) | 200 OK [http://localhost/articles]
+  [4;36;1mArticle Delete all (0.6ms)[0m   [0;1mDELETE FROM "articles" WHERE ("id" IN ('--- 
+- :id
+- 1
+')) [0m
+  [4;35;1mArticle Load (1.8ms)[0m   [0mSELECT * FROM "articles" [0m
+  [4;36;1mArticle Load (1.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+  [4;35;1mArticle Load (1.7ms)[0m   [0mSELECT * FROM "articles" [0m
+  [4;36;1mArticle Delete all (137.7ms)[0m   [0;1mDELETE FROM "articles" WHERE ("id" IN (3)) [0m
+  [4;35;1mArticle Delete all (81.8ms)[0m   [0mDELETE FROM "articles" WHERE ("id" IN (4)) [0m
+  [4;36;1mArticle Delete all (107.7ms)[0m   [0;1mDELETE FROM "articles" WHERE ("id" IN (5)) [0m
+  [4;35;1mArticle Delete all (107.3ms)[0m   [0mDELETE FROM "articles" WHERE ("id" IN (6)) [0m
+  [4;36;1mArticle Delete all (107.6ms)[0m   [0;1mDELETE FROM "articles" WHERE ("id" IN (7)) [0m
+  [4;35;1mArticle Delete all (107.5ms)[0m   [0mDELETE FROM "articles" WHERE ("id" IN (8)) [0m
+  [4;36;1mArticle Delete all (107.2ms)[0m   [0;1mDELETE FROM "articles" WHERE ("id" IN (9)) [0m
+  [4;35;1mArticle Delete all (83.1ms)[0m   [0mDELETE FROM "articles" WHERE ("id" IN (10)) [0m
+  [4;36;1mArticle Delete all (74.3ms)[0m   [0;1mDELETE FROM "articles" WHERE ("id" IN (11)) [0m
+  [4;35;1mArticle Delete all (65.9ms)[0m   [0mDELETE FROM "articles" WHERE ("id" IN (12)) [0m
+  [4;36;1mArticle Delete all (74.3ms)[0m   [0;1mDELETE FROM "articles" WHERE ("id" IN (13)) [0m
+  [4;35;1mArticle Delete all (74.3ms)[0m   [0mDELETE FROM "articles" WHERE ("id" IN (14)) [0m
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:49:01) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 23:49:10) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 23:49:16) [POST]
+  Parameters: {"article"=>{"body"=>"Testy", "author"=>"Test", "title"=>"Ahh"}, "commit"=>"Create", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64="}
+  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:49:16', 'Ahh', 'Test', 'Testy', '2011-02-07 06:49:16', 0)[0m
+Redirected to http://localhost:3000/articles/15
+Completed in 95ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 23:49:16) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.1ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:49:19) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:50:12) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 23:50:17) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 23:50:22) [POST]
+  Parameters: {"article"=>{"body"=>"aaefsf", "author"=>"sadf", "title"=>"asdf"}, "commit"=>"Create", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64="}
+  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:50:22', 'asdf', 'sadf', 'aaefsf', '2011-02-07 06:50:22', 0)[0m
+Redirected to http://localhost:3000/articles/16
+Completed in 211ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 23:50:22) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 16) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.2ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/16]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:50:23) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-06 23:50:31) [DELETE]
+  Parameters: {"authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"15"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+  [4;35;1mArticle Destroy (0.3ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 15[0m
+Redirected to http://localhost:3000/articles
+Completed in 93ms (DB: 1) | 302 Found [http://localhost/articles/15]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:50:32) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-06 23:50:33) [DELETE]
+  Parameters: {"authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"16"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 16) [0m
+  [4;36;1mArticle Destroy (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 16[0m
+Redirected to http://localhost:3000/articles
+Completed in 126ms (DB: 0) | 302 Found [http://localhost/articles/16]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:50:34) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:50:45) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/articles]
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:50:45', 'A Tale of Two Cities', 'Charles Dickens', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non pellentesque massa. Vestibulum in congue metus. Phasellus malesuada scelerisque dui vitae pretium. Phasellus quam nulla, mollis id ultricies quis, dictum at mi. Nunc gravida eros non odio congue non vehicula eros ultrices. Nam nec rutrum magna. In eu sem tellus, at sodales odio. Maecenas placerat, neque et ornare varius, ipsum ante tincidunt dolor, vel tincidunt risus orci at quam. Suspendisse potenti. Morbi dapibus libero quam. Etiam ac dui a nulla adipiscing suscipit eu in eros. Nam a quam ut sem volutpat sagittis eu eu neque. Fusce auctor, diam a laoreet auctor, leo quam adipiscing sapien, et consequat lectus tortor in mauris. Nulla enim nisl, pharetra id congue a, fermentum a est. Fusce dictum faucibus urna, in cursus justo imperdiet vitae. Praesent nulla lectus, consectetur nec cursus eleifend, molestie viverra quam. Ut dictum pellentesque ante, ut egestas risus tristique a. Duis eget lorem blandit augue ornare volutpat. Curabitur ac justo nisi, in mattis sapien.
+
+Donec bibendum tempor nibh. Nunc posuere, eros at hendrerit dapibus, mauris velit congue sapien, non varius dolor mauris et libero. Aliquam id quam lacus, et luctus nisi. Duis sit amet nibh a nisl dapibus faucibus eu sit amet purus. Curabitur malesuada volutpat malesuada. In hac habitasse platea dictumst. Mauris iaculis turpis sit amet massa fringilla condimentum. Ut eget arcu nulla. Vestibulum ut sem et urna molestie suscipit. Mauris dapibus, magna et iaculis ornare, felis felis hendrerit nibh, vitae consequat orci erat a nisi. Nunc ut diam dolor, quis consectetur augue. Praesent auctor euismod elit quis ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse ut felis non ante placerat auctor. Nulla a ligula nunc. In at massa quis diam commodo placerat at sit amet orci. Pellentesque velit turpis, rutrum id semper id, volutpat sed lacus.
+
+Fusce dapibus volutpat erat, vel facilisis neque rhoncus eget. Aliquam sodales sollicitudin libero a condimentum. Phasellus eu risus sit amet erat rhoncus consequat id quis mauris. Nam sed risus urna. Donec urna enim, aliquet at adipiscing id, rhoncus eu eros. Morbi vestibulum cursus lectus eget dapibus. Sed fermentum erat a quam vehicula id semper nunc volutpat. Phasellus nisl erat, hendrerit eget iaculis id, accumsan ut quam. Sed viverra sem eget metus commodo eget pretium metus sodales. Maecenas elit neque, tincidunt sit amet eleifend mattis, viverra non enim. Proin molestie venenatis massa, quis facilisis ipsum vulputate ut. Nulla ut purus lectus, ac faucibus ante. Phasellus adipiscing rhoncus dolor, in tristique metus blandit vitae. Vestibulum interdum, metus lacinia semper imperdiet, purus neque vulputate arcu, quis tempus augue purus et turpis. Donec augue purus, porttitor in facilisis non, posuere ac velit.
+
+Donec erat eros, hendrerit ac ultricies vitae, feugiat at massa. Nam non dolor in elit vestibulum interdum. In hac habitasse platea dictumst. In imperdiet, quam sit amet auctor molestie, lectus augue dictum nibh, eget porta erat turpis sit amet diam. Etiam nec erat quis quam placerat placerat eu quis sem. Quisque tincidunt turpis eu nibh pulvinar at rhoncus lectus faucibus. Suspendisse potenti. Nunc placerat auctor pulvinar. Morbi tincidunt velit eu augue suscipit sit amet iaculis enim luctus. Curabitur auctor lectus sed arcu condimentum et malesuada nunc sodales. Curabitur molestie, tortor non scelerisque porta, odio nisi auctor orci, id elementum dui massa at nulla. In porta tellus ac nulla vestibulum tempus a eu sem. Ut pharetra diam mauris. Quisque eu ligula erat. In hac habitasse platea dictumst. Vivamus egestas facilisis libero, at placerat lorem scelerisque at. In vehicula neque vel sapien imperdiet sodales. Fusce at pulvinar odio.
+
+Donec ipsum nunc, vulputate at interdum in, suscipit ac augue. Quisque leo tellus, accumsan interdum rhoncus non, feugiat in neque. Praesent lobortis dui nec magna euismod iaculis. Vestibulum malesuada rhoncus lacus, ac pretium ipsum feugiat ut. Curabitur malesuada lorem eu sem ultrices nec imperdiet odio semper. Sed tristique gravida neque, non imperdiet metus consequat non. Aliquam mattis tempor dignissim. Sed vulputate sollicitudin posuere. Maecenas tincidunt tellus et arcu ullamcorper lobortis. Donec iaculis scelerisque euismod. Fusce urna leo, tincidunt sed dignissim eget, varius et dui. Nullam vestibulum, tellus sed dictum laoreet, lorem dolor mattis odio, sit amet consequat diam arcu et risus. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id volutpat turpis. Duis ac nunc eget neque posuere elementum sed non ipsum. In hac habitasse platea dictumst. Donec ipsum mi, porttitor in elementum non, placerat ut nulla.
+
+Sed facilisis faucibus nisl vitae vulputate. Integer dictum diam a enim egestas facilisis. Nulla in eros et felis venenatis adipiscing quis vitae est. Integer sollicitudin felis eu sem vulputate sit amet sodales augue congue. In vehicula egestas malesuada. Suspendisse congue, magna a ultricies euismod, neque nibh rhoncus lorem, a congue tortor magna sit amet velit. Proin est magna, ornare eget posuere at, sagittis sit amet tellus. Vivamus eleifend lorem diam. Sed vel neque ligula, ut pulvinar velit. Donec vel rutrum dolor. Nulla bibendum diam eu mi pretium aliquam. Donec at elit et ipsum posuere varius. Curabitur mi lectus, bibendum viverra sodales vel, fringilla vitae lectus. Praesent quis lacus massa. Sed sagittis sem eget risus gravida ut suscipit turpis porttitor. Maecenas ac eros vehicula libero semper auctor.
+
+Aliquam laoreet auctor suscipit. Quisque laoreet justo id dolor egestas ornare fringilla tellus egestas. Phasellus eu porta velit. Mauris porttitor nunc nec leo tincidunt scelerisque. Donec placerat odio at metus hendrerit rhoncus. Vivamus eleifend volutpat lorem eu dapibus. Vivamus semper imperdiet faucibus. Etiam ante felis, placerat a mollis nec, elementum et dui. Mauris pellentesque, odio vel viverra vehicula, odio dui eleifend sapien, in fringilla mauris enim a ligula. Nunc quis odio eu ipsum congue ultricies. Integer in odio odio. Phasellus et nibh quam. In sodales dignissim metus, ac pulvinar justo sodales id.
+
+Nulla massa libero, vulputate et tempor eget, fringilla eu eros. Maecenas ultricies viverra condimentum. Ut nisl enim, vulputate a tempor a, iaculis vel enim. Cras vel metus eu magna blandit pulvinar eget ut nunc. Fusce eget semper nisi. Quisque elementum justo dapibus neque dapibus non aliquet quam viverra. Proin in turpis vehicula velit hendrerit commodo. Aliquam elit libero, scelerisque a dapibus sed, adipiscing dapibus purus. Fusce at diam vitae purus imperdiet pellentesque. Aenean posuere varius arcu, et accumsan sem porttitor vitae. Quisque libero leo, gravida eget dictum id, bibendum eget nisl.
+
+Aenean metus nibh, pretium id lobortis id, faucibus eget mauris. Suspendisse tempus, sem ut auctor molestie, nulla velit consectetur nibh, nec egestas eros velit vitae eros. Maecenas cursus quam eget lorem sodales nec aliquam libero tincidunt. Quisque libero tortor, iaculis at convallis eu, facilisis in mi. Integer adipiscing magna vitae justo viverra tincidunt. Sed vel lacus consectetur enim malesuada gravida sit amet et erat. Sed metus sapien, imperdiet in sodales a, gravida eu tellus. Nam facilisis felis eu ipsum aliquet commodo. Nunc ullamcorper auctor cursus. Etiam congue urna in tellus feugiat malesuada. Nullam consectetur est in nisi porttitor pharetra consectetur libero sollicitudin. Nulla scelerisque eleifend arcu vitae dapibus. Donec ac dictum dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed faucibus, felis quis aliquet elementum, tellus enim pellentesque ante, eget sollicitudin mi tellus sit amet odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Pellentesque pharetra libero sed urna consequat id tincidunt turpis sollicitudin. Integer vulputate massa nec sem ultrices feugiat. Phasellus ullamcorper, augue eget sodales aliquam, leo quam lacinia est, ac bibendum velit nunc vitae lacus. Phasellus fringilla, augue non varius pharetra, velit mi vulputate magna, sit amet luctus velit mauris at urna. In eleifend venenatis leo, sed eleifend urna commodo et. Sed tortor nisi, rutrum a dictum sit amet, auctor lacinia sapien. Suspendisse vestibulum enim vitae lorem tempor eget tincidunt urna luctus. Proin feugiat dolor ut elit laoreet quis pellentesque purus rhoncus. Nullam in feugiat nisi. Vestibulum nec vehicula nibh. Morbi dignissim pellentesque erat, non tempor ante lobortis et. Phasellus massa risus, adipiscing quis viverra ac, consectetur vitae lacus. Aliquam eleifend nulla at lectus sollicitudin congue. Praesent luctus, ipsum suscipit egestas condimentum, libero risus consequat turpis, venenatis venenatis lorem nisl id sapien. Etiam nec sem at tellus vestibulum lobortis. Ut vel tellus et ligula congue hendrerit facilisis vitae ipsum. Sed quis convallis velit. 
+', '2011-02-07 06:50:45', 0)[0m
+  [4;35;1mArticle Create (0.6ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:50:45', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:50:45', 0)[0m
+  [4;36;1mArticle Create (0.6ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:50:46', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:50:46', 0)[0m
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:50:46', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:50:46', 0)[0m
+  [4;36;1mArticle Create (0.6ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:50:46', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:50:46', 0)[0m
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:50:46', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:50:46', 0)[0m
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:50:46', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:50:46', 0)[0m
+  [4;35;1mArticle Create (0.6ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:50:46', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:50:46', 0)[0m
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:50:46', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:50:46', 0)[0m
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:50:46', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:50:46', 0)[0m
+  [4;36;1mArticle Create (0.8ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:50:46', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:50:46', 0)[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:50:46) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 43ms (View: 38, DB: 1) | 200 OK [http://localhost/articles]
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:50:46', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 06:50:46', 0)[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:50:48) [GET]
+  [4;36;1mArticle Load (1.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 53ms (View: 46, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:52:16) [GET]
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 60ms (View: 54, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 23:52:18) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:52:21) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 51ms (View: 45, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:52:43) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 51ms (View: 46, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:52:52) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 51ms (View: 45, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:53:33) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 51ms (View: 45, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:53:43) [GET]
+  [4;36;1mArticle Load (0.8ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 94ms (View: 87, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:53:58) [GET]
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 52ms (View: 46, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:54:15) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 70ms (View: 63, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-06 23:54:22) [DELETE]
+  Parameters: {"authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"17"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 17) [0m
+  [4;36;1mArticle Destroy (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 17[0m
+Redirected to http://localhost:3000/articles
+Completed in 115ms (DB: 0) | 302 Found [http://localhost/articles/17]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:54:22) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 93ms (View: 88, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:54:49) [GET]
+  [4;36;1mArticle Load (0.8ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 48ms (View: 42, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-06 23:54:53) [DELETE]
+  Parameters: {"authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"23"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 23) [0m
+  [4;36;1mArticle Destroy (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 23[0m
+Redirected to http://localhost:3000/articles
+Completed in 77ms (DB: 0) | 302 Found [http://localhost/articles/23]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:54:53) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 53ms (View: 47, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:55:48) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 47ms (View: 41, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 23:55:53) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 23:55:57) [POST]
+  Parameters: {"article"=>{"body"=>"d", "author"=>"s", "title"=>"a"}, "commit"=>"Create", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64="}
+  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:55:57', 'a', 's', 'd', '2011-02-07 06:55:57', 0)[0m
+Redirected to http://localhost:3000/articles/29
+Completed in 124ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 23:55:57) [GET]
+  Parameters: {"id"=>"29"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 29) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.3ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/29]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:56:00) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 48ms (View: 42, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:57:05) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 45ms (View: 40, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 23:57:12) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 23:57:16) [POST]
+  Parameters: {"article"=>{"body"=>"d", "author"=>"g", "title"=>"d"}, "commit"=>"Create", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64="}
+  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 06:57:16', 'd', 'g', 'd', '2011-02-07 06:57:16', 0)[0m
+Redirected to http://localhost:3000/articles/30
+Completed in 96ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 23:57:16) [GET]
+  Parameters: {"id"=>"30"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 30) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (6.1ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/30]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:57:18) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 89ms (View: 75, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:57:47) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 54ms (View: 48, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:57:49) [GET]
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 49ms (View: 43, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:57:54) [GET]
+  [4;36;1mArticle Load (0.8ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 52ms (View: 46, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:58:07) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 54ms (View: 49, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:59:35) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 48ms (View: 43, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:59:48) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 56ms (View: 50, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 23:59:58) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 57ms (View: 51, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:00:29) [GET]
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 50ms (View: 43, DB: 1) | 200 OK [http://localhost/articles]
+  [4;35;1mArticle Load (1.5ms)[0m   [0mSELECT * FROM "articles" [0m
+  [4;36;1mArticle Delete all (137.6ms)[0m   [0;1mDELETE FROM "articles" WHERE ("id" IN (18)) [0m
+  [4;35;1mArticle Delete all (81.9ms)[0m   [0mDELETE FROM "articles" WHERE ("id" IN (19)) [0m
+  [4;36;1mArticle Delete all (83.2ms)[0m   [0;1mDELETE FROM "articles" WHERE ("id" IN (20)) [0m
+  [4;35;1mArticle Delete all (57.7ms)[0m   [0mDELETE FROM "articles" WHERE ("id" IN (21)) [0m
+  [4;36;1mArticle Delete all (57.6ms)[0m   [0;1mDELETE FROM "articles" WHERE ("id" IN (22)) [0m
+  [4;35;1mArticle Delete all (65.9ms)[0m   [0mDELETE FROM "articles" WHERE ("id" IN (24)) [0m
+  [4;36;1mArticle Delete all (57.5ms)[0m   [0;1mDELETE FROM "articles" WHERE ("id" IN (25)) [0m
+  [4;35;1mArticle Delete all (66.2ms)[0m   [0mDELETE FROM "articles" WHERE ("id" IN (26)) [0m
+  [4;36;1mArticle Delete all (65.9ms)[0m   [0;1mDELETE FROM "articles" WHERE ("id" IN (27)) [0m
+  [4;35;1mArticle Delete all (65.9ms)[0m   [0mDELETE FROM "articles" WHERE ("id" IN (28)) [0m
+  [4;36;1mArticle Delete all (65.9ms)[0m   [0;1mDELETE FROM "articles" WHERE ("id" IN (29)) [0m
+  [4;35;1mArticle Delete all (66.0ms)[0m   [0mDELETE FROM "articles" WHERE ("id" IN (30)) [0m
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:01:28) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/articles]
+  [4;36;1mArticle Create (0.9ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 07:01:36', 'A Tale of Two Cities', 'Charles Dickens', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non pellentesque massa. Vestibulum in congue metus. Phasellus malesuada scelerisque dui vitae pretium. Phasellus quam nulla, mollis id ultricies quis, dictum at mi. Nunc gravida eros non odio congue non vehicula eros ultrices. Nam nec rutrum magna. In eu sem tellus, at sodales odio. Maecenas placerat, neque et ornare varius, ipsum ante tincidunt dolor, vel tincidunt risus orci at quam. Suspendisse potenti. Morbi dapibus libero quam. Etiam ac dui a nulla adipiscing suscipit eu in eros. Nam a quam ut sem volutpat sagittis eu eu neque. Fusce auctor, diam a laoreet auctor, leo quam adipiscing sapien, et consequat lectus tortor in mauris. Nulla enim nisl, pharetra id congue a, fermentum a est. Fusce dictum faucibus urna, in cursus justo imperdiet vitae. Praesent nulla lectus, consectetur nec cursus eleifend, molestie viverra quam. Ut dictum pellentesque ante, ut egestas risus tristique a. Duis eget lorem blandit augue ornare volutpat. Curabitur ac justo nisi, in mattis sapien.
+
+Donec bibendum tempor nibh. Nunc posuere, eros at hendrerit dapibus, mauris velit congue sapien, non varius dolor mauris et libero. Aliquam id quam lacus, et luctus nisi. Duis sit amet nibh a nisl dapibus faucibus eu sit amet purus. Curabitur malesuada volutpat malesuada. In hac habitasse platea dictumst. Mauris iaculis turpis sit amet massa fringilla condimentum. Ut eget arcu nulla. Vestibulum ut sem et urna molestie suscipit. Mauris dapibus, magna et iaculis ornare, felis felis hendrerit nibh, vitae consequat orci erat a nisi. Nunc ut diam dolor, quis consectetur augue. Praesent auctor euismod elit quis ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse ut felis non ante placerat auctor. Nulla a ligula nunc. In at massa quis diam commodo placerat at sit amet orci. Pellentesque velit turpis, rutrum id semper id, volutpat sed lacus.
+
+Fusce dapibus volutpat erat, vel facilisis neque rhoncus eget. Aliquam sodales sollicitudin libero a condimentum. Phasellus eu risus sit amet erat rhoncus consequat id quis mauris. Nam sed risus urna. Donec urna enim, aliquet at adipiscing id, rhoncus eu eros. Morbi vestibulum cursus lectus eget dapibus. Sed fermentum erat a quam vehicula id semper nunc volutpat. Phasellus nisl erat, hendrerit eget iaculis id, accumsan ut quam. Sed viverra sem eget metus commodo eget pretium metus sodales. Maecenas elit neque, tincidunt sit amet eleifend mattis, viverra non enim. Proin molestie venenatis massa, quis facilisis ipsum vulputate ut. Nulla ut purus lectus, ac faucibus ante. Phasellus adipiscing rhoncus dolor, in tristique metus blandit vitae. Vestibulum interdum, metus lacinia semper imperdiet, purus neque vulputate arcu, quis tempus augue purus et turpis. Donec augue purus, porttitor in facilisis non, posuere ac velit.
+
+Donec erat eros, hendrerit ac ultricies vitae, feugiat at massa. Nam non dolor in elit vestibulum interdum. In hac habitasse platea dictumst. In imperdiet, quam sit amet auctor molestie, lectus augue dictum nibh, eget porta erat turpis sit amet diam. Etiam nec erat quis quam placerat placerat eu quis sem. Quisque tincidunt turpis eu nibh pulvinar at rhoncus lectus faucibus. Suspendisse potenti. Nunc placerat auctor pulvinar. Morbi tincidunt velit eu augue suscipit sit amet iaculis enim luctus. Curabitur auctor lectus sed arcu condimentum et malesuada nunc sodales. Curabitur molestie, tortor non scelerisque porta, odio nisi auctor orci, id elementum dui massa at nulla. In porta tellus ac nulla vestibulum tempus a eu sem. Ut pharetra diam mauris. Quisque eu ligula erat. In hac habitasse platea dictumst. Vivamus egestas facilisis libero, at placerat lorem scelerisque at. In vehicula neque vel sapien imperdiet sodales. Fusce at pulvinar odio.
+
+Donec ipsum nunc, vulputate at interdum in, suscipit ac augue. Quisque leo tellus, accumsan interdum rhoncus non, feugiat in neque. Praesent lobortis dui nec magna euismod iaculis. Vestibulum malesuada rhoncus lacus, ac pretium ipsum feugiat ut. Curabitur malesuada lorem eu sem ultrices nec imperdiet odio semper. Sed tristique gravida neque, non imperdiet metus consequat non. Aliquam mattis tempor dignissim. Sed vulputate sollicitudin posuere. Maecenas tincidunt tellus et arcu ullamcorper lobortis. Donec iaculis scelerisque euismod. Fusce urna leo, tincidunt sed dignissim eget, varius et dui. Nullam vestibulum, tellus sed dictum laoreet, lorem dolor mattis odio, sit amet consequat diam arcu et risus. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id volutpat turpis. Duis ac nunc eget neque posuere elementum sed non ipsum. In hac habitasse platea dictumst. Donec ipsum mi, porttitor in elementum non, placerat ut nulla.
+
+Sed facilisis faucibus nisl vitae vulputate. Integer dictum diam a enim egestas facilisis. Nulla in eros et felis venenatis adipiscing quis vitae est. Integer sollicitudin felis eu sem vulputate sit amet sodales augue congue. In vehicula egestas malesuada. Suspendisse congue, magna a ultricies euismod, neque nibh rhoncus lorem, a congue tortor magna sit amet velit. Proin est magna, ornare eget posuere at, sagittis sit amet tellus. Vivamus eleifend lorem diam. Sed vel neque ligula, ut pulvinar velit. Donec vel rutrum dolor. Nulla bibendum diam eu mi pretium aliquam. Donec at elit et ipsum posuere varius. Curabitur mi lectus, bibendum viverra sodales vel, fringilla vitae lectus. Praesent quis lacus massa. Sed sagittis sem eget risus gravida ut suscipit turpis porttitor. Maecenas ac eros vehicula libero semper auctor.
+
+Aliquam laoreet auctor suscipit. Quisque laoreet justo id dolor egestas ornare fringilla tellus egestas. Phasellus eu porta velit. Mauris porttitor nunc nec leo tincidunt scelerisque. Donec placerat odio at metus hendrerit rhoncus. Vivamus eleifend volutpat lorem eu dapibus. Vivamus semper imperdiet faucibus. Etiam ante felis, placerat a mollis nec, elementum et dui. Mauris pellentesque, odio vel viverra vehicula, odio dui eleifend sapien, in fringilla mauris enim a ligula. Nunc quis odio eu ipsum congue ultricies. Integer in odio odio. Phasellus et nibh quam. In sodales dignissim metus, ac pulvinar justo sodales id.
+
+Nulla massa libero, vulputate et tempor eget, fringilla eu eros. Maecenas ultricies viverra condimentum. Ut nisl enim, vulputate a tempor a, iaculis vel enim. Cras vel metus eu magna blandit pulvinar eget ut nunc. Fusce eget semper nisi. Quisque elementum justo dapibus neque dapibus non aliquet quam viverra. Proin in turpis vehicula velit hendrerit commodo. Aliquam elit libero, scelerisque a dapibus sed, adipiscing dapibus purus. Fusce at diam vitae purus imperdiet pellentesque. Aenean posuere varius arcu, et accumsan sem porttitor vitae. Quisque libero leo, gravida eget dictum id, bibendum eget nisl.
+
+Aenean metus nibh, pretium id lobortis id, faucibus eget mauris. Suspendisse tempus, sem ut auctor molestie, nulla velit consectetur nibh, nec egestas eros velit vitae eros. Maecenas cursus quam eget lorem sodales nec aliquam libero tincidunt. Quisque libero tortor, iaculis at convallis eu, facilisis in mi. Integer adipiscing magna vitae justo viverra tincidunt. Sed vel lacus consectetur enim malesuada gravida sit amet et erat. Sed metus sapien, imperdiet in sodales a, gravida eu tellus. Nam facilisis felis eu ipsum aliquet commodo. Nunc ullamcorper auctor cursus. Etiam congue urna in tellus feugiat malesuada. Nullam consectetur est in nisi porttitor pharetra consectetur libero sollicitudin. Nulla scelerisque eleifend arcu vitae dapibus. Donec ac dictum dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed faucibus, felis quis aliquet elementum, tellus enim pellentesque ante, eget sollicitudin mi tellus sit amet odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Pellentesque pharetra libero sed urna consequat id tincidunt turpis sollicitudin. Integer vulputate massa nec sem ultrices feugiat. Phasellus ullamcorper, augue eget sodales aliquam, leo quam lacinia est, ac bibendum velit nunc vitae lacus. Phasellus fringilla, augue non varius pharetra, velit mi vulputate magna, sit amet luctus velit mauris at urna. In eleifend venenatis leo, sed eleifend urna commodo et. Sed tortor nisi, rutrum a dictum sit amet, auctor lacinia sapien. Suspendisse vestibulum enim vitae lorem tempor eget tincidunt urna luctus. Proin feugiat dolor ut elit laoreet quis pellentesque purus rhoncus. Nullam in feugiat nisi. Vestibulum nec vehicula nibh. Morbi dignissim pellentesque erat, non tempor ante lobortis et. Phasellus massa risus, adipiscing quis viverra ac, consectetur vitae lacus. Aliquam eleifend nulla at lectus sollicitudin congue. Praesent luctus, ipsum suscipit egestas condimentum, libero risus consequat turpis, venenatis venenatis lorem nisl id sapien. Etiam nec sem at tellus vestibulum lobortis. Ut vel tellus et ligula congue hendrerit facilisis vitae ipsum. Sed quis convallis velit. 
+', '2011-02-07 07:01:36', 0)[0m
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 07:01:36', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 07:01:36', 0)[0m
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 07:01:36', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 07:01:36', 0)[0m
+  [4;35;1mArticle Create (0.6ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 07:01:36', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 07:01:36', 0)[0m
+  [4;36;1mArticle Create (0.6ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 07:01:36', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 07:01:36', 0)[0m
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 07:01:36', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 07:01:36', 0)[0m
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 07:01:36', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 07:01:36', 0)[0m
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 07:01:36', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 07:01:36', 0)[0m
+  [4;36;1mArticle Create (0.9ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 07:01:36', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 07:01:36', 0)[0m
+  [4;35;1mArticle Create (0.6ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 07:01:36', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 07:01:36', 0)[0m
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 07:01:36', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 07:01:36', 0)[0m
+  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 07:01:36', 'Anna Karenina', 'Leo Tolstoy', 'A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction.', '2011-02-07 07:01:36', 0)[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:01:44) [GET]
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 56ms (View: 50, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:02:07) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 50ms (View: 44, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:02:12) [GET]
+  [4;35;1mArticle Load (0.9ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 52ms (View: 46, DB: 1) | 200 OK [http://localhost/articles]

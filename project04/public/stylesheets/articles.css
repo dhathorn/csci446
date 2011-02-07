@@ -49,11 +49,14 @@ table {
 	border-collapse: collapse;
 	padding: 0px;
 }
-#table {
-	margin: auto;
-	max-height: 442px;
+#tablecontainer{
+	max-height:442px;
 	width: 880px;
 	overflow: auto;
+}
+#table {
+	margin: auto;
+	width: 95%;
 }
 #content {
 	margin: auto;
@@ -62,6 +65,8 @@ table {
 	height: 1000px;
 }
 #footer {
+	padding-left: 40px;
+	padding-top: 10px;
 	margin: auto;
 	width: 880px;
 }

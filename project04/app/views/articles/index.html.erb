@@ -7,6 +7,7 @@
 		<li><%= link_to image_tag("add.png", :border => 0, :size => "20x20", :align => "absmiddle")+"Create an Article",new_article_path %></li>
 	</ul>
 </div>
+<div id="tablecontainer">
 <table id="table">
 	<tr>
 		<th class="th_row">Title</th>
@@ -19,9 +20,9 @@
 
 <% @articles.each do |article| %>
 	<tr class="<%= cycle("odd","even") -%>">
-		<td class="maintable"><%=h article.title %></td>
-		<td class="maintable"><%=h article.author %></td>
-		<td class="maintable"><%=h truncate(article.body, :length => 42) %></td>
+		<td class="maintable"><%=h truncate(article.title, :length => 15) %></td>
+		<td class="maintable"><%=h truncate(article.author, :length => 15) %></td>
+		<td class="maintable"><%=h truncate(article.body, :length => 32) %></td>
 		<td class="maintable"><%=h article.edit_count %></td>
 		<td class="maintable"><%= article.created_at.strftime("%A, %b.%e %Y")%></td>
 		<td class="link"><%= link_to image_tag("magin.png", :border => 0, :size => "20x20", :alt => "Show Article"), article, :title => "Show #{article.title}" %></td>
@@ -30,6 +31,7 @@
 	</tr>
 <% end %>
 </table>
+</div>
 <div id="footer">
 	<%= pluralize(@articles.count, "article") %>
 </div>
