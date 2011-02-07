@@ -9728,3 +9728,38 @@ Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:30:06) [GET]
 Rendering template within layouts/articles
 Rendering articles/index
 Completed in 87ms (View: 81, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:33:51) [GET]
+  [4;36;1mArticle Load (1.1ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 138ms (View: 131, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:35:07) [GET]
+  [4;35;1mArticle Load (1.1ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 131ms (View: 83, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:35:17) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 83ms (View: 77, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:35:52) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 143ms (View: 136, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:36:05) [GET]
+  [4;36;1mArticle Load (1.1ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 86ms (View: 80, DB: 1) | 200 OK [http://localhost/]
