@@ -1,0 +1,7 @@
+<div id="titlebar">
+	<ul>
+		<li><%= link_to image_tag("arrow_left.png", :border => 0, :size => "25x25", :align => "absmiddle")+"list all articles", articles_path, :title => "Back" %>
+		<li><%= link_to image_tag("pencil.png", :border => 0, :size => "20x20", :alt => "Edit Article"), edit_article_path(@article), :title => "Edit #{@article.title}" %></li>
+		<li><%= link_to image_tag("delete.png",  :border => 0, :size => "20x20", :alt => "Delete Article"), @article, :title => "Delete #{@article.title}", :confirm => "Are you sure you want to delete #{@article.title}?", :method => :delete %>
+		<li><%= mail_to('', image_tag("email.png", :border => 0, :size => "20x20", :alt => "Email article to a friend"), :subject => @article.title, :body => article_url) %></li>
+</div>

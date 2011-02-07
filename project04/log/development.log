@@ -5063,3 +5063,2668 @@ Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:08:10) [GET]
 Rendering template within layouts/articles
 Rendering articles/index
 Completed in 22ms (View: 17, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 17:09:42) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:10:44) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:11:51) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:11:52) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 67ms (View: 62, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:12:00) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:12:48) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:12:55) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:13:42) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:13:51) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:14:08) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:15:29) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:15:40) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:16:14) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:16:26) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:17:32) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 66ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:17:42) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:17:54) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:18:28) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:23:48) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 22ms (View: 17, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 17:24:02) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:28:08) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:28:09) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:28:49) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:29:11) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 20ms (View: 14, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:29:37) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 17:34:09) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 73ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-06 17:34:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/left_arrow.png" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 17:35:07) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 17:35:24) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 17:37:35) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+
+ActionView::TemplateError (undefined local variable or method `article' for #<ActionView::Base:0xb5fba1ac>) on line #7 of app/views/articles/show.html.erb:
+4: <% content_for :titlebar do -%>
+5: 	<ul>
+6: 		<li><%= link_to image_tag("arrow_left.png", :border => 0, :size => "25x25", :align => "absmiddle")+"list all articles", articles_path, :title => "Back" %>
+7: 		<li><%= link_to image_tag("pencil.png", :border => 0, :size => "20x20", :alt => "Edit Article"), edit_article_path(article), :title => "Edit #{article.title}" %></li>
+8: 		<li><%= link_to image_tag("delete.png",  :border => 0, :size => "20x20", :alt => "Delete Article"), article, :title => "Delete #{article.title}", :confirm => "Are you sure you want to delete #{article.title}?", :method => :delete %>
+9: <%- end %>
+10: 
+
+    app/views/articles/show.html.erb:7
+    app/views/articles/show.html.erb:4
+    app/controllers/articles_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.5ms)
+Rendered rescues/_request_and_response (12.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 17:38:33) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+
+ActionView::TemplateError (undefined local variable or method `article' for #<ActionView::Base:0xb60ae61c>) on line #8 of app/views/articles/show.html.erb:
+5: 	<ul>
+6: 		<li><%= link_to image_tag("arrow_left.png", :border => 0, :size => "25x25", :align => "absmiddle")+"list all articles", articles_path, :title => "Back" %>
+7: 		<li><%= link_to image_tag("pencil.png", :border => 0, :size => "20x20", :alt => "Edit Article"), edit_article_path(@article), :title => "Edit #{@article.title}" %></li>
+8: 		<li><%= link_to image_tag("delete.png",  :border => 0, :size => "20x20", :alt => "Delete Article"), @article, :title => "Delete #{@article.title}", :confirm => "Are you sure you want to delete #{article.title}?", :method => :delete %>
+9: <%- end %>
+10: 
+11: 
+
+    app/views/articles/show.html.erb:8
+    app/views/articles/show.html.erb:4
+    app/controllers/articles_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 17:38:52) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:53:07) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 25ms (View: 20, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:53:08) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 17:58:01) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 22ms (View: 17, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 17:58:04) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+ERROR: compiling _run_erb_app47views47articles47show46html46erb RAISED compile error
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:10: syntax error, unexpected '<'
+<%- end ).to_s); @output_buffer...
+ ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:10: unterminated string meets end of file
+Function body:           def _run_erb_app47views47articles47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  content_for :subtitle do 
+@output_buffer.concat "...what's \"Articl\" in Spanish anyway?\n"
+;  end ; @output_buffer.concat "\n"
+;  content_for :titlebar do 
+@output_buffer.concat "\t<ul>\n\t\t<li>"
+; @output_buffer.concat(( link_to image_tag("arrow_left.png", :border => 0, :size => "25x25", :align => "absmiddle")+"list all articles", articles_path, :title => "Back" ).to_s); @output_buffer.concat "\n\t\t<li>"
+; @output_buffer.concat(( link_to image_tag("pencil.png", :border => 0, :size => "20x20", :alt => "Edit Article"), edit_article_path(@article), :title => "Edit #{@article.title}" ).to_s); @output_buffer.concat "</li>\n\t\t<li>"
+; @output_buffer.concat(( link_to image_tag("delete.png",  :border => 0, :size => "20x20", :alt => "Delete Article"), @article, :title => "Delete #{@article.title}", :confirm => "Are you sure you want to delete #{@article.title}?", :method => :delete ).to_s); @output_buffer.concat "\n\t\t<li>"
+; @output_buffer.concat(( 
+<%- end ).to_s); @output_buffer.concat "\n\n\n<p>\n  <b>Title:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @article.title ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>Author:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @article.author ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>Body:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @article.body ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>Edit count:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @article.edit_count ).to_s); @output_buffer.concat "\n</p>\n\n\n"
+
+
+
+; @output_buffer.concat(( link_to 'Edit', edit_article_path(@article) ).to_s); @output_buffer.concat " |\n"
+; @output_buffer.concat(( link_to 'Back', articles_path ).to_s); @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:10:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:135:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:135
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:179:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:179:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:173:in `each'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:173:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/dan/Documents/School/spring11/csci446/src/project04/app/controllers/articles_controller.rb:18:in `show'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1333:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1333:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:10: syntax error, unexpected '<'
+<%- end ).to_s); @output_buffer...
+ ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:10: unterminated string meets end of file) on line #10 of app/views/articles/show.html.erb:
+7: 		<li><%= link_to image_tag("pencil.png", :border => 0, :size => "20x20", :alt => "Edit Article"), edit_article_path(@article), :title => "Edit #{@article.title}" %></li>
+8: 		<li><%= link_to image_tag("delete.png",  :border => 0, :size => "20x20", :alt => "Delete Article"), @article, :title => "Delete #{@article.title}", :confirm => "Are you sure you want to delete #{@article.title}?", :method => :delete %>
+9: 		<li><%= 
+10: <%- end %>
+11: 
+12: 
+13: <p>
+
+    app/views/articles/show.html.erb:10:in `compile!'
+    app/controllers/articles_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (26.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 17:58:20) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+ERROR: compiling _run_erb_app47views47articles47show46html46erb RAISED compile error
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:10: syntax error, unexpected '<'
+<%- end ).to_s); @output_buffer...
+ ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:10: unterminated string meets end of file
+Function body:           def _run_erb_app47views47articles47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  content_for :subtitle do 
+@output_buffer.concat "...what's \"Articl\" in Spanish anyway?\n"
+;  end ; @output_buffer.concat "\n"
+;  content_for :titlebar do 
+@output_buffer.concat "\t<ul>\n\t\t<li>"
+; @output_buffer.concat(( link_to image_tag("arrow_left.png", :border => 0, :size => "25x25", :align => "absmiddle")+"list all articles", articles_path, :title => "Back" ).to_s); @output_buffer.concat "\n\t\t<li>"
+; @output_buffer.concat(( link_to image_tag("pencil.png", :border => 0, :size => "20x20", :alt => "Edit Article"), edit_article_path(@article), :title => "Edit #{@article.title}" ).to_s); @output_buffer.concat "</li>\n\t\t<li>"
+; @output_buffer.concat(( link_to image_tag("delete.png",  :border => 0, :size => "20x20", :alt => "Delete Article"), @article, :title => "Delete #{@article.title}", :confirm => "Are you sure you want to delete #{@article.title}?", :method => :delete ).to_s); @output_buffer.concat "\n\t\t<li>"
+; @output_buffer.concat(( 
+<%- end ).to_s); @output_buffer.concat "\n\n\n<p>\n  <b>Title:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @article.title ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>Author:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @article.author ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>Body:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @article.body ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>Edit count:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @article.edit_count ).to_s); @output_buffer.concat "\n</p>\n\n\n"
+
+
+
+; @output_buffer.concat(( link_to 'Edit', edit_article_path(@article) ).to_s); @output_buffer.concat " |\n"
+; @output_buffer.concat(( link_to 'Back', articles_path ).to_s); @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:10:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:135:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:135
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:179:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:179:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:173:in `each'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:173:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/dan/Documents/School/spring11/csci446/src/project04/app/controllers/articles_controller.rb:18:in `show'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1333:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1333:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:10: syntax error, unexpected '<'
+<%- end ).to_s); @output_buffer...
+ ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:10: unterminated string meets end of file) on line #10 of app/views/articles/show.html.erb:
+7: 		<li><%= link_to image_tag("pencil.png", :border => 0, :size => "20x20", :alt => "Edit Article"), edit_article_path(@article), :title => "Edit #{@article.title}" %></li>
+8: 		<li><%= link_to image_tag("delete.png",  :border => 0, :size => "20x20", :alt => "Delete Article"), @article, :title => "Delete #{@article.title}", :confirm => "Are you sure you want to delete #{@article.title}?", :method => :delete %>
+9: 		<li><%= 
+10: <%- end %>
+11: 
+12: 
+13: <p>
+
+    app/views/articles/show.html.erb:10:in `compile!'
+    app/controllers/articles_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (77.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 17:59:21) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+
+ActionView::TemplateError (Attempt to call private method) on line #6 of app/views/articles/_titlebar.html.erb:
+3: 		<li><%= link_to image_tag("arrow_left.png", :border => 0, :size => "25x25", :align => "absmiddle")+"list all articles", articles_path, :title => "Back" %>
+4: 		<li><%= link_to image_tag("pencil.png", :border => 0, :size => "20x20", :alt => "Edit Article"), edit_article_path(@article), :title => "Edit #{@article.title}" %></li>
+5: 		<li><%= link_to image_tag("delete.png",  :border => 0, :size => "20x20", :alt => "Delete Article"), @article, :title => "Delete #{@article.title}", :confirm => "Are you sure you want to delete #{@article.title}?", :method => :delete %>
+6: 		<li><%= mail_to('', "Email article to a friend", :subject => @article, :body => @article) %></li>
+7: </div>
+
+    /usr/lib/ruby/1.8/cgi.rb:342:in `escape'
+    app/views/articles/_titlebar.html.erb:6
+    app/views/articles/show.html.erb:4
+    app/controllers/articles_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 17:59:45) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+
+ActionView::TemplateError (Attempt to call private method) on line #6 of app/views/articles/_titlebar.html.erb:
+3: 		<li><%= link_to image_tag("arrow_left.png", :border => 0, :size => "25x25", :align => "absmiddle")+"list all articles", articles_path, :title => "Back" %>
+4: 		<li><%= link_to image_tag("pencil.png", :border => 0, :size => "20x20", :alt => "Edit Article"), edit_article_path(@article), :title => "Edit #{@article.title}" %></li>
+5: 		<li><%= link_to image_tag("delete.png",  :border => 0, :size => "20x20", :alt => "Delete Article"), @article, :title => "Delete #{@article.title}", :confirm => "Are you sure you want to delete #{@article.title}?", :method => :delete %>
+6: 		<li><%= mail_to('', "Email article to a friend", :subject => @article.title, :body => @article) %></li>
+7: </div>
+
+    /usr/lib/ruby/1.8/cgi.rb:342:in `escape'
+    app/views/articles/_titlebar.html.erb:6
+    app/views/articles/show.html.erb:4
+    app/controllers/articles_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 17:59:59) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.3ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:00:18) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.6ms)
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 18:02:11) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 71ms (View: 66, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:02:14) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (6.0ms)
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:06:11) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.1ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 18:08:11) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 18:08:18) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:09:48) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.7ms)
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:09:53) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.1ms)
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:12:22) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+ERROR: compiling _run_erb_app47views47articles47show46html46erb RAISED compile error
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:8: syntax error, unexpected tSTRING_BEG, expecting '}'
+...eated_at.strftime("%b.%e %Y")" ).to_s); @output_buffer.conca...
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:8: unknown regexp option - p
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:8: syntax error, unexpected $undefined
+...ut_buffer.concat "</h3>\n</p>\n\n<p>\n  <b>Body:</b>\n  "
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:8: syntax error, unexpected $undefined
+...er.concat "</h3>\n</p>\n\n<p>\n  <b>Body:</b>\n  "
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:8: syntax error, unexpected tSYMBEG, expecting kDO or '{' or '('
+...</h3>\n</p>\n\n<p>\n  <b>Body:</b>\n  "
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:8: syntax error, unexpected $undefined
+...\n</p>\n\n<p>\n  <b>Body:</b>\n  "
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:13: syntax error, unexpected $undefined, expecting '}'
+...o_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>Edit count:...
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:13: unknown regexp option - b
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:13: syntax error, unexpected $undefined
+...\n\n<p>\n  <b>Edit count:</b>\n  "
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:18: syntax error, unexpected $undefined, expecting '}'
+...o_s); @output_buffer.concat "\n</p>\n\n\n"
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:18: unterminated string meets end of file
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:18: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR
+Function body:           def _run_erb_app47views47articles47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  content_for :subtitle do 
+@output_buffer.concat "...what's \"Articl\" in Spanish anyway?\n"
+;  end ; @output_buffer.concat "\n"
+; @output_buffer.concat(( render(:partial => "titlebar") ).to_s); @output_buffer.concat "\n\n<div id=\"content\">\n\t<h2>"
+
+
+; @output_buffer.concat((h @article.title ).to_s); @output_buffer.concat "</h2>\n\t<h3>"
+; @output_buffer.concat((h "by #{@article.author}. #{@article.edit_count} edits since #{@article.created_at.strftime("%b.%e %Y")" ).to_s); @output_buffer.concat "</h3>\n</p>\n\n<p>\n  <b>Body:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @article.body ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>Edit count:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @article.edit_count ).to_s); @output_buffer.concat "\n</p>\n\n\n"
+
+
+
+; @output_buffer.concat(( link_to 'Edit', edit_article_path(@article) ).to_s); @output_buffer.concat " |\n"
+; @output_buffer.concat(( link_to 'Back', articles_path ).to_s); @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:18:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:135:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:135
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:179:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:179:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:173:in `each'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:173:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/dan/Documents/School/spring11/csci446/src/project04/app/controllers/articles_controller.rb:18:in `show'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1333:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1333:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:8: syntax error, unexpected tSTRING_BEG, expecting '}'
+...eated_at.strftime("%b.%e %Y")" ).to_s); @output_buffer.conca...
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:8: unknown regexp option - p
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:8: syntax error, unexpected $undefined
+...ut_buffer.concat "</h3>\n</p>\n\n<p>\n  <b>Body:</b>\n  "
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:8: syntax error, unexpected $undefined
+...er.concat "</h3>\n</p>\n\n<p>\n  <b>Body:</b>\n  "
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:8: syntax error, unexpected tSYMBEG, expecting kDO or '{' or '('
+...</h3>\n</p>\n\n<p>\n  <b>Body:</b>\n  "
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:8: syntax error, unexpected $undefined
+...\n</p>\n\n<p>\n  <b>Body:</b>\n  "
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:13: syntax error, unexpected $undefined, expecting '}'
+...o_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>Edit count:...
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:13: unknown regexp option - b
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:13: syntax error, unexpected $undefined
+...\n\n<p>\n  <b>Edit count:</b>\n  "
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:18: syntax error, unexpected $undefined, expecting '}'
+...o_s); @output_buffer.concat "\n</p>\n\n\n"
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:18: unterminated string meets end of file
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/show.html.erb:18: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR) on line #8 of app/views/articles/show.html.erb:
+5: 
+6: <div id="content">
+7: 	<h2><%=h @article.title %></h2>
+8: 	<h3><%=h "by #{@article.author}. #{@article.edit_count} edits since #{@article.created_at.strftime("%b.%e %Y")" %></h3>
+9: </p>
+10: 
+11: <p>
+
+    app/views/articles/show.html.erb:18:in `compile!'
+    app/controllers/articles_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (26.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:12:51) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.1ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:13:06) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.8ms)
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:13:19) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.3ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:13:21) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.3ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:14:38) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.2ms)
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:14:50) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.3ms)
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:14:52) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.1ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:15:00) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.0ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 18:15:18) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 20ms (View: 15, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 18:15:20) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 29ms (View: 25, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 18:16:01) [POST]
+  Parameters: {"article"=>{"body"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non pellentesque massa. Vestibulum in congue metus. Phasellus malesuada scelerisque dui vitae pretium. Phasellus quam nulla, mollis id ultricies quis, dictum at mi. Nunc gravida eros non odio congue non vehicula eros ultrices. Nam nec rutrum magna. In eu sem tellus, at sodales odio. Maecenas placerat, neque et ornare varius, ipsum ante tincidunt dolor, vel tincidunt risus orci at quam. Suspendisse potenti. Morbi dapibus libero quam. Etiam ac dui a nulla adipiscing suscipit eu in eros. Nam a quam ut sem volutpat sagittis eu eu neque. Fusce auctor, diam a laoreet auctor, leo quam adipiscing sapien, et consequat lectus tortor in mauris. Nulla enim nisl, pharetra id congue a, fermentum a est. Fusce dictum faucibus urna, in cursus justo imperdiet vitae. Praesent nulla lectus, consectetur nec cursus eleifend, molestie viverra quam. Ut dictum pellentesque ante, ut egestas risus tristique a. Duis eget lorem blandit augue ornare volutpat. Curabitur ac justo nisi, in mattis sapien.\r\n\r\nDonec bibendum tempor nibh. Nunc posuere, eros at hendrerit dapibus, mauris velit congue sapien, non varius dolor mauris et libero. Aliquam id quam lacus, et luctus nisi. Duis sit amet nibh a nisl dapibus faucibus eu sit amet purus. Curabitur malesuada volutpat malesuada. In hac habitasse platea dictumst. Mauris iaculis turpis sit amet massa fringilla condimentum. Ut eget arcu nulla. Vestibulum ut sem et urna molestie suscipit. Mauris dapibus, magna et iaculis ornare, felis felis hendrerit nibh, vitae consequat orci erat a nisi. Nunc ut diam dolor, quis consectetur augue. Praesent auctor euismod elit quis ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse ut felis non ante placerat auctor. Nulla a ligula nunc. In at massa quis diam commodo placerat at sit amet orci. Pellentesque velit turpis, rutrum id semper id, volutpat sed lacus.\r\n\r\nFusce dapibus volutpat erat, vel facilisis neque rhoncus eget. Aliquam sodales sollicitudin libero a condimentum. Phasellus eu risus sit amet erat rhoncus consequat id quis mauris. Nam sed risus urna. Donec urna enim, aliquet at adipiscing id, rhoncus eu eros. Morbi vestibulum cursus lectus eget dapibus. Sed fermentum erat a quam vehicula id semper nunc volutpat. Phasellus nisl erat, hendrerit eget iaculis id, accumsan ut quam. Sed viverra sem eget metus commodo eget pretium metus sodales. Maecenas elit neque, tincidunt sit amet eleifend mattis, viverra non enim. Proin molestie venenatis massa, quis facilisis ipsum vulputate ut. Nulla ut purus lectus, ac faucibus ante. Phasellus adipiscing rhoncus dolor, in tristique metus blandit vitae. Vestibulum interdum, metus lacinia semper imperdiet, purus neque vulputate arcu, quis tempus augue purus et turpis. Donec augue purus, porttitor in facilisis non, posuere ac velit.\r\n\r\nDonec erat eros, hendrerit ac ultricies vitae, feugiat at massa. Nam non dolor in elit vestibulum interdum. In hac habitasse platea dictumst. In imperdiet, quam sit amet auctor molestie, lectus augue dictum nibh, eget porta erat turpis sit amet diam. Etiam nec erat quis quam placerat placerat eu quis sem. Quisque tincidunt turpis eu nibh pulvinar at rhoncus lectus faucibus. Suspendisse potenti. Nunc placerat auctor pulvinar. Morbi tincidunt velit eu augue suscipit sit amet iaculis enim luctus. Curabitur auctor lectus sed arcu condimentum et malesuada nunc sodales. Curabitur molestie, tortor non scelerisque porta, odio nisi auctor orci, id elementum dui massa at nulla. In porta tellus ac nulla vestibulum tempus a eu sem. Ut pharetra diam mauris. Quisque eu ligula erat. In hac habitasse platea dictumst. Vivamus egestas facilisis libero, at placerat lorem scelerisque at. In vehicula neque vel sapien imperdiet sodales. Fusce at pulvinar odio.\r\n\r\nDonec ipsum nunc, vulputate at interdum in, suscipit ac augue. Quisque leo tellus, accumsan interdum rhoncus non, feugiat in neque. Praesent lobortis dui nec magna euismod iaculis. Vestibulum malesuada rhoncus lacus, ac pretium ipsum feugiat ut. Curabitur malesuada lorem eu sem ultrices nec imperdiet odio semper. Sed tristique gravida neque, non imperdiet metus consequat non. Aliquam mattis tempor dignissim. Sed vulputate sollicitudin posuere. Maecenas tincidunt tellus et arcu ullamcorper lobortis. Donec iaculis scelerisque euismod. Fusce urna leo, tincidunt sed dignissim eget, varius et dui. Nullam vestibulum, tellus sed dictum laoreet, lorem dolor mattis odio, sit amet consequat diam arcu et risus. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id volutpat turpis. Duis ac nunc eget neque posuere elementum sed non ipsum. In hac habitasse platea dictumst. Donec ipsum mi, porttitor in elementum non, placerat ut nulla.\r\n\r\nSed facilisis faucibus nisl vitae vulputate. Integer dictum diam a enim egestas facilisis. Nulla in eros et felis venenatis adipiscing quis vitae est. Integer sollicitudin felis eu sem vulputate sit amet sodales augue congue. In vehicula egestas malesuada. Suspendisse congue, magna a ultricies euismod, neque nibh rhoncus lorem, a congue tortor magna sit amet velit. Proin est magna, ornare eget posuere at, sagittis sit amet tellus. Vivamus eleifend lorem diam. Sed vel neque ligula, ut pulvinar velit. Donec vel rutrum dolor. Nulla bibendum diam eu mi pretium aliquam. Donec at elit et ipsum posuere varius. Curabitur mi lectus, bibendum viverra sodales vel, fringilla vitae lectus. Praesent quis lacus massa. Sed sagittis sem eget risus gravida ut suscipit turpis porttitor. Maecenas ac eros vehicula libero semper auctor.\r\n\r\nAliquam laoreet auctor suscipit. Quisque laoreet justo id dolor egestas ornare fringilla tellus egestas. Phasellus eu porta velit. Mauris porttitor nunc nec leo tincidunt scelerisque. Donec placerat odio at metus hendrerit rhoncus. Vivamus eleifend volutpat lorem eu dapibus. Vivamus semper imperdiet faucibus. Etiam ante felis, placerat a mollis nec, elementum et dui. Mauris pellentesque, odio vel viverra vehicula, odio dui eleifend sapien, in fringilla mauris enim a ligula. Nunc quis odio eu ipsum congue ultricies. Integer in odio odio. Phasellus et nibh quam. In sodales dignissim metus, ac pulvinar justo sodales id.\r\n\r\nNulla massa libero, vulputate et tempor eget, fringilla eu eros. Maecenas ultricies viverra condimentum. Ut nisl enim, vulputate a tempor a, iaculis vel enim. Cras vel metus eu magna blandit pulvinar eget ut nunc. Fusce eget semper nisi. Quisque elementum justo dapibus neque dapibus non aliquet quam viverra. Proin in turpis vehicula velit hendrerit commodo. Aliquam elit libero, scelerisque a dapibus sed, adipiscing dapibus purus. Fusce at diam vitae purus imperdiet pellentesque. Aenean posuere varius arcu, et accumsan sem porttitor vitae. Quisque libero leo, gravida eget dictum id, bibendum eget nisl.\r\n\r\nAenean metus nibh, pretium id lobortis id, faucibus eget mauris. Suspendisse tempus, sem ut auctor molestie, nulla velit consectetur nibh, nec egestas eros velit vitae eros. Maecenas cursus quam eget lorem sodales nec aliquam libero tincidunt. Quisque libero tortor, iaculis at convallis eu, facilisis in mi. Integer adipiscing magna vitae justo viverra tincidunt. Sed vel lacus consectetur enim malesuada gravida sit amet et erat. Sed metus sapien, imperdiet in sodales a, gravida eu tellus. Nam facilisis felis eu ipsum aliquet commodo. Nunc ullamcorper auctor cursus. Etiam congue urna in tellus feugiat malesuada. Nullam consectetur est in nisi porttitor pharetra consectetur libero sollicitudin. Nulla scelerisque eleifend arcu vitae dapibus. Donec ac dictum dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed faucibus, felis quis aliquet elementum, tellus enim pellentesque ante, eget sollicitudin mi tellus sit amet odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n\r\nPellentesque pharetra libero sed urna consequat id tincidunt turpis sollicitudin. Integer vulputate massa nec sem ultrices feugiat. Phasellus ullamcorper, augue eget sodales aliquam, leo quam lacinia est, ac bibendum velit nunc vitae lacus. Phasellus fringilla, augue non varius pharetra, velit mi vulputate magna, sit amet luctus velit mauris at urna. In eleifend venenatis leo, sed eleifend urna commodo et. Sed tortor nisi, rutrum a dictum sit amet, auctor lacinia sapien. Suspendisse vestibulum enim vitae lorem tempor eget tincidunt urna luctus. Proin feugiat dolor ut elit laoreet quis pellentesque purus rhoncus. Nullam in feugiat nisi. Vestibulum nec vehicula nibh. Morbi dignissim pellentesque erat, non tempor ante lobortis et. Phasellus massa risus, adipiscing quis viverra ac, consectetur vitae lacus. Aliquam eleifend nulla at lectus sollicitudin congue. Praesent luctus, ipsum suscipit egestas condimentum, libero risus consequat turpis, venenatis venenatis lorem nisl id sapien. Etiam nec sem at tellus vestibulum lobortis. Ut vel tellus et ligula congue hendrerit facilisis vitae ipsum. Sed quis convallis velit. ", "author"=>"Ipsum", "title"=>"Lorum"}, "commit"=>"Create", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64="}
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 01:16:01', 'Lorum', 'Ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non pellentesque massa. Vestibulum in congue metus. Phasellus malesuada scelerisque dui vitae pretium. Phasellus quam nulla, mollis id ultricies quis, dictum at mi. Nunc gravida eros non odio congue non vehicula eros ultrices. Nam nec rutrum magna. In eu sem tellus, at sodales odio. Maecenas placerat, neque et ornare varius, ipsum ante tincidunt dolor, vel tincidunt risus orci at quam. Suspendisse potenti. Morbi dapibus libero quam. Etiam ac dui a nulla adipiscing suscipit eu in eros. Nam a quam ut sem volutpat sagittis eu eu neque. Fusce auctor, diam a laoreet auctor, leo quam adipiscing sapien, et consequat lectus tortor in mauris. Nulla enim nisl, pharetra id congue a, fermentum a est. Fusce dictum faucibus urna, in cursus justo imperdiet vitae. Praesent nulla lectus, consectetur nec cursus eleifend, molestie viverra quam. Ut dictum pellentesque ante, ut egestas risus tristique a. Duis eget lorem blandit augue ornare volutpat. Curabitur ac justo nisi, in mattis sapien.
+
+Donec bibendum tempor nibh. Nunc posuere, eros at hendrerit dapibus, mauris velit congue sapien, non varius dolor mauris et libero. Aliquam id quam lacus, et luctus nisi. Duis sit amet nibh a nisl dapibus faucibus eu sit amet purus. Curabitur malesuada volutpat malesuada. In hac habitasse platea dictumst. Mauris iaculis turpis sit amet massa fringilla condimentum. Ut eget arcu nulla. Vestibulum ut sem et urna molestie suscipit. Mauris dapibus, magna et iaculis ornare, felis felis hendrerit nibh, vitae consequat orci erat a nisi. Nunc ut diam dolor, quis consectetur augue. Praesent auctor euismod elit quis ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse ut felis non ante placerat auctor. Nulla a ligula nunc. In at massa quis diam commodo placerat at sit amet orci. Pellentesque velit turpis, rutrum id semper id, volutpat sed lacus.
+
+Fusce dapibus volutpat erat, vel facilisis neque rhoncus eget. Aliquam sodales sollicitudin libero a condimentum. Phasellus eu risus sit amet erat rhoncus consequat id quis mauris. Nam sed risus urna. Donec urna enim, aliquet at adipiscing id, rhoncus eu eros. Morbi vestibulum cursus lectus eget dapibus. Sed fermentum erat a quam vehicula id semper nunc volutpat. Phasellus nisl erat, hendrerit eget iaculis id, accumsan ut quam. Sed viverra sem eget metus commodo eget pretium metus sodales. Maecenas elit neque, tincidunt sit amet eleifend mattis, viverra non enim. Proin molestie venenatis massa, quis facilisis ipsum vulputate ut. Nulla ut purus lectus, ac faucibus ante. Phasellus adipiscing rhoncus dolor, in tristique metus blandit vitae. Vestibulum interdum, metus lacinia semper imperdiet, purus neque vulputate arcu, quis tempus augue purus et turpis. Donec augue purus, porttitor in facilisis non, posuere ac velit.
+
+Donec erat eros, hendrerit ac ultricies vitae, feugiat at massa. Nam non dolor in elit vestibulum interdum. In hac habitasse platea dictumst. In imperdiet, quam sit amet auctor molestie, lectus augue dictum nibh, eget porta erat turpis sit amet diam. Etiam nec erat quis quam placerat placerat eu quis sem. Quisque tincidunt turpis eu nibh pulvinar at rhoncus lectus faucibus. Suspendisse potenti. Nunc placerat auctor pulvinar. Morbi tincidunt velit eu augue suscipit sit amet iaculis enim luctus. Curabitur auctor lectus sed arcu condimentum et malesuada nunc sodales. Curabitur molestie, tortor non scelerisque porta, odio nisi auctor orci, id elementum dui massa at nulla. In porta tellus ac nulla vestibulum tempus a eu sem. Ut pharetra diam mauris. Quisque eu ligula erat. In hac habitasse platea dictumst. Vivamus egestas facilisis libero, at placerat lorem scelerisque at. In vehicula neque vel sapien imperdiet sodales. Fusce at pulvinar odio.
+
+Donec ipsum nunc, vulputate at interdum in, suscipit ac augue. Quisque leo tellus, accumsan interdum rhoncus non, feugiat in neque. Praesent lobortis dui nec magna euismod iaculis. Vestibulum malesuada rhoncus lacus, ac pretium ipsum feugiat ut. Curabitur malesuada lorem eu sem ultrices nec imperdiet odio semper. Sed tristique gravida neque, non imperdiet metus consequat non. Aliquam mattis tempor dignissim. Sed vulputate sollicitudin posuere. Maecenas tincidunt tellus et arcu ullamcorper lobortis. Donec iaculis scelerisque euismod. Fusce urna leo, tincidunt sed dignissim eget, varius et dui. Nullam vestibulum, tellus sed dictum laoreet, lorem dolor mattis odio, sit amet consequat diam arcu et risus. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id volutpat turpis. Duis ac nunc eget neque posuere elementum sed non ipsum. In hac habitasse platea dictumst. Donec ipsum mi, porttitor in elementum non, placerat ut nulla.
+
+Sed facilisis faucibus nisl vitae vulputate. Integer dictum diam a enim egestas facilisis. Nulla in eros et felis venenatis adipiscing quis vitae est. Integer sollicitudin felis eu sem vulputate sit amet sodales augue congue. In vehicula egestas malesuada. Suspendisse congue, magna a ultricies euismod, neque nibh rhoncus lorem, a congue tortor magna sit amet velit. Proin est magna, ornare eget posuere at, sagittis sit amet tellus. Vivamus eleifend lorem diam. Sed vel neque ligula, ut pulvinar velit. Donec vel rutrum dolor. Nulla bibendum diam eu mi pretium aliquam. Donec at elit et ipsum posuere varius. Curabitur mi lectus, bibendum viverra sodales vel, fringilla vitae lectus. Praesent quis lacus massa. Sed sagittis sem eget risus gravida ut suscipit turpis porttitor. Maecenas ac eros vehicula libero semper auctor.
+
+Aliquam laoreet auctor suscipit. Quisque laoreet justo id dolor egestas ornare fringilla tellus egestas. Phasellus eu porta velit. Mauris porttitor nunc nec leo tincidunt scelerisque. Donec placerat odio at metus hendrerit rhoncus. Vivamus eleifend volutpat lorem eu dapibus. Vivamus semper imperdiet faucibus. Etiam ante felis, placerat a mollis nec, elementum et dui. Mauris pellentesque, odio vel viverra vehicula, odio dui eleifend sapien, in fringilla mauris enim a ligula. Nunc quis odio eu ipsum congue ultricies. Integer in odio odio. Phasellus et nibh quam. In sodales dignissim metus, ac pulvinar justo sodales id.
+
+Nulla massa libero, vulputate et tempor eget, fringilla eu eros. Maecenas ultricies viverra condimentum. Ut nisl enim, vulputate a tempor a, iaculis vel enim. Cras vel metus eu magna blandit pulvinar eget ut nunc. Fusce eget semper nisi. Quisque elementum justo dapibus neque dapibus non aliquet quam viverra. Proin in turpis vehicula velit hendrerit commodo. Aliquam elit libero, scelerisque a dapibus sed, adipiscing dapibus purus. Fusce at diam vitae purus imperdiet pellentesque. Aenean posuere varius arcu, et accumsan sem porttitor vitae. Quisque libero leo, gravida eget dictum id, bibendum eget nisl.
+
+Aenean metus nibh, pretium id lobortis id, faucibus eget mauris. Suspendisse tempus, sem ut auctor molestie, nulla velit consectetur nibh, nec egestas eros velit vitae eros. Maecenas cursus quam eget lorem sodales nec aliquam libero tincidunt. Quisque libero tortor, iaculis at convallis eu, facilisis in mi. Integer adipiscing magna vitae justo viverra tincidunt. Sed vel lacus consectetur enim malesuada gravida sit amet et erat. Sed metus sapien, imperdiet in sodales a, gravida eu tellus. Nam facilisis felis eu ipsum aliquet commodo. Nunc ullamcorper auctor cursus. Etiam congue urna in tellus feugiat malesuada. Nullam consectetur est in nisi porttitor pharetra consectetur libero sollicitudin. Nulla scelerisque eleifend arcu vitae dapibus. Donec ac dictum dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed faucibus, felis quis aliquet elementum, tellus enim pellentesque ante, eget sollicitudin mi tellus sit amet odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Pellentesque pharetra libero sed urna consequat id tincidunt turpis sollicitudin. Integer vulputate massa nec sem ultrices feugiat. Phasellus ullamcorper, augue eget sodales aliquam, leo quam lacinia est, ac bibendum velit nunc vitae lacus. Phasellus fringilla, augue non varius pharetra, velit mi vulputate magna, sit amet luctus velit mauris at urna. In eleifend venenatis leo, sed eleifend urna commodo et. Sed tortor nisi, rutrum a dictum sit amet, auctor lacinia sapien. Suspendisse vestibulum enim vitae lorem tempor eget tincidunt urna luctus. Proin feugiat dolor ut elit laoreet quis pellentesque purus rhoncus. Nullam in feugiat nisi. Vestibulum nec vehicula nibh. Morbi dignissim pellentesque erat, non tempor ante lobortis et. Phasellus massa risus, adipiscing quis viverra ac, consectetur vitae lacus. Aliquam eleifend nulla at lectus sollicitudin congue. Praesent luctus, ipsum suscipit egestas condimentum, libero risus consequat turpis, venenatis venenatis lorem nisl id sapien. Etiam nec sem at tellus vestibulum lobortis. Ut vel tellus et ligula congue hendrerit facilisis vitae ipsum. Sed quis convallis velit. ', '2011-02-07 01:16:01', 0)[0m
+Redirected to http://localhost:3000/articles/8
+Completed in 163ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:16:01) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (4.9ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/8]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:17:54) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.2ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/8]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:18:15) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (4.9ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/8]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:18:27) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.6ms)
+Completed in 61ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/8]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:20:48) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.1ms)
+Completed in 37ms (View: 20, DB: 1) | 200 OK [http://localhost/articles/8]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:20:55) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.0ms)
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/8]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:21:20) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.2ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/8]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:21:28) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.3ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/8]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:22:21) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.6ms)
+Completed in 64ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/8]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:26:23) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.3ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/8]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 18:26:24) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 23ms (View: 18, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:26:26) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 18:26:28) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 23ms (View: 18, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:26:32) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.4ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:26:36) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:26:39) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.6ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:26:44) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 18:26:49) [PUT]
+  Parameters: {"article"=>{"body"=>"ahh, lots of stuff", "author"=>"dab", "title"=>"t2"}, "commit"=>"Update", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-07 01:26:49', "edit_count" = 3, "body" = 'ahh, lots of stuff' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/articles/5
+Completed in 95ms (DB: 0) | 302 Found [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:26:49) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (4.9ms)
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 18:26:53) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 22ms (View: 17, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:27:41) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 18:27:47) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 23ms (View: 18, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:27:52) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.3ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:27:53) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:27:55) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.8ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:27:58) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:27:59) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.1ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:28:27) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:28:29) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.0ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 18:28:31) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 23ms (View: 18, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:28:34) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 18:28:35) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 23ms (View: 18, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 18:29:33) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 23ms (View: 18, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:29:36) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 18:29:39) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 22ms (View: 17, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 18:30:45) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 69ms (View: 65, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 18:30:46) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 18:30:48) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.4ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:30:51) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:31:15) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:31:54) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:33:14) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:33:26) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:34:30) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:36:42) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:36:43) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:36:59) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:37:39) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:38:06) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:38:40) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:38:59) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:41:09) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:41:38) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:42:09) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:42:15) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:42:16) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:42:27) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:42:40) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:43:35) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:43:36) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:43:40) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:44:15) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:46:22) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:46:28) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:48:28) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:50:03) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:50:04) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:50:20) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:50:48) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:50:59) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:51:55) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 61ms (View: 56, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:54:04) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:54:20) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:54:29) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:54:36) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:55:17) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:55:30) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:56:18) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:56:27) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 62ms (View: 57, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:56:38) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 18:56:46) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:02:26) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:02:58) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:03:13) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:04:27) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:04:54) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:05:36) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:05:53) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:06:29) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:06:43) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:06:52) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:07:01) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:07:06) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:07:25) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:07:34) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:07:43) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:07:54) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:24:53) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:25:20) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:25:35) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:25:49) [PUT]
+  Parameters: {"article"=>{"body"=>"ahh, lots of stuff", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;36;1mArticle Update (0.2ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-07 02:25:49', "edit_count" = 4 WHERE "id" = 5[0m
+Redirected to http://localhost:3000/articles/5
+Completed in 114ms (DB: 0) | 302 Found [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:25:49) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (8.8ms)
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 19:25:53) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 23ms (View: 17, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:25:56) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.3ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/6]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:26:01) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/6/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:26:06) [PUT]
+  Parameters: {"article"=>{"body"=>"b", "author"=>"Mia", "title"=>"a"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"6"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+  [4;36;1mArticle Update (0.2ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-07 02:26:07', "author" = 'Mia', "edit_count" = 1 WHERE "id" = 6[0m
+Redirected to http://localhost:3000/articles
+Completed in 111ms (DB: 0) | 302 Found [http://localhost/articles/6]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 19:26:07) [GET]
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 25ms (View: 17, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:26:23) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 19ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:26:29) [PUT]
+  Parameters: {"article"=>{"body"=>"", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 75ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:27:02) [PUT]
+  Parameters: {"article"=>{"body"=>"", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 29ms (View: 21, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:27:07) [PUT]
+  Parameters: {"article"=>{"body"=>"", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 19:27:17) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 32ms (View: 27, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 19:27:52) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 23ms (View: 18, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:27:54) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (9.5ms)
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:27:57) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:28:01) [PUT]
+  Parameters: {"article"=>{"body"=>"", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 20ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:29:14) [PUT]
+  Parameters: {"article"=>{"body"=>"", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:31:05) [PUT]
+  Parameters: {"article"=>{"body"=>"", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+
+ActionView::TemplateError (undefined method `error_messages' for #<Article:0xb5f8a498>) on line #6 of app/views/articles/edit.html.erb:
+3: 		<li><%= link_to image_tag("arrow_left.png", :border => 0, :size => "25x25", :align => "absmiddle")+"Back", session[:go_back], :title => "Back" %>
+4: 	</ul>
+5: </div>
+6: <%= @article.error_messages %>
+7: <div id="content">
+8: 	<h2><%=h "Editing #{@article.title}" %></h2>
+9: <% form_for(@article) do |f| %>
+
+    app/views/articles/edit.html.erb:6
+    app/controllers/articles_controller.rb:69
+    app/controllers/articles_controller.rb:64:in `update'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:31:43) [PUT]
+  Parameters: {"article"=>{"body"=>"", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 76ms (View: 13, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:35:29) [PUT]
+  Parameters: {"article"=>{"body"=>"", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:38:34) [PUT]
+  Parameters: {"article"=>{"body"=>"", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:39:33) [PUT]
+  Parameters: {"article"=>{"body"=>"", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:39:57) [PUT]
+  Parameters: {"article"=>{"body"=>"", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:40:08) [PUT]
+  Parameters: {"article"=>{"body"=>"lorum", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;35;1mArticle Update (0.3ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-07 02:40:08', "edit_count" = 5, "body" = 'lorum' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/articles/5
+Completed in 122ms (DB: 0) | 302 Found [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:40:08) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (6.3ms)
+Completed in 61ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:40:25) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.9ms)
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:40:50) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:40:57) [PUT]
+  Parameters: {"article"=>{"body"=>"lorum ipsum", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-07 02:40:57', "edit_count" = 6, "body" = 'lorum ipsum' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/articles/5
+Completed in 113ms (DB: 1) | 302 Found [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:40:57) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.0ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:41:39) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.0ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:41:56) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.7ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:42:01) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:42:07) [PUT]
+  Parameters: {"article"=>{"body"=>"lorum ipsum dolor", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;36;1mArticle Update (0.9ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-07 02:42:07', "edit_count" = 7, "body" = 'lorum ipsum dolor' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/articles/5
+Completed in 145ms (DB: 1) | 302 Found [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:42:07) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.1ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:42:29) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.4ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:42:37) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.8ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:42:52) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:42:54) [PUT]
+  Parameters: {"article"=>{"body"=>"", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:47:38) [PUT]
+  Parameters: {"article"=>{"body"=>"Lorum <p> ipsum", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;35;1mArticle Update (0.2ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-07 02:47:38', "edit_count" = 8, "body" = 'Lorum <p> ipsum' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/articles/5
+Completed in 88ms (DB: 0) | 302 Found [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:47:38) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.4ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:47:51) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:47:55) [PUT]
+  Parameters: {"article"=>{"body"=>"Lorum <h1> ipsum", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;35;1mArticle Update (0.5ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-07 02:47:55', "edit_count" = 9, "body" = 'Lorum <h1> ipsum' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/articles/5
+Completed in 112ms (DB: 1) | 302 Found [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:47:55) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (4.9ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:48:17) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.3ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:48:18) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.3ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:48:25) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:48:28) [PUT]
+  Parameters: {"article"=>{"body"=>"Lorum ipsum", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;35;1mArticle Update (0.2ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-07 02:48:28', "edit_count" = 10, "body" = 'Lorum ipsum' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/articles/5
+Completed in 105ms (DB: 0) | 302 Found [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:48:29) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (4.9ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:48:31) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:48:38) [PUT]
+  Parameters: {"article"=>{"body"=>"Lorum <h1> ipsum", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;35;1mArticle Update (0.2ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-07 02:48:38', "edit_count" = 11, "body" = 'Lorum <h1> ipsum' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/articles/5
+Completed in 89ms (DB: 0) | 302 Found [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:48:38) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (4.9ms)
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:48:42) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 19:48:45) [PUT]
+  Parameters: {"article"=>{"body"=>"Lorum ipsum", "author"=>"dab", "title"=>"t2"}, "commit"=>"Save Changes", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64=", "id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;35;1mArticle Update (0.2ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-07 02:48:45', "edit_count" = 12, "body" = 'Lorum ipsum' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/articles/5
+Completed in 79ms (DB: 0) | 302 Found [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:48:45) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.2ms)
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:53:10) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.2ms)
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 19:53:13) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.4ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 19:53:15) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 25ms (View: 19, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 19:53:21) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+ERROR: compiling _run_erb_app47views47articles47new46html46erb RAISED compile error
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/new.html.erb:28: syntax error, unexpected kENSURE, expecting kEND
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/new.html.erb:30: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47articles47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id=\"titlebar\">\n\t<ul>\n\t\t<li>"
+
+; @output_buffer.concat(( link_to image_tag("arrow_left.png", :border => 0, :size => "25x25", :align => "absmiddle")+"List all Articles", articles_path, :title => "List all Articles" ).to_s); @output_buffer.concat "\n\t</ul>\n</div>\n<h2>"
+
+
+; @output_buffer.concat((h "Creating a New Article" ).to_s); @output_buffer.concat "</h2>\n"
+;  form_for(@article) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n<div id=\"content\">\n\t<ul>\n\t\t<li>"
+
+
+; @output_buffer.concat(( f.label :title ).to_s); @output_buffer.concat "</li>\n\t\t<li>"
+; @output_buffer.concat(( f.text_field :title ).to_s); @output_buffer.concat "</li>\n\t</ul>\n\t<ul>\n\t\t<li>"
+
+
+; @output_buffer.concat(( f.label :author, "Author Name" ).to_s); @output_buffer.concat "</li>\n\t\t<li>"
+; @output_buffer.concat(( f.text_field :author ).to_s); @output_buffer.concat "</li>\n\t</ul>\n  <ul>\n\t\t<li>"
+
+
+; @output_buffer.concat(( f.label :body ).to_s); @output_buffer.concat "</li>\n\t\t<li>"
+; @output_buffer.concat(( f.text_area :body ).to_s); @output_buffer.concat "</li>\n\t</ul>\n\t<ul>\n\t\t<li></li>\n\t\t<li>"
+
+
+
+; @output_buffer.concat(( f.submit 'Create' ).to_s); @output_buffer.concat "</li>\n\t</ul>\n</div>\n"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/new.html.erb:30:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:135:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:135
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:179:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:179:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:173:in `each'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:173:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/dan/Documents/School/spring11/csci446/src/project04/app/controllers/articles_controller.rb:29:in `new'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1333:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1333:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/new.html.erb:28: syntax error, unexpected kENSURE, expecting kEND
+/home/dan/Documents/School/spring11/csci446/src/project04/app/views/articles/new.html.erb:30: syntax error, unexpected $end, expecting kEND) on line #28 of app/views/articles/new.html.erb:
+25: 	</ul>
+26: </div>
+
+    app/views/articles/new.html.erb:30:in `compile!'
+    app/controllers/articles_controller.rb:29:in `new'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (76.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 19:53:43) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 19:53:54) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 23ms (View: 17, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:53:57) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:54:28) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 19:54:29) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 19:54:33) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 72ms (View: 67, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 19:54:35) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 19:57:46) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 19:58:32) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 19:58:45) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 19:58:56) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 20:00:35) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 20:01:58) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 28ms (View: 20, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 20:02:37) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 20:04:02) [POST]
+  Parameters: {"article"=>{"body"=>"", "author"=>"Ipsum", "title"=>"Lorum"}, "commit"=>"Create", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64="}
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 20:04:07) [POST]
+  Parameters: {"article"=>{"body"=>"Dolor", "author"=>"Ipsum", "title"=>"Lorum"}, "commit"=>"Create", "authenticity_token"=>"XE7FNkRIAGjwW5vUYh+icsJqBP8YxK5oIw71h0hpQ64="}
+  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edit_count") VALUES('2011-02-07 03:04:07', 'Lorum', 'Ipsum', 'Dolor', '2011-02-07 03:04:07', 0)[0m
+Redirected to http://localhost:3000/articles/9
+Completed in 135ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 20:04:07) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 9) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Rendered articles/_titlebar (5.1ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/9]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 20:04:13) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 40ms (View: 34, DB: 0) | 200 OK [http://localhost/articles]
