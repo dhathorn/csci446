@@ -9763,3 +9763,10 @@ Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:36:05) [GET]
 Rendering template within layouts/articles
 Rendering articles/index
 Completed in 86ms (View: 80, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 00:44:26) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 128ms (View: 123, DB: 1) | 200 OK [http://localhost/]
