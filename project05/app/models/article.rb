@@ -9,6 +9,7 @@ class Article < ActiveRecord::Base
 	def plus_edit_count
 		self.edit_count += 1
 	end
+
 	def no_sally
 		errors.add(:author, 'cannot be named Sally') if author =~ /\bsally\b/i 
 	end
