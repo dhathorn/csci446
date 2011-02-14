@@ -24,7 +24,7 @@
 		<td class="maintable"><%=h truncate(article.author, :length => 15) %></td>
 		<td class="maintable"><%=h truncate(article.body, :length => 32) %></td>
 		<td class="maintable"><%=h article.edit_count %></td>
-		<td class="maintable"><%= article.created_at.strftime("%A, %b.%e %Y")%></td>
+		<td class="maintable"><%= article.created_at.to_s(:longdate)%></td>
 		<td class="link"><%= link_to image_tag("magin.png", :border => 0, :size => "20x20", :alt => "Show Article"), article, :title => "Show #{article.title}" %></td>
 		<td class="link"><%= link_to image_tag("pencil.png", :border => 0, :size => "20x20", :alt => "Edit Article"), edit_article_path(article), :title => "Edit #{article.title}" %></td>
 		<td class="link"><%= link_to image_tag("delete.png",  :border => 0, :size => "20x20", :alt => "Delete Article"), article, :title => "Delete #{article.title}", :confirm => "Are you sure you want to delete #{article.title}?", :method => :delete %></td>
