@@ -8,23 +8,5 @@
 </div>
 <h2><%=h "Editing #{@article.title}" %></h2>
 <% form_for(@article) do |f| %>
-  <%= f.error_messages %>
-	<div id="content">
-		<ul>
-			<li><%= f.label :title %></li>
-			<li><%= f.text_field :title %></li>
-		</ul>
-		<ul>
-			<li><%= f.label :author, "Author Name" %></li>
-			<li><%= f.text_field :author %></li>
-		</ul>
-		<ul>
-			<li><%= f.label :body %></li>
-			<li><%= f.text_area :body %></li>
-		</ul>
-		<ul>
-			<li></li>
-			<li style="text-align: left;"><%= f.submit 'Save Changes' %></li>
-		</ul>
-	</div>
+	<%= render :partial => 'form', :locals => {:f => f} %>
 <% end %>
