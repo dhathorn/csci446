@@ -44,43 +44,34 @@ class ArticlesController < ApplicationController
     @article = Article.new(params[:article])
     @article.edit_count = 0
 
-    respond_to do |format|
-      if @article.save
-        format.html { redirect_to(@article, :notice => 'Article was successfully created.') }
-        format.xml  { render :xml => @article, :status => :created, :location => @article }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
-      end
-    end
+		if @article.save
+			format.html { redirect_to(@article, :flash => {:success => 'Article was successfully created.'}) }
+			format.xml  { render :xml => @article, :status => :created, :location => @article }
+		else
+			flash[:error] = 'Error creating article.'
+			render :action => "new"
+		end
   end
 
   # PUT /articles/1
   # PUT /articles/1.xml
   def update
     @article = Article.find(params[:id])
-   # @article.edit_count += 1
 
-    respond_to do |format|
-      if @article.update_attributes(params[:article])
-        format.html { redirect_to(session[:go_back], :notice => 'Article was successfully updated.') }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
-      end
-    end
-  end
+		if @article.update_attributes(params[:article])
+			redirect_to(session[:go_back], :flash => {:success => 'Article was successfully updated.'})
+		else
+			flash[:error] = 'Error updating article.'
+			render :action => "edit"
+		end
 
-  # DELETE /articles/1
-  # DELETE /articles/1.xml
+	end
+
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(articles_url) }
-      format.xml  { head :ok }
-    end
+		format.html { redirect_to(articles_url) }
+		format.xml  { head :ok }
   end
 end

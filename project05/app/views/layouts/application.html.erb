@@ -15,7 +15,9 @@
 			<p><%= yield :subtitle %></p>
 
 		</div>
-		<p style="color: green"><%= notice %></p>
+		<% flash.each_pair do |key, message| %>
+			<%= content_tag :div, message, :class => key %>
+		<% end %>
 		<%= yield %>
 	</div>
 </body>

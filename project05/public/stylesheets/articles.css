@@ -112,3 +112,18 @@ table {
 li.right {
 	text-align: left;
 }
+.notice {
+	padding-left: 40px;
+	border: 2px #00B2EE solid;
+	color: #00B2EE;
+}
+.success {
+	padding-left: 40px;
+	border: 2px green solid;
+	color: green;
+}
+.error {
+	padding-left: 40px;
+	border: 2px #CC0000 solid;
+	color: #CC0000;
+
