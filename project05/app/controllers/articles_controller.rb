@@ -27,7 +27,6 @@ class ArticlesController < ApplicationController
   # POST /articles.xml
   def create
     @article = Article.new(params[:article])
-    @article.edit_count = 0
 		if @article.save
 			redirect_to(@article, :flash => {:success => 'Article was successfully created.'})
 		else

@@ -3,11 +3,10 @@ class Article < ActiveRecord::Base
 	validate :no_sally
 	before_save :plus_edit_count
 
-
 	protected
 
 	def plus_edit_count
-		self.edit_count += 1 if self.changed?
+		self.edit_count += 1 if self.changed? unless self.new_record?
 	end
 
 	def no_sally
