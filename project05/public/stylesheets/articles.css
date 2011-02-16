@@ -2,6 +2,7 @@ body {
 	margin-top: 0px;
 	background-color: #545454;
 	font-family: fantasy;
+	font-size: 0.8em;
 }
 #container {
 	margin: 0px;
@@ -37,7 +38,6 @@ body {
 	margin-right: 100px;
 	margin-left: 0px;
 	display: inline;
-	vertical-align: bottom; 
 }
 #titlebar ul li a:link {
 	text-decoration: none;
@@ -87,7 +87,7 @@ table {
 }
 .link {
 	text-align: center;
-	width: 24px;
+	width: 20px;
 	padding: 0;
 	background-color: #CDCDCD;
 }	

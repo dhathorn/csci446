@@ -7,7 +7,7 @@ class Article < ActiveRecord::Base
 	protected
 
 	def plus_edit_count
-		self.edit_count += 1
+		self.edit_count += 1 if self.changed?
 	end
 
 	def no_sally
