@@ -2,7 +2,8 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.xml
   def index
-    @articles = Article.all
+    @total_articles = Article.all
+		@articles = Article.paginate :page => params[:page], :order => 'created_at DESC'
   end
 
   # GET /articles/1

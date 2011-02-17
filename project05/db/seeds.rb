@@ -7,8 +7,8 @@
 #   Major.create(:title => 'Daley', :city => cities.first)
 #
 #
-
-Article.create([{ :title => 'A Tale of Two Cities', :author => 'Charles Dickens', :edit_count => 0, :body => <<HEREE
+Author.create([{ :name => "Charles Dickens"}, {:name => "Leo Tolstoy"}, {:name => "Anon Checkov"}])
+Article.create([{ :title => 'A Tale of Two Cities', :author => Author.find_by_name("Charles Dickens"), :edit_count => 0, :body => <<HEREE
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non pellentesque massa. Vestibulum in congue metus. Phasellus malesuada scelerisque dui vitae pretium. Phasellus quam nulla, mollis id ultricies quis, dictum at mi. Nunc gravida eros non odio congue non vehicula eros ultrices. Nam nec rutrum magna. In eu sem tellus, at sodales odio. Maecenas placerat, neque et ornare varius, ipsum ante tincidunt dolor, vel tincidunt risus orci at quam. Suspendisse potenti. Morbi dapibus libero quam. Etiam ac dui a nulla adipiscing suscipit eu in eros. Nam a quam ut sem volutpat sagittis eu eu neque. Fusce auctor, diam a laoreet auctor, leo quam adipiscing sapien, et consequat lectus tortor in mauris. Nulla enim nisl, pharetra id congue a, fermentum a est. Fusce dictum faucibus urna, in cursus justo imperdiet vitae. Praesent nulla lectus, consectetur nec cursus eleifend, molestie viverra quam. Ut dictum pellentesque ante, ut egestas risus tristique a. Duis eget lorem blandit augue ornare volutpat. Curabitur ac justo nisi, in mattis sapien.
 
 Donec bibendum tempor nibh. Nunc posuere, eros at hendrerit dapibus, mauris velit congue sapien, non varius dolor mauris et libero. Aliquam id quam lacus, et luctus nisi. Duis sit amet nibh a nisl dapibus faucibus eu sit amet purus. Curabitur malesuada volutpat malesuada. In hac habitasse platea dictumst. Mauris iaculis turpis sit amet massa fringilla condimentum. Ut eget arcu nulla. Vestibulum ut sem et urna molestie suscipit. Mauris dapibus, magna et iaculis ornare, felis felis hendrerit nibh, vitae consequat orci erat a nisi. Nunc ut diam dolor, quis consectetur augue. Praesent auctor euismod elit quis ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse ut felis non ante placerat auctor. Nulla a ligula nunc. In at massa quis diam commodo placerat at sit amet orci. Pellentesque velit turpis, rutrum id semper id, volutpat sed lacus.
@@ -29,26 +29,26 @@ Aenean metus nibh, pretium id lobortis id, faucibus eget mauris. Suspendisse tem
 
 Pellentesque pharetra libero sed urna consequat id tincidunt turpis sollicitudin. Integer vulputate massa nec sem ultrices feugiat. Phasellus ullamcorper, augue eget sodales aliquam, leo quam lacinia est, ac bibendum velit nunc vitae lacus. Phasellus fringilla, augue non varius pharetra, velit mi vulputate magna, sit amet luctus velit mauris at urna. In eleifend venenatis leo, sed eleifend urna commodo et. Sed tortor nisi, rutrum a dictum sit amet, auctor lacinia sapien. Suspendisse vestibulum enim vitae lorem tempor eget tincidunt urna luctus. Proin feugiat dolor ut elit laoreet quis pellentesque purus rhoncus. Nullam in feugiat nisi. Vestibulum nec vehicula nibh. Morbi dignissim pellentesque erat, non tempor ante lobortis et. Phasellus massa risus, adipiscing quis viverra ac, consectetur vitae lacus. Aliquam eleifend nulla at lectus sollicitudin congue. Praesent luctus, ipsum suscipit egestas condimentum, libero risus consequat turpis, venenatis venenatis lorem nisl id sapien. Etiam nec sem at tellus vestibulum lobortis. Ut vel tellus et ligula congue hendrerit facilisis vitae ipsum. Sed quis convallis velit. 
 HEREE
-},{ :title => 'Anna Karenina', :author => 'Leo Tolstoy', :edit_count => 0,
+},{ :title => 'Anna Karenina', :author => Author.find_by_name("Leo Tolstoy"), :edit_count => 0,
  :body => "A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction."},
-{ :title => 'Anna Karenina', :author => 'Leo Tolstoy', :edit_count => 0,
+{ :title => 'Anna Karenina', :author => Author.find_by_name("Leo Tolstoy"), :edit_count => 0,
  :body => "A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction."},
-{ :title => 'Anna Karenina', :author => 'Leo Tolstoy', :edit_count => 0,
+{ :title => 'Anna Karenina', :author => Author.find_by_name("Leo Tolstoy"), :edit_count => 0,
  :body => "A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction."},
-{ :title => 'Anna Karenina', :author => 'Leo Tolstoy', :edit_count => 0,
+{ :title => 'Anna Karenina', :author => Author.find_by_name("Leo Tolstoy"), :edit_count => 0,
  :body => "A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction."},
-{ :title => 'Anna Karenina', :author => 'Leo Tolstoy', :edit_count => 0,
+{ :title => 'Anna Karenina', :author => Author.find_by_name("Leo Tolstoy"), :edit_count => 0,
  :body => "A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction."},
-{ :title => 'Anna Karenina', :author => 'Leo Tolstoy', :edit_count => 0,
+{ :title => 'Anna Karenina', :author => Author.find_by_name("Leo Tolstoy"), :edit_count => 0,
  :body => "A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction."},
-{ :title => 'Anna Karenina', :author => 'Leo Tolstoy', :edit_count => 0,
+{ :title => 'Anna Karenina', :author => Author.find_by_name("Leo Tolstoy"), :edit_count => 0,
  :body => "A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction."},
-{ :title => 'Anna Karenina', :author => 'Leo Tolstoy', :edit_count => 0,
+{ :title => 'Anna Karenina', :author => Author.find_by_name("Leo Tolstoy"), :edit_count => 0,
  :body => "A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction."},
-{ :title => 'Anna Karenina', :author => 'Leo Tolstoy', :edit_count => 0,
+{ :title => 'Anna Karenina', :author => Author.find_by_name("Leo Tolstoy"), :edit_count => 0,
  :body => "A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction."},
-{ :title => 'Anna Karenina', :author => 'Leo Tolstoy', :edit_count => 0,
+{ :title => 'Anna Karenina', :author => Author.find_by_name("Leo Tolstoy"), :edit_count => 0,
  :body => "A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction."},
-{ :title => 'Anna Karenina', :author => 'Leo Tolstoy', :edit_count => 0,
+{ :title => 'Anna Karenina', :author => Author.find_by_name("Leo Tolstoy"), :edit_count => 0,
  :body => "A man is like a fraction whose numerator is what he is and whose denominator is what he thinks of himself. The larger the denominator, the smaller the fraction."}
 ])

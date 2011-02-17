@@ -7,6 +7,12 @@
 	</ul>
 </div>
 <h2><%=h "Editing #{@article.title}" %></h2>
+<div id="content">
 <% form_for(@article) do |f| %>
 	<%= render :partial => 'form', :locals => {:f => f} %>
+	<ul>
+		<li></li>
+		<li style="text-align: left;"><%= f.submit 'Submit' %></li>
+	</ul>
 <% end %>
+</div>

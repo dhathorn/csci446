@@ -1,19 +1,12 @@
 <%= f.error_messages %>
-<div id="content">
 	<ul>
 		<li><%= f.label :title %></li>
 		<li><%= f.text_field :title %></li>
 	</ul>
 	<ul>
-		<li><%= f.label :author, "Author Name" %></li>
-		<li><%= f.text_field :author %></li>
+		<li><%= f.label :author_name, "Author Name" %></li>
 	</ul>
 	<ul>
 		<li><%= f.label :body %></li>
 		<li><%= f.text_area :body %></li>
 	</ul>
-	<ul>
-		<li></li>
-		<li style="text-align: left;"><%= f.submit 'Create' %></li>
-	</ul>
-</div>

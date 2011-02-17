@@ -21,7 +21,7 @@
 <% @articles.each do |article| %>
 	<tr class="<%= cycle("odd","even") -%>">
 		<td class="maintable"><%=h truncate(article.title, :length => 15) %></td>
-		<td class="maintable"><%=h truncate(article.author, :length => 15) %></td>
+		<td class="maintable"><%=h truncate(article.author_name, :length => 15) %></td>
 		<td class="maintable"><%=h truncate(article.body, :length => 32) %></td>
 		<td class="maintable"><%=h article.edit_count %></td>
 		<td class="maintable"><%= article.created_at.to_s(:longdate)%></td>
@@ -33,7 +33,7 @@
 </table>
 </div>
 <div id="footer">
-	<%= pluralize(@articles.count, "article") %>
+	<%= page_entries_info @articles %>
 </div>
 <br />
-
+<%= will_paginate @articles %>
