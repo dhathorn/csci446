@@ -1,5 +1,6 @@
 <p>
-	<%=h "#{@author.name}'s current articles:" %>
+	<h2><%=h @author.name %></h2>
+	<%= image_tag(@author.photo.url) %>	
 	<% if @author.articles.size == 0 %>
 		<p> This Author has no articles </p>
 	<% else %>

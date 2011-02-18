@@ -20,6 +20,7 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
 	config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'
+	config.gem 'paperclip', :version => '~> 2.3'
 
   
 	
