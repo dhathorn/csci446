@@ -2,7 +2,9 @@ class Author < ActiveRecord::Base
 	has_many :articles
 	validates_presence_of :name
 	validate :no_sally
-	has_attached_file :photo, :url => '/assets/:class/:attachment/:id/:style/:filename'
+	has_attached_file :photo,
+		:url => '/assets/:class/:attachment/:id/:style/:filename',
+		:default_url => '/images/aristotle.jpg'
 	
 	
 	protected

@@ -21,6 +21,7 @@ Rails::Initializer.run do |config|
   # config.gem "aws-s3", :lib => "aws/s3"
 	config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'
 	config.gem 'paperclip', :version => '~> 2.3'
+	config.gem 'haml'
 
   
 	
