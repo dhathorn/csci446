@@ -3,8 +3,7 @@ class Article < ActiveRecord::Base
 	validates_presence_of :title, :body
 	validate :no_sally
 	belongs_to :author
-	before_save :plus_edit_count
-	before_create :set_author_name
+	before_save :plus_edit_count,:set_author_name
 	@@per_page = 10
 
 	protected

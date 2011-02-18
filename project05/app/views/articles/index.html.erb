@@ -1,37 +1,13 @@
 <% content_for :subtitle do -%>
 	...with a name .com hipsters love!
 <%- end %>
-<div id="titlebar">
+<div class="titlebar">
 	<ul>
 		<li class="larger">All the World's Articles</li>
 		<li><%= link_to image_tag("add.png", :border => 0, :align => "texttop")+"Create an Article",new_article_path %></li>
 	</ul>
 </div>
-<div id="tablecontainer">
-<table id="table">
-	<tr>
-		<th class="th_row">Title</th>
-		<th class="th_row">Author</th>
-		<th class="th_row">Body</th>
-		<th class="th_row">Edit Count</th>
-		<th class="th_row">Creation Date</th>
-		<th></th>
-	</tr> 
-
-<% @articles.each do |article| %>
-	<tr class="<%= cycle("odd","even") -%>">
-		<td class="maintable"><%=h truncate(article.title, :length => 15) %></td>
-		<td class="maintable"><%=h truncate(article.author_name, :length => 15) %></td>
-		<td class="maintable"><%=h truncate(article.body, :length => 32) %></td>
-		<td class="maintable"><%=h article.edit_count %></td>
-		<td class="maintable"><%= article.created_at.to_s(:longdate)%></td>
-		<td class="link"><%= link_to image_tag("magin.png", :border => 0, :alt => "Show Article"), article, :title => "Show #{article.title}" %></td>
-		<td class="link"><%= link_to image_tag("pencil.png", :border => 0, :alt => "Edit Article"), edit_article_path(article), :title => "Edit #{article.title}" %></td>
-		<td class="link"><%= link_to image_tag("delete.png",  :border => 0, :alt => "Delete Article"), article, :title => "Delete #{article.title}", :confirm => "Are you sure you want to delete #{article.title}?", :method => :delete %></td>
-	</tr>
-<% end %>
-</table>
-</div>
+<%= render :partial => 'articles_table', :locals => {:articles => @articles} %> 
 <div id="footer">
 	<%= page_entries_info @articles %>
 </div>

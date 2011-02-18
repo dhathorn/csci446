@@ -9,7 +9,7 @@ body {
 	padding-left: 40px;
 	padding-right: 40px;
 	width: 920px;
-	min-height: 800px;
+	min-height: 880px;
 	height: 100%;
 	background-color: #CDCDCD;
 	margin: auto
@@ -23,26 +23,26 @@ body {
 	margin-bottom: -0.5em;
 	font-size: 4em;
 }
-#titlebar {
+.titlebar {
 	width: 880px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
-#titlebar ul {
+.titlebar ul {
 	margin: 0;
 	list-style-type: none;
 }
-#titlebar ul li {
+.titlebar ul li {
 	margin-right: 100px;
 	margin-left: 0px;
 	display: inline;
 }
-#titlebar ul li a:link {
+.titlebar ul li a:link {
 	text-decoration: none;
 }
-#titlebar ul li a:visited {
+.titlebar ul li a:visited {
 	text-decoration: none;
 }
 table {
@@ -126,4 +126,8 @@ li.right {
 	padding-left: 40px;
 	border: 2px #CC0000 solid;
 	color: #CC0000;
+}
 
+.big {
+	font-size: 1.2em;
+}

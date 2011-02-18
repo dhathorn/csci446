@@ -1,13 +1,7 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#   
-#   cities = City.create([{ :title => 'Chicago' }, { :title => 'Copenhagen' }])
-#   Major.create(:title => 'Daley', :city => cities.first)
+# This file should contain all the record creation needed to seed the database with its default values.  # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).  # # Examples: #   #   cities = City.create([{ :title => 'Chicago' }, { :title => 'Copenhagen' }]) #   Major.create(:title => 'Daley', :city => cities.first)
 #
 #
-Author.create([{ :name => "Charles Dickens"}, {:name => "Leo Tolstoy"}, {:name => "Anon Checkov"}])
+Author.create([{ :name => "Charles Dickens"}, {:name => "Leo Tolstoy"}, {:name => "Anton Checkov"}])
 Article.create([{ :title => 'A Tale of Two Cities', :author => Author.find_by_name("Charles Dickens"), :edit_count => 0, :body => <<HEREE
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non pellentesque massa. Vestibulum in congue metus. Phasellus malesuada scelerisque dui vitae pretium. Phasellus quam nulla, mollis id ultricies quis, dictum at mi. Nunc gravida eros non odio congue non vehicula eros ultrices. Nam nec rutrum magna. In eu sem tellus, at sodales odio. Maecenas placerat, neque et ornare varius, ipsum ante tincidunt dolor, vel tincidunt risus orci at quam. Suspendisse potenti. Morbi dapibus libero quam. Etiam ac dui a nulla adipiscing suscipit eu in eros. Nam a quam ut sem volutpat sagittis eu eu neque. Fusce auctor, diam a laoreet auctor, leo quam adipiscing sapien, et consequat lectus tortor in mauris. Nulla enim nisl, pharetra id congue a, fermentum a est. Fusce dictum faucibus urna, in cursus justo imperdiet vitae. Praesent nulla lectus, consectetur nec cursus eleifend, molestie viverra quam. Ut dictum pellentesque ante, ut egestas risus tristique a. Duis eget lorem blandit augue ornare volutpat. Curabitur ac justo nisi, in mattis sapien.
 

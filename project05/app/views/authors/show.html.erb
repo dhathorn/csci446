@@ -1,8 +1,15 @@
 <p>
-  <b>Name:</b>
-  <%=h @author.name %>
+	<%=h "#{@author.name}'s current articles:" %>
+	<% if @author.articles.size == 0 %>
+		<p> This Author has no articles </p>
+	<% else %>
+		<%= render :partial => 'articles/articles_table', :locals => {:articles => @author.articles} %> 
+	<% end %>	
 </p>
+<div class="titlebar">
+	<ul>
+		<li><%= link_to 'Edit Author Name', edit_author_path(@author) %></li>
+		<li><%= link_to 'Back', authors_path %></li>
+	</ul>
+</div>
 
-
-<%= link_to 'Edit', edit_author_path(@author) %> |
-<%= link_to 'Back', authors_path %>

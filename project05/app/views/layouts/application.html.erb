@@ -13,11 +13,16 @@
 		<div id="header">
 			<h1>Articl.es</h1>
 			<p><%= yield :subtitle %></p>
-
 		</div>
 		<% flash.each_pair do |key, message| %>
 			<%= content_tag :div, message, :class => key %>
 		<% end %>
+		<div class="titlebar">
+			<ul>
+				<li class="big"><%= link_to("Articles", articles_url) %></li>
+				<li class="big"><%= link_to("Authors", authors_path) %></li>
+			</ul>
+		</div>
 		<%= yield %>
 	</div>
 </body>

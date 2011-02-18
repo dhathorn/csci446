@@ -1,18 +1,19 @@
 <% content_for :subtitle do %>
 	...my cousin works for Bit.ly
 <% end %>
-<div id="titlebar">
+<div class="titlebar">
 	<ul>
 		<li><%= link_to image_tag("arrow_left.png", :border => 0, :align => "texttop")+"Back", session[:go_back], :title => "Back" %>
 	</ul>
 </div>
 <h2><%=h "Editing #{@article.title}" %></h2>
-<div id="content">
 <% form_for(@article) do |f| %>
-	<%= render :partial => 'form', :locals => {:f => f} %>
-	<ul>
-		<li></li>
-		<li style="text-align: left;"><%= f.submit 'Submit' %></li>
-	</ul>
+	<%= f.error_messages %>
+	<div id="content">
+		<%= render :partial => 'form', :locals => {:f => f} %>
+		<ul>
+			<li></li>
+			<li style="text-align: left;"><%= f.submit 'Submit' %></li>
+		</ul>
+	</div>
 <% end %>
-</div>

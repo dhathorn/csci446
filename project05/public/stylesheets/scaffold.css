@@ -2,6 +2,7 @@
   padding: 2px;
   background-color: red;
   display: table;
+	display: inline-block;
 }
 
 #errorExplanation {
