@@ -1,0 +1,19 @@
+#tablecontainer
+  %table#table
+    %tr
+      %th.th_row Title
+      %th.th_row Author
+      %th.th_row Body
+      %th.th_row Edit Count
+      %th.th_row Creation Date
+      %th
+    - articles.each do |article|
+      %tr{:class => cycle("odd","even")}
+        %td.maintable= h truncate(article.title, :length => 15)
+        %td.maintable= h truncate(article.author_name, :length => 15)
+        %td.maintable= h truncate(article.body, :length => 32)
+        %td.maintable= h article.edit_count
+        %td.maintable= article.created_at.to_s(:longdate)
+        %td.link= link_to image_tag("magin.png", :border => 0, :alt => "Show Article"), article, :title => "Show #{article.title}"
+        %td.link= link_to image_tag("pencil.png", :border => 0, :alt => "Edit Article"), edit_article_path(article), :title => "Edit #{article.title}"
+        %td.link= link_to image_tag("delete.png",  :border => 0, :alt => "Delete Article"), article, :title => "Delete #{article.title}", :confirm => "Are you sure you want to delete #{article.title}?", :method => :delete

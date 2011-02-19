@@ -1,0 +1,14 @@
+- content_for :subtitle do
+  \..not just  for the country of Spain
+.titlebar
+  %ul
+    %li
+      = link_to image_tag("arrow_left.png", :border => 0, :align => "texttop")+"List all Articles", articles_path, :title => "List all Articles"
+%h2= h "Creating a New Article"
+- form_for(@article) do |f|
+  = f.error_messages
+  #content
+    = render :partial => 'form', :locals => {:f => f}
+    %ul
+      %li
+      %li{:style => "text-align: left;"}= f.submit 'Create'

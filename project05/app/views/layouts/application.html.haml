@@ -1,0 +1,20 @@
+!!!
+%html{:lang => "en", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html;charset=UTF-8", "http-equiv" => "content-type"}/
+    %title
+      Articl.es -- All the World's Articles (with a name .com hipsters love)
+    = stylesheet_link_tag 'scaffold'
+    = stylesheet_link_tag 'articles'
+  %body
+    #container
+      #header
+        %h1 Articl.es
+        %p= yield :subtitle
+      - flash.each_pair do |key, message|
+        = content_tag :div, message, :class => key
+      .titlebar
+        %ul
+          %li.big= link_to("Articles", articles_url)
+          %li.big= link_to("Authors", authors_path)
+      = yield

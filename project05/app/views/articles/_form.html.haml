@@ -1,0 +1,10 @@
+%ul
+  %li= f.label :title
+  %li= f.text_field :title
+%ul
+  %li= f.label :author_name, "Author Name"
+  %li
+    = f.collection_select(:author_id, @authors, :id, :name)
+%ul
+  %li= f.label :body
+  %li= f.text_area :body

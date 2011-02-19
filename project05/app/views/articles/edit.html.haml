@@ -1,0 +1,14 @@
+- content_for :subtitle do
+  \...my cousin works for Bit.ly
+.titlebar
+  %ul
+    %li
+      = link_to image_tag("arrow_left.png", :border => 0, :align => "texttop")+"Back", session[:go_back], :title => "Back"
+%h2= h "Editing #{@article.title}"
+- form_for(@article) do |f|
+  = f.error_messages
+  #content
+    = render :partial => 'form', :locals => {:f => f}
+    %ul
+      %li
+      %li{:style => "text-align: left;"}= f.submit 'Submit'
