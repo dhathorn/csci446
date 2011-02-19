@@ -1,133 +1,124 @@
 body {
-	margin-top: 0px;
-	background-color: #545454;
-	font-family: fantasy;
-	font-size: 0.8em;
-}
+  margin-top: 0px;
+  background-color: #545454;
+  font-family: fantasy;
+  font-size: 0.8em; }
+
 #container {
-	margin: 0px;
-	padding-left: 40px;
-	padding-right: 40px;
-	width: 920px;
-	min-height: 880px;
-	height: 100%;
-	background-color: #CDCDCD;
-	margin: auto
-}
+  margin: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 920px;
+  min-height: 880px;
+  height: 100%;
+  background-color: #CDCDCD;
+  margin: auto; }
+
 #header {
-	text-align: center;
-}
-#header h1 {
-	padding-bottom: 0;
-	margin-top: 0;
-	margin-bottom: -0.5em;
-	font-size: 4em;
-}
+  text-align: center; }
+  #header h1 {
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: -0.5em;
+    font-size: 4em; }
+
 .titlebar {
-	width: 880px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-.titlebar ul {
-	margin: 0;
-	list-style-type: none;
-}
-.titlebar ul li {
-	margin-right: 100px;
-	margin-left: 0px;
-	display: inline;
-}
-.titlebar ul li a:link {
-	text-decoration: none;
-}
-.titlebar ul li a:visited {
-	text-decoration: none;
-}
+  width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .titlebar ul {
+    margin: 0;
+    list-style-type: none; }
+    .titlebar ul li {
+      margin-right: 100px;
+      margin-left: 0px;
+      display: inline; }
+      .titlebar ul li a:link {
+        text-decoration: none; }
+      .titlebar ul li a:visited {
+        text-decoration: none; }
+
 table {
-	border-collapse: collapse;
-	padding: 0px;
-}
-#tablecontainer{
-	max-height:442px;
-	width: 920px;
-	overflow: auto;
-}
+  border-collapse: collapse;
+  padding: 0px; }
+
+#tablecontainer {
+  max-height: 442px;
+  width: 920px;
+  overflow: auto; }
+
 #table {
-	margin: auto;
-	width: 95%;
-}
+  margin: auto;
+  width: 95%; }
+
 #content {
-	margin: auto;
-	width: 920px;
-	padding-bottom: 30px;
-}
+  margin: auto;
+  padding-bottom: 30px;
+  width: 920px; }
+  #content #content ul {
+    list-style-type: none;
+    padding-left: 10px;
+    clear: left; }
+    #content #content ul li {
+      text-align: right;
+      width: 120px;
+      padding-right: 10px;
+      margin: 10px;
+      display: inline;
+      float: left;
+      vertical-align: top; }
+
 #footer {
-	padding-left: 40px;
-	padding-top: 10px;
-	margin: auto;
-	width: 880px;
-}
+  padding-left: 40px;
+  padding-top: 10px;
+  margin: auto;
+  width: 880px; }
+
 .th_row {
-	border:2px solid black;
-	background-color: #344494;
-	height: 40px;
-}
+  border: 2px solid black;
+  background-color: #344494;
+  height: 40px; }
+
 .maintable {
-	text-align: center;
-	border:2px solid black;
-	height: 40px;
-}
+  text-align: center;
+  border: 2px solid black;
+  height: 40px; }
+
 .even {
-	background-color: #5464A0;
-}
+  background-color: #5464A0; }
+
 .odd {
-	background-color: #7484C0;
-}
+  background-color: #7484C0; }
+
 .link {
-	text-align: center;
-	width: 20px;
-	padding: 0;
-	background-color: #CDCDCD;
-}	
+  text-align: center;
+  width: 20px;
+  padding: 0;
+  background-color: #CDCDCD; }
+
 .larger {
-	font-size: 2em;
-	font-weight: bold;
-}
-#content ul {
-	list-style-type: none;
-	padding-left: 10px;
-	clear: left;
-}
-#content ul li {
-	text-align: right; 
-	width: 120px;
-	padding-right: 10px;
-	margin:10px;
-	display: inline;
-	float: left;
-	vertical-align: top; 
-}
+  font-size: 2em;
+  font-weight: bold; }
+
 li.right {
-	text-align: left;
-}
+  text-align: left; }
+
 .notice {
-	padding-left: 40px;
-	border: 2px #00B2EE solid;
-	color: #00B2EE;
-}
+  padding-left: 40px;
+  border: 2px #00B2EE solid;
+  color: #00B2EE; }
+
 .success {
-	padding-left: 40px;
-	border: 2px green solid;
-	color: green;
-}
+  padding-left: 40px;
+  border: 2px green solid;
+  color: green; }
+
 .error {
-	padding-left: 40px;
-	border: 2px #CC0000 solid;
-	color: #CC0000;
-}
+  padding-left: 40px;
+  border: 2px #CC0000 solid;
+  color: #CC0000; }
 
 .big {
-	font-size: 1.2em;
-}
+  font-size: 1.2em; }
