@@ -3,6 +3,6 @@
 = render(:partial => "titlebar")
 #content
   %h2= h @article.title
-  %p= h "by #{@article.author_name}. #{pluralize(@article.edit_count, 'edit')} edits since #{@article.created_at.strftime("%b.%e %Y")}"
+  %p= h "by #{@article.author_name}. #{pluralize(@article.edit_count, 'edit')} since #{@article.created_at.strftime("%b.%e %Y")}"
   %br/
   = h simple_format(@article.body)
