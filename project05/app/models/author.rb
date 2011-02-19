@@ -11,10 +11,7 @@ class Author < ActiveRecord::Base
 	protected
 
 	def change_articles
-		self.articles.each do |article|
-			article.author_name = self.name
-			article.save
-		end
+		self.articles.each(&:save)
 	end
 
 	def no_sally
