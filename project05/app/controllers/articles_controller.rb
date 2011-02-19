@@ -1,33 +1,25 @@
 class ArticlesController < ApplicationController
-  # GET /articles
-  # GET /articles.xml
-  def index
+  
+	def index
     @total_articles = Article.all
 		@articles = Article.paginate :page => params[:page], :order => 'created_at DESC'
   end
 
-  # GET /articles/1
-  # GET /articles/1.xml
   def show
     @article = Article.find(params[:id])
   end
 
-  # GET /articles/new
-  # GET /articles/new.xml
   def new
     @article = Article.new
 		@authors = Author.all
   end
 
-  # GET /articles/1/edit
   def edit
     @article = Article.find(params[:id])
 		@authors = Author.all
     session[:go_back] = request.env['HTTP_REFERER'] || articles_url
   end
 
-  # POST /articles
-  # POST /articles.xml
   def create
     @article = Article.new(params[:article])
 		@authors = Author.all
@@ -39,8 +31,6 @@ class ArticlesController < ApplicationController
 		end
   end
 
-  # PUT /articles/1
-  # PUT /articles/1.xml
   def update
     @article = Article.find(params[:id])
 		@authors = Author.all

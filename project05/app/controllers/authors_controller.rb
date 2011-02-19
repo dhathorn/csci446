@@ -25,31 +25,20 @@ class AuthorsController < ApplicationController
       end
   end
 
-  # PUT /authors/1
-  # PUT /authors/1.xml
   def update
     @author = Author.find(params[:id])
 
-    respond_to do |format|
-      if @author.update_attributes(params[:author])
-        format.html { redirect_to(@author, :notice => 'Author was successfully updated.') }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @author.errors, :status => :unprocessable_entity }
-      end
-    end
+		if @author.update_attributes(params[:author])
+			redirect_to(@author, :notice => 'Author was successfully updated.')
+		else
+			render :action => "edit"
+		end
   end
 
-  # DELETE /authors/1
-  # DELETE /authors/1.xml
   def destroy
     @author = Author.find(params[:id])
     @author.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(authors_url) }
-      format.xml  { head :ok }
-    end
+		redirect_to(authors_url)
   end
 end
