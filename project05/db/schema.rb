@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(:version => 20110218034924) do
   end
 
   create_table "authors", :force => true do |t|
-    t.string   "name"
+    t.string   "name",               :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "photo_file_name"
