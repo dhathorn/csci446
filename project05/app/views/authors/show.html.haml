@@ -1,11 +1,13 @@
 %p
-  %h2= h @author.name
-  = image_tag(@author.photo.url)
+  .titlebar
+    %ul
+      %li.bigger= h @author.name 
+      %li= image_tag(@author.photo.url, :border => '2px solid black')
   - if @author.articles.size == 0
     %p This Author has no articles
   - else
     = render :partial => 'articles/articles_table', :locals => {:articles => @author.articles}
 .titlebar
   %ul
-    %li= link_to 'Edit Author Name', edit_author_path(@author)
+    %li= link_to 'Edit Author', edit_author_path(@author)
     %li= link_to 'Back', authors_path

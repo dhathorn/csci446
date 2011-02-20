@@ -1,6 +1,8 @@
+$background: #545454;
+
 body {
 	margin-top: 0px;
-	background-color: #545454;
+	background-color: $background;
 	font-family: fantasy;
 	font-size: 0.8em;
 }
@@ -36,17 +38,14 @@ body {
 			margin-right: 100px;
 			margin-left: 0px;
 			display: inline;
-			a:link {
-				text-decoration: none;
+			a {
+				&:link, &:visited {
+					text-decoration: none;
+				}
 			}
-			a:visited {
-				text-decoration: none;
-      }			
 		}
 	}
 }
-
-
 table {
 	border-collapse: collapse;
 	padding: 0px;
@@ -64,7 +63,7 @@ table {
 	margin: auto;
 	padding-bottom: 30px;
 	width: 920px;
-	#content ul {
+	ul {
 		list-style-type: none;
 		padding-left: 10px;
 		clear: left;
@@ -133,4 +132,10 @@ li.right {
 
 .big {
 	font-size: 1.2em;
+}
+.bigger {
+	font-size: 2.4em;
+}
+.photoframe {
+	border: 2px solid $background;
 }
