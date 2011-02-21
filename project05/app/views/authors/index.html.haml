@@ -1,12 +1,14 @@
 %h1 Listing authors
-%table
-  %tr
-    %th Name
-  - @authors.each do |author|
+#tablecontainer
+  %table#table
     %tr
-      %td= h author.name
-      %td= link_to 'Show', author
-      %td= link_to 'Edit', edit_author_path(author)
-      %td= link_to 'Destroy', author, :confirm => 'Are you sure?', :method => :delete
+      %th.th_row Name
+      %th
+    - @authors.each do |author|
+      %tr{:class => cycle("odd","even")}
+        %td.maintable= h truncate(author.name, :length => 15)
+        %td.link= link_to image_tag("magin.png", :border => 0, :alt => "Show Author"), author, :title => "Show #{author.name}"
+        %td.link= link_to image_tag("pencil.png", :border => 0, :alt => "Edit Author"), edit_author_path(author), :title => "Edit #{author.name}"
+        %td.link= link_to image_tag("delete.png",  :border => 0, :alt => "Delete Author"), author, :title => "Delete #{author.name}", :confirm => "Are you sure you want to delete #{author.name}?", :method => :delete
 %br/
 = link_to 'New author', new_author_path
