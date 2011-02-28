@@ -7,6 +7,10 @@ RAILS_GEM_VERSION = '2.3.10' unless defined? RAILS_GEM_VERSION
 require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
+	
+  config.gem 'will_paginate', :version => '~> 2.3.11'
+  config.gem 'paperclip', :version => '~> 2.3'
+  config.gem 'haml'
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
   # -- all .rb files in that directory are automatically loaded.
