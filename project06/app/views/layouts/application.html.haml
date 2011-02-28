@@ -6,8 +6,10 @@
       Games: #{controller.action_name}
     = stylesheet_link_tag 'scaffold'
   %body
-    %p= link_to "Register", new_member_path 
+    %p
+    = link_to "Register", new_member_path 
     = link_to "Login", login_path
+    = link_to "Logout", logout_path
     %h1= link_to "Games", root_path
     %p{:style => "color: green"}= notice
     = yield

@@ -1995,3 +1995,71 @@ Processing GamesController#index (for 127.0.0.1 at 2011-02-28 00:26:26) [GET]
 Rendering template within layouts/application
 Rendering games/index
 Completed in 68ms (View: 64, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-28 00:34:54) [GET]
+  [4;36;1mGame Load (0.3ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-28 00:35:34) [GET]
+  Parameters: {"action"=>"new", "controller"=>"member_sessions"}
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+Completed in 15ms (View: 4, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing MemberSessionsController#create (for 127.0.0.1 at 2011-02-28 00:35:38) [POST]
+  Parameters: {"commit"=>"Login", "action"=>"create", "authenticity_token"=>"cz6erIpAOhAVsMahTIDlq64mxnVelCgd14Ymm9FecDM=", "controller"=>"member_sessions", "member_session"=>{"username"=>"dan", "password"=>"[FILTERED]"}}
+  [4;35;1mMember Load (0.3ms)[0m   [0mSELECT * FROM "members" WHERE (LOWER("members".username) = 'dan') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/member_sessions]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-28 00:35:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.4ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-28 00:36:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mGame Load (0.3ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-28 00:37:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.3ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MemberSessionsController#destroy (for 127.0.0.1 at 2011-02-28 00:37:12) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"member_sessions"}
+  [4;35;1mMember Load (0.3ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."id" = '1') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-28 00:37:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.3ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-28 00:37:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mGame Load (0.3ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/]
