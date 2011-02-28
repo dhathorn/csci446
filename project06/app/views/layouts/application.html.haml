@@ -3,8 +3,9 @@
   %head
     %meta{:content => "text/html;charset=UTF-8", "http-equiv" => "content-type"}/
     %title
-      Members: #{controller.action_name}
+      Games: #{controller.action_name}
     = stylesheet_link_tag 'scaffold'
   %body
+    %h1= link_to "Games", root_path
     %p{:style => "color: green"}= notice
     = yield

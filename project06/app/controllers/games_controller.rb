@@ -2,7 +2,7 @@ class GamesController < ApplicationController
   # GET /games
   # GET /games.xml
   def index
-    @games = Game.all
+    @games = Game.paginate :page => params[:page], :order => 'created_at DESC'
 
     respond_to do |format|
       format.html # index.html.erb

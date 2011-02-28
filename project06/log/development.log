@@ -42,3 +42,481 @@ Processing MembersController#index (for 127.0.0.1 at 2011-02-27 21:24:46) [GET]
 Rendering template within layouts/members
 Rendering members/index
 Completed in 24ms (View: 19, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2011-02-27 21:47:24) [GET]
+  [4;36;1mMember Load (0.3ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/members
+Rendering members/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-27 21:50:32) [GET]
+  [4;36;1mGame Load (0.3ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-27 21:50:44) [GET]
+  [4;35;1mGame Load (0.3ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-27 22:05:01) [GET]
+  [4;36;1mGame Load (0.6ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-27 22:05:13) [GET]
+
+ActionController::RoutingError (No route matches "/admin" with {:method=>:get}):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2011-02-27 22:05:19) [GET]
+  [4;35;1mMember Load (0.3ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/members
+Rendering members/index
+Completed in 20ms (View: 15, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2011-02-27 22:50:49) [GET]
+  [4;36;1mMember Load (0.3ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/members
+Rendering members/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2011-02-27 22:50:50) [GET]
+  [4;35;1mMember Load (0.4ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/members
+Rendering members/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2011-02-27 22:50:50) [GET]
+  [4;36;1mMember Load (0.3ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/members
+Rendering members/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2011-02-27 22:50:51) [GET]
+  [4;35;1mMember Load (2.4ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/members
+Rendering members/index
+Completed in 8ms (View: 1, DB: 2) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2011-02-27 22:50:51) [GET]
+  [4;36;1mMember Load (0.3ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/members
+Rendering members/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2011-02-27 22:55:57) [GET]
+  [4;35;1mMember Load (0.3ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+
+ActionView::TemplateError (undefined local variable or method `index_path' for #<ActionView::Base:0xb6db71d8>) on line #9 of app/views/layouts/application.html.haml:
+6:       Games: #{controller.action_name}
+7:     = stylesheet_link_tag 'scaffold'
+8:   %body
+9:     %h1=image_tag "Games", index_path
+10:     %p{:style => "color: green"}= notice
+11:     = yield
+
+    app/views/layouts/application.html.haml:9:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:7:in `index'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2011-02-27 22:56:52) [GET]
+  [4;36;1mMember Load (0.3ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+
+ActionView::TemplateError (undefined local variable or method `index_path' for #<ActionView::Base:0xb6eb5ea4>) on line #9 of app/views/layouts/application.html.haml:
+6:       Games: #{controller.action_name}
+7:     = stylesheet_link_tag 'scaffold'
+8:   %body
+9:     %h1= link_to "Games", index_path
+10:     %p{:style => "color: green"}= notice
+11:     = yield
+
+    app/views/layouts/application.html.haml:9:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:7:in `index'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2011-02-27 22:56:53) [GET]
+  [4;35;1mMember Load (0.3ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+
+ActionView::TemplateError (undefined local variable or method `index_path' for #<ActionView::Base:0xb6ced590>) on line #9 of app/views/layouts/application.html.haml:
+6:       Games: #{controller.action_name}
+7:     = stylesheet_link_tag 'scaffold'
+8:   %body
+9:     %h1= link_to "Games", index_path
+10:     %p{:style => "color: green"}= notice
+11:     = yield
+
+    app/views/layouts/application.html.haml:9:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:7:in `index'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2011-02-27 22:57:02) [GET]
+  [4;36;1mMember Load (0.3ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-27 22:57:04) [GET]
+  [4;35;1mGame Load (0.3ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-27 22:57:06) [GET]
+  [4;36;1mGame Load (0.3ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing GamesController#new (for 127.0.0.1 at 2011-02-27 22:57:10) [GET]
+Rendering template within layouts/application
+Rendering games/new
+Completed in 20ms (View: 15, DB: 0) | 200 OK [http://localhost/games/new]
+
+
+Processing GamesController#create (for 127.0.0.1 at 2011-02-27 22:57:16) [POST]
+  Parameters: {"game"=>{"rating"=>"good!~", "title"=>"test"}, "commit"=>"Create", "authenticity_token"=>"cz6erIpAOhAVsMahTIDlq64mxnVelCgd14Ymm9FecDM="}
+  [4;35;1mGame Create (0.3ms)[0m   [0mINSERT INTO "games" ("rating", "created_at", "title", "updated_at") VALUES('good!~', '2011-02-28 05:57:16', 'test', '2011-02-28 05:57:16')[0m
+Redirected to http://localhost:3000/games/1
+Completed in 122ms (DB: 0) | 302 Found [http://localhost/games]
+
+
+Processing GamesController#show (for 127.0.0.1 at 2011-02-27 22:57:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering games/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/games/1]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-27 22:57:18) [GET]
+  [4;35;1mGame Load (0.4ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-27 22:59:20) [GET]
+  [4;36;1mGame Load (0.3ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+
+ActionView::TemplateError (undefined method `total_pages' for #<Array:0xb6ea1f58>) on line #14 of app/views/games/index.html.haml:
+11:       %td= link_to 'Edit', edit_game_path(game)
+12:       %td= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
+13: %br/
+14: = will_paginate @games
+15: = link_to 'New game', new_game_path
+
+    /var/lib/gems/1.8/gems/will_paginate-2.3.15/lib/will_paginate/view_helpers.rb:201:in `total_pages_for_collection'
+    /var/lib/gems/1.8/gems/will_paginate-2.3.15/lib/will_paginate/view_helpers.rb:98:in `will_paginate'
+    app/views/games/index.html.haml:14:in `_run_haml_app47views47games47index46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/games_controller.rb:7:in `index'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-27 23:00:52) [GET]
+  [4;35;1mGame Load (0.3ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+
+ActionView::TemplateError (undefined method `total_pages' for #<Array:0xb6fe22dc>) on line #14 of app/views/games/index.html.haml:
+11:       %td= link_to 'Edit', edit_game_path(game)
+12:       %td= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
+13: %br/
+14: = will_paginate @games
+15: = link_to 'New game', new_game_path
+
+    /var/lib/gems/1.8/gems/will_paginate-2.3.15/lib/will_paginate/view_helpers.rb:201:in `total_pages_for_collection'
+    /var/lib/gems/1.8/gems/will_paginate-2.3.15/lib/will_paginate/view_helpers.rb:98:in `will_paginate'
+    app/views/games/index.html.haml:14:in `_run_haml_app47views47games47index46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/games_controller.rb:7:in `index'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-27 23:00:53) [GET]
+  [4;36;1mGame Load (0.3ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+
+ActionView::TemplateError (undefined method `total_pages' for #<Array:0xb6dfa104>) on line #14 of app/views/games/index.html.haml:
+11:       %td= link_to 'Edit', edit_game_path(game)
+12:       %td= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
+13: %br/
+14: = will_paginate @games
+15: = link_to 'New game', new_game_path
+
+    /var/lib/gems/1.8/gems/will_paginate-2.3.15/lib/will_paginate/view_helpers.rb:201:in `total_pages_for_collection'
+    /var/lib/gems/1.8/gems/will_paginate-2.3.15/lib/will_paginate/view_helpers.rb:98:in `will_paginate'
+    app/views/games/index.html.haml:14:in `_run_haml_app47views47games47index46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/games_controller.rb:7:in `index'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-27 23:00:54) [GET]
+  [4;35;1mGame Load (0.3ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+
+ActionView::TemplateError (undefined method `total_pages' for #<Array:0xb6fc01f0>) on line #14 of app/views/games/index.html.haml:
+11:       %td= link_to 'Edit', edit_game_path(game)
+12:       %td= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
+13: %br/
+14: = will_paginate @games
+15: = link_to 'New game', new_game_path
+
+    /var/lib/gems/1.8/gems/will_paginate-2.3.15/lib/will_paginate/view_helpers.rb:201:in `total_pages_for_collection'
+    /var/lib/gems/1.8/gems/will_paginate-2.3.15/lib/will_paginate/view_helpers.rb:98:in `will_paginate'
+    app/views/games/index.html.haml:14:in `_run_haml_app47views47games47index46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/games_controller.rb:7:in `index'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-27 23:01:07) [GET]
+  [4;36;1mGame Load (0.4ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+
+ActionView::TemplateError (undefined method `total_pages' for #<Array:0xb6c1f2e4>) on line #14 of app/views/games/index.html.haml:
+11:       %td= link_to 'Edit', edit_game_path(game)
+12:       %td= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
+13: %br/
+14: = will_paginate @games
+15: = link_to 'New game', new_game_path
+
+    /var/lib/gems/1.8/gems/will_paginate-2.3.15/lib/will_paginate/view_helpers.rb:201:in `total_pages_for_collection'
+    /var/lib/gems/1.8/gems/will_paginate-2.3.15/lib/will_paginate/view_helpers.rb:98:in `will_paginate'
+    app/views/games/index.html.haml:14:in `_run_haml_app47views47games47index46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/games_controller.rb:7:in `index'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (77.3ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-27 23:03:01) [GET]
+  [4;35;1mGame Load (0.3ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+
+ActionView::TemplateError (undefined method `total_pages' for #<Array:0xb6df4ed4>) on line #13 of app/views/games/index.html.haml:
+10:       %td= link_to 'Show', game
+11:       %td= link_to 'Edit', edit_game_path(game)
+12:       %td= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
+13:   = page_entries_info @games
+14: %br/
+15: = will_paginate @games
+16: = link_to 'New game', new_game_path
+
+    /var/lib/gems/1.8/gems/will_paginate-2.3.15/lib/will_paginate/view_helpers.rb:171:in `page_entries_info'
+    app/views/games/index.html.haml:13:in `_run_haml_app47views47games47index46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/games_controller.rb:7:in `index'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-27 23:06:18) [GET]
+  [4;36;1mGame Load (0.4ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-27 23:06:33) [GET]
+  [4;35;1mGame Load (0.4ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-27 23:06:43) [GET]
+  [4;36;1mGame Load (0.5ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-27 23:06:53) [GET]
+  [4;35;1mGame Load (0.4ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/games]
