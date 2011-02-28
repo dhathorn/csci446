@@ -520,3 +520,1478 @@ Processing GamesController#index (for 127.0.0.1 at 2011-02-27 23:06:53) [GET]
 Rendering template within layouts/application
 Rendering games/index
 Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/games]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateGames (20110228042250)
+Migrating to CreateMembers (20110228042359)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("games")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("members")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateGames (20110228042250)
+Migrating to CreateMembers (20110228042359)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("games")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("members")[0m
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-27 23:15:59) [GET]
+  [4;36;1mGame Load (0.5ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 22ms (View: 17, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2011-02-27 23:16:05) [GET]
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2011-02-27 23:26:07) [GET]
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+
+ActionView::TemplateError (undefined local variable or method `new_user_path' for #<ActionView::Base:0xb6f98a9c>) on line #9 of app/views/layouts/application.html.haml:
+6:       Games: #{controller.action_name}
+7:     = stylesheet_link_tag 'scaffold'
+8:   %body
+9:     %p= link_to "Register", new_user_path | 
+10:     %h1= link_to "Games", root_path
+11:     %p{:style => "color: green"}= notice
+12:     = yield
+
+    app/views/layouts/application.html.haml:9:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:7:in `index'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.6ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2011-02-27 23:26:19) [GET]
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-27 23:27:02) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Completed in 21ms (View: 13, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-27 23:42:16) [GET]
+Rendering template within layouts/application
+Rendering members/new
+ERROR: compiling _run_haml_app47views47layouts47application46html46haml RAISED compile error
+/home/dan/Documents/School/spring11/csci446/src/project06/app/views/layouts/application.html.haml:9: syntax error, unexpected tSTRING_BEG, expecting kDO or '{' or '('
+...", new_member_path | link_to "Login", login_path
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project06/app/views/layouts/application.html.haml:9: syntax error, unexpected ',', expecting ')'
+...member_path | link_to "Login", login_path
+                              ^
+Function body:           def _run_haml_app47views47layouts47application46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:ugly=>false, :format=>:xhtml, :preserve=>["textarea", "pre", "code"], :encoding=>nil, :attr_wrapper=>"'", :escape_html=>false, :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"]});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>\n  <head>\n    <meta content='text/html;charset=UTF-8' http-equiv='content-type' />\n    <title>\n      #{
+
+
+
+
+_hamlout.adjust_tabs(3); _hamlout.format_script_false_false_false_false_false_true_false(("Games: #{controller.action_name}"
+));}\n    </title>\n    #{_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( stylesheet_link_tag 'scaffold'
+));}\n  </head>\n  <body>\n    <p>#{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to "Register", new_member_path | link_to "Login", login_path
+));}</p>\n    <h1>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to "Games", root_path
+));}</h1>\n    <p style='color: green'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((notice
+));}</p>\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( yield
+));}\n  </body>\n</html>\n", -2, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/dan/Documents/School/spring11/csci446/src/project06/app/views/layouts/application.html.haml:16:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render_without_haml'
+/var/lib/gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:352:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render_without_haml'
+/var/lib/gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:135:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:135
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:179:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:179:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:173:in `each'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:173:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/dan/Documents/School/spring11/csci446/src/project06/app/controllers/members_controller.rb:29:in `new'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1333:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1333:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/dan/Documents/School/spring11/csci446/src/project06/app/views/layouts/application.html.haml:9: syntax error, unexpected tSTRING_BEG, expecting kDO or '{' or '('
+...", new_member_path | link_to "Login", login_path
+                              ^
+/home/dan/Documents/School/spring11/csci446/src/project06/app/views/layouts/application.html.haml:9: syntax error, unexpected ',', expecting ')'
+...member_path | link_to "Login", login_path
+                              ^) on line #9 of app/views/layouts/application.html.haml:
+6:       Games: #{controller.action_name}
+7:     = stylesheet_link_tag 'scaffold'
+8:   %body
+9:     %p= link_to "Register", new_member_path | link_to "Login", login_path
+10:     %h1= link_to "Games", root_path
+11:     %p{:style => "color: green"}= notice
+12:     = yield
+
+    app/views/layouts/application.html.haml:16:in `compile!'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:29:in `new'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-27 23:42:30) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-27 23:42:39) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Completed in 20ms (View: 12, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-27 23:42:46) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (undefined local variable or method `login_path' for #<ActionView::Base:0xb6f82a08>) on line #10 of app/views/layouts/application.html.haml:
+7:     = stylesheet_link_tag 'scaffold'
+8:   %body
+9:     %p= link_to "Register", new_member_path 
+10:     = link_to "Login", login_path
+11:     %h1= link_to "Games", root_path
+12:     %p{:style => "color: green"}= notice
+13:     = yield
+
+    app/views/layouts/application.html.haml:10:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:29:in `new'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-27 23:45:07) [GET]
+
+ActionController::RoutingError (No route matches "/members/new" with {:method=>:get}):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-27 23:47:33) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (undefined local variable or method `login_path' for #<ActionView::Base:0xb6d9ef34>) on line #10 of app/views/layouts/application.html.haml:
+7:     = stylesheet_link_tag 'scaffold'
+8:   %body
+9:     %p= link_to "Register", new_member_path 
+10:     = link_to "Login", login_path
+11:     %h1= link_to "Games", root_path
+12:     %p{:style => "color: green"}= notice
+13:     = yield
+
+    app/views/layouts/application.html.haml:10:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:29:in `new'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.8ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-27 23:49:21) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (undefined local variable or method `login_path' for #<ActionView::Base:0xb6cd8a00>) on line #10 of app/views/layouts/application.html.haml:
+7:     = stylesheet_link_tag 'scaffold'
+8:   %body
+9:     %p= link_to "Register", new_member_path 
+10:     = link_to "Login", login_path
+11:     %h1= link_to "Games", root_path
+12:     %p{:style => "color: green"}= notice
+13:     = yield
+
+    app/views/layouts/application.html.haml:10:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:29:in `new'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.8ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-27 23:49:23) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (undefined local variable or method `login_path' for #<ActionView::Base:0xb6e7c53c>) on line #10 of app/views/layouts/application.html.haml:
+7:     = stylesheet_link_tag 'scaffold'
+8:   %body
+9:     %p= link_to "Register", new_member_path 
+10:     = link_to "Login", login_path
+11:     %h1= link_to "Games", root_path
+12:     %p{:style => "color: green"}= notice
+13:     = yield
+
+    app/views/layouts/application.html.haml:10:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:29:in `new'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-27 23:50:35) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Completed in 25ms (View: 18, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-02-27 23:50:38) [GET]
+
+SyntaxError (/home/dan/Documents/School/spring11/csci446/src/project06/app/controllers/member_sessions_controller.rb:19: syntax error, unexpected $end, expecting kEND):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (21.0ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-27 23:51:21) [GET]
+
+ActionView::MissingTemplate (Missing template member_sessions/new.erb in view path app/views):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-27 23:52:41) [GET]
+
+ActionView::MissingTemplate (Missing template member_sessions/new.erb in view path app/views):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-27 23:54:35) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-27 23:56:28) [GET]
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+Completed in 27ms (View: 12, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-27 23:56:29) [GET]
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-28 00:01:18) [GET]
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+Completed in 17ms (View: 7, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-28 00:01:19) [GET]
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-28 00:01:48) [GET]
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-28 00:02:06) [GET]
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+Completed in 64ms (View: 55, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-28 00:02:08) [GET]
+  [4;36;1mGame Load (0.4ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 23ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-28 00:02:12) [GET]
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing MemberSessionsController#create (for 127.0.0.1 at 2011-02-28 00:02:13) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cz6erIpAOhAVsMahTIDlq64mxnVelCgd14Ymm9FecDM="}
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/member_sessions]
+
+
+Processing MemberSessionsController#index (for 127.0.0.1 at 2011-02-28 00:02:15) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, destroy, and new):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-28 00:02:19) [GET]
+  [4;35;1mGame Load (0.4ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:02:21) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Completed in 22ms (View: 14, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-28 00:02:37) [GET]
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-28 00:03:10) [GET]
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+
+ActionView::TemplateError (undefined method `password_confirmation' for #<MemberSession: no credentials provided>) on line #15 of app/views/member_sessions/new.html.haml:
+12:   %p
+13:     = f.label :password_confimation
+14:     %br/
+15:     = f.password_field :password_confirmation
+16:   %p
+17:     = f.submit 'Login'
+18: = link_to 'Back', member_sessions_path
+
+    app/views/member_sessions/new.html.haml:15
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/member_sessions/new.html.haml:2:in `_run_haml_app47views47member_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.5ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-28 00:03:15) [GET]
+  [4;36;1mGame Load (0.4ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-28 00:03:17) [GET]
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+
+ActionView::TemplateError (undefined method `password_confirmation' for #<MemberSession: no credentials provided>) on line #15 of app/views/member_sessions/new.html.haml:
+12:   %p
+13:     = f.label :password_confimation
+14:     %br/
+15:     = f.password_field :password_confirmation
+16:   %p
+17:     = f.submit 'Login'
+18: = link_to 'Back', member_sessions_path
+
+    app/views/member_sessions/new.html.haml:15
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/member_sessions/new.html.haml:2:in `_run_haml_app47views47member_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-28 00:03:53) [GET]
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-28 00:03:59) [GET]
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+
+ActionView::TemplateError (undefined method `password_confirmation' for #<MemberSession: no credentials provided>) on line #15 of app/views/member_sessions/new.html.haml:
+12:   %p
+13:     = f.label :password_confimation
+14:     %br/
+15:     = f.password_field :password_confirmation
+16:   %p
+17:     = f.submit 'Login'
+18: = link_to 'Back', member_sessions_path
+
+    app/views/member_sessions/new.html.haml:15
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/member_sessions/new.html.haml:2:in `_run_haml_app47views47member_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-28 00:04:20) [GET]
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing MemberSessionsController#index (for 127.0.0.1 at 2011-02-28 00:04:22) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, destroy, and new):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MemberSessionsController#index (for 127.0.0.1 at 2011-02-28 00:04:35) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, destroy, and new):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MemberSessionsController#index (for 127.0.0.1 at 2011-02-28 00:04:39) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, destroy, and new):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-28 00:04:46) [GET]
+  [4;35;1mGame Load (0.4ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-28 00:04:47) [GET]
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-28 00:04:48) [GET]
+  [4;36;1mGame Load (0.4ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:04:49) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:06:11) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (undefined method `password' for #<Member:0xb6fb3d74>) on line #23 of app/views/members/new.html.haml:
+20:   %p
+21:     = f.label :password
+22:     %br/
+23:     = f.password_field :password
+24:   %p
+25:     = f.label :password_confirmation
+26:     %br/
+
+    app/views/members/new.html.haml:23
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/members/new.html.haml:2:in `_run_haml_app47views47members47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:29:in `new'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:12:26) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (undefined method `password' for #<Member:0xb6d41c08>) on line #23 of app/views/members/new.html.haml:
+20:   %p
+21:     = f.label :password
+22:     %br/
+23:     = f.password_field :password
+24:   %p
+25:     = f.label :password_confirmation
+26:     %br/
+
+    app/views/members/new.html.haml:23
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/members/new.html.haml:2:in `_run_haml_app47views47members47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:29:in `new'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:13:29) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (undefined method `password' for #<Member:0xb6ebda50>) on line #23 of app/views/members/new.html.haml:
+20:   %p
+21:     = f.label :password
+22:     %br/
+23:     = f.password_field :password
+24:   %p
+25:     = f.label :password_confirmation
+26:     %br/
+
+    app/views/members/new.html.haml:23
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/members/new.html.haml:2:in `_run_haml_app47views47members47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:29:in `new'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:13:30) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (undefined method `password' for #<Member:0xb6c8083c>) on line #23 of app/views/members/new.html.haml:
+20:   %p
+21:     = f.label :password
+22:     %br/
+23:     = f.password_field :password
+24:   %p
+25:     = f.label :password_confirmation
+26:     %br/
+
+    app/views/members/new.html.haml:23
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/members/new.html.haml:2:in `_run_haml_app47views47members47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:29:in `new'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:13:31) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (undefined method `password' for #<Member:0xb6d926a8>) on line #23 of app/views/members/new.html.haml:
+20:   %p
+21:     = f.label :password
+22:     %br/
+23:     = f.password_field :password
+24:   %p
+25:     = f.label :password_confirmation
+26:     %br/
+
+    app/views/members/new.html.haml:23
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/members/new.html.haml:2:in `_run_haml_app47views47members47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:29:in `new'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (93.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:15:31) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (undefined method `password' for #<Member:0xb6f01c00>) on line #23 of app/views/members/new.html.haml:
+20:   %p
+21:     = f.label :password
+22:     %br/
+23:     = f.password_field :password
+24:   %p
+25:     = f.label :password_confirmation
+26:     %br/
+
+    app/views/members/new.html.haml:23
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/members/new.html.haml:2:in `_run_haml_app47views47members47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:29:in `new'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-28 00:15:34) [GET]
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+Completed in 16ms (View: 6, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:15:36) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (undefined method `password' for #<Member:0xb6f89330>) on line #23 of app/views/members/new.html.haml:
+20:   %p
+21:     = f.label :password
+22:     %br/
+23:     = f.password_field :password
+24:   %p
+25:     = f.label :password_confirmation
+26:     %br/
+
+    app/views/members/new.html.haml:23
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/members/new.html.haml:2:in `_run_haml_app47views47members47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:29:in `new'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:18:22) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (undefined method `password' for #<Member:0xb6d44624>) on line #15 of app/views/members/new.html.haml:
+12:   %p
+13:     = f.label :password
+14:     %br/
+15:     = f.password_field :password
+16:   %p
+17:     = f.label :password_confirmation
+18:     %br/
+
+    app/views/members/new.html.haml:15
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/members/new.html.haml:2:in `_run_haml_app47views47members47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:29:in `new'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (93.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:19:38) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (undefined method `password' for #<Member:0xb6e87ab8>) on line #23 of app/views/members/new.html.haml:
+20:   %p
+21:     = f.label :password
+22:     %br/
+23:     = f.password_field :password
+24:   %p
+25:     = f.label :password_confirmation
+26:     %br/
+
+    app/views/members/new.html.haml:23
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/members/new.html.haml:2:in `_run_haml_app47views47members47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:29:in `new'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (135.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (84.8ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateGames (20110228042250)
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE TABLE "games" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110228042250')[0m
+Migrating to CreateMembers (20110228042359)
+  [4;35;1mSQL (0.8ms)[0m   [0mCREATE TABLE "members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110228042359')[0m
+Migrating to CreateMemberSessions (20110228065522)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "member_sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110228065522')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("games")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("member_sessions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("members")[0m
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:20:51) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (undefined method `username' for #<Member:0xb6f7d300>) on line #7 of app/views/members/new.html.haml:
+4:   %p
+5:     = f.label :username
+6:     %br/
+7:     = f.text_field :username
+8:   %p
+9:     = f.label :first_name
+10:     %br/
+
+    app/views/members/new.html.haml:7
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/members/new.html.haml:2:in `_run_haml_app47views47members47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:29:in `new'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:20:52) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (undefined method `username' for #<Member:0xb6d3e440>) on line #7 of app/views/members/new.html.haml:
+4:   %p
+5:     = f.label :username
+6:     %br/
+7:     = f.text_field :username
+8:   %p
+9:     = f.label :first_name
+10:     %br/
+
+    app/views/members/new.html.haml:7
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/members/new.html.haml:2:in `_run_haml_app47views47members47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:29:in `new'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (92.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:24:26) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (undefined method `username' for #<Member:0xb6e93db8>) on line #7 of app/views/members/new.html.haml:
+4:   %p
+5:     = f.label :username
+6:     %br/
+7:     = f.text_field :username
+8:   %p
+9:     = f.label :first_name
+10:     %br/
+
+    app/views/members/new.html.haml:7
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/members/new.html.haml:2:in `_run_haml_app47views47members47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:29:in `new'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (130.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (72.9ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateGames (20110228042250)
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE TABLE "games" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110228042250')[0m
+Migrating to CreateMembers (20110228042359)
+  [4;35;1mSQL (0.8ms)[0m   [0mCREATE TABLE "members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110228042359')[0m
+Migrating to CreateMemberSessions (20110228065522)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "member_sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110228065522')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("games")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("member_sessions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("members")[0m
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:24:53) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Completed in 73ms (View: 8, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:24:56) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:24:57) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-28 00:24:58) [GET]
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:25:03) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:25:05) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:25:33) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:25:34) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-28 00:25:39) [GET]
+  [4;35;1mGame Load (0.3ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:25:40) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2011-02-28 00:25:42) [GET]
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2011-02-28 00:25:44) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Completed in 66ms (View: 7, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing MembersController#create (for 127.0.0.1 at 2011-02-28 00:26:01) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cz6erIpAOhAVsMahTIDlq64mxnVelCgd14Ymm9FecDM=", "member"=>{"password_confirmation"=>"1234", "username"=>"dan", "last_name"=>"Hathorn", "password"=>"123", "email"=>"dhathorn@mines.edu", "first_name"=>"Dan"}}
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT "members".id FROM "members" WHERE (LOWER("members"."email") = 'dhathorn@mines.edu') LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" WHERE (LOWER("members"."username") = 'dan') LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" WHERE ("members"."persistence_token" = 'baf82f802c3c97a0e918bc959fc65d10c72e4cf9047591706b3d093b967bedcf0140affdbe6ab369c10fab873a584dde11b928c592811ff21c0a1552e1ce82ce') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering members/new
+Completed in 145ms (View: 11, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#create (for 127.0.0.1 at 2011-02-28 00:26:06) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cz6erIpAOhAVsMahTIDlq64mxnVelCgd14Ymm9FecDM=", "member"=>{"password_confirmation"=>"1234", "username"=>"dan", "last_name"=>"Hathorn", "password"=>"1234", "email"=>"dhathorn@mines.edu", "first_name"=>"Dan"}}
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" WHERE (LOWER("members"."email") = 'dhathorn@mines.edu') LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" WHERE (LOWER("members"."username") = 'dan') LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" WHERE ("members"."persistence_token" = '495beb1d45ef32aa7361c7b369cce617022a07f6de1ea21d78283b95e4cacd9742fe9845c21723cbf2bf51431dafb3e553e83e031ddd9015cdd335c5a2aad72b') LIMIT 1[0m
+  [4;35;1mMember Create (0.3ms)[0m   [0mINSERT INTO "members" ("created_at", "crypted_password", "updated_at", "username", "password_salt", "last_name", "persistence_token", "first_name", "email") VALUES('2011-02-28 07:26:07', 'c062c2ff4216729e47c1437cec9f9e31a367a20dda6f48e496e7ac4a5bfd269ff17f0066079d51f359ef7be2e9cbd59ffb9f60730a0e90f8b1abd67361ef4294', '2011-02-28 07:26:07', 'dan', 'OSu3h9O5guVA1lN9KId', 'Hathorn', '495beb1d45ef32aa7361c7b369cce617022a07f6de1ea21d78283b95e4cacd9742fe9845c21723cbf2bf51431dafb3e553e83e031ddd9015cdd335c5a2aad72b', 'Dan', 'dhathorn@mines.edu')[0m
+Redirected to http://localhost:3000/members/1
+Completed in 129ms (DB: 1) | 302 Found [http://localhost/members]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2011-02-28 00:26:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMember Load (0.3ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering members/show
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://localhost/members/1]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2011-02-28 00:26:12) [GET]
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MemberSessionsController#new (for 127.0.0.1 at 2011-02-28 00:26:21) [GET]
+Rendering template within layouts/member_sessions
+Rendering member_sessions/new
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing MemberSessionsController#create (for 127.0.0.1 at 2011-02-28 00:26:26) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"cz6erIpAOhAVsMahTIDlq64mxnVelCgd14Ymm9FecDM=", "member_session"=>{"username"=>"dan", "password"=>"1234"}}
+  [4;36;1mMember Load (0.3ms)[0m   [0;1mSELECT * FROM "members" WHERE (LOWER("members".username) = 'dan') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/member_sessions]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-02-28 00:26:26) [GET]
+  [4;35;1mGame Load (0.3ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 68ms (View: 64, DB: 0) | 200 OK [http://localhost/]

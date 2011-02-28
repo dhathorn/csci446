@@ -18,5 +18,13 @@
     %br/
     = f.text_field :email
   %p
+    = f.label :password
+    %br/
+    = f.password_field :password
+  %p
+    = f.label :password_confirmation
+    %br/
+    = f.password_field :password_confirmation
+  %p
     = f.submit 'Create'
 = link_to 'Back', members_path
