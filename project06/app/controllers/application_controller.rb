@@ -1,4 +1,3 @@
-
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   helper_method :current_member, :current_member_session, :member_name

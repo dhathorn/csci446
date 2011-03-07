@@ -5,6 +5,13 @@ ActionController::Routing::Routes.draw do |map|
   map.logout "logout", :controller => 'member_sessions', :action => 'destroy'
   map.resources :members
   map.resources :games
+  
+  map.namespace :admin do |admin|
+    admin.resources :members
+    admin.root :controller => 'admin', :action => 'index'
+  end
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
