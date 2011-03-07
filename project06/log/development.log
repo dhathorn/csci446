@@ -2157,3 +2157,476 @@ Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:06:23) [GET]
 Rendering template within layouts/application
 Rendering games/index
 Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:15:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mGame Load (0.4ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 39ms (View: 34, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:25:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.4ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:25:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mGame Load (0.4ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:25:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.4ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#show (for 127.0.0.1 at 2011-03-06 19:25:52) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"games"}
+  [4;35;1mGame Load (0.3ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering games/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/games/1]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:25:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.4ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:26:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.5ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 28ms (View: 22, DB: 1) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:41:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mGame Load (0.5ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+ERROR: compiling _run_haml_app47views47games47index46html46haml RAISED compile error
+/home/dan/Documents/School/spring11/csci446/src/project06/app/views/games/index.html.haml:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+....created_at.to_s(:longdate) by game.author
+                              ^
+Function body:           def _run_haml_app47views47games47index46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:ugly=>false, :format=>:xhtml, :preserve=>["textarea", "pre", "code"], :encoding=>nil, :attr_wrapper=>"'", :escape_html=>false, :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"]});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>Listing games</h1>\n<table>\n  <tr>\n    <th>Title</th>\n    <th>Rating</th>\n    <td>Date Added</td>\n  </tr>\n", 1, false);
+
+
+
+
+
+ @games.each do |game|;
+_hamlout.push_text("  <tr>\n    <td>#{
+_hamlout.adjust_tabs(2); _hamlout.format_script_false_true_false_false_false_true_false((h game.title
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h game.rating
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h game.created_at.to_s(:longdate) by game.author
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Show', game
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Edit', edit_game_path(game)
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
+));}</td>\n  </tr>\n", -1, false);end;_hamlout.push_text("</table>\n<br />\n#{
+_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( page_entries_info @games
+));}\n#{_hamlout.format_script_false_false_false_false_false_true_false(( will_paginate @games
+));}\n<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'New game', new_game_path
+));}</p>\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/dan/Documents/School/spring11/csci446/src/project06/app/views/games/index.html.haml:22:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render_without_haml'
+/var/lib/gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render_without_haml'
+/var/lib/gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/dan/Documents/School/spring11/csci446/src/project06/app/views/games/index.html.haml:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+....created_at.to_s(:longdate) by game.author
+                              ^) on line #11 of app/views/games/index.html.haml:
+8:     %tr
+9:       %td= h game.title
+10:       %td= h game.rating
+11:       %td= h game.created_at.to_s(:longdate) by game.author
+12:       %td= link_to 'Show', game
+13:       %td= link_to 'Edit', edit_game_path(game)
+14:       %td= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
+
+    app/views/games/index.html.haml:22:in `compile!'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.6ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:41:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.4ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:41:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mGame Load (0.4ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+ERROR: compiling _run_haml_app47views47games47index46html46haml RAISED compile error
+/home/dan/Documents/School/spring11/csci446/src/project06/app/views/games/index.html.haml:11: syntax error, unexpected tSTRING_BEG, expecting ')'
+...e.created_at.to_s(:longdate) "by game.author"
+                              ^
+Function body:           def _run_haml_app47views47games47index46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:ugly=>false, :format=>:xhtml, :preserve=>["textarea", "pre", "code"], :encoding=>nil, :attr_wrapper=>"'", :escape_html=>false, :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"]});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>Listing games</h1>\n<table>\n  <tr>\n    <th>Title</th>\n    <th>Rating</th>\n    <td>Date Added</td>\n  </tr>\n", 1, false);
+
+
+
+
+
+ @games.each do |game|;
+_hamlout.push_text("  <tr>\n    <td>#{
+_hamlout.adjust_tabs(2); _hamlout.format_script_false_true_false_false_false_true_false((h game.title
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h game.rating
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h game.created_at.to_s(:longdate) "by game.author"
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Show', game
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Edit', edit_game_path(game)
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
+));}</td>\n  </tr>\n", -1, false);end;_hamlout.push_text("</table>\n<br />\n#{
+_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( page_entries_info @games
+));}\n#{_hamlout.format_script_false_false_false_false_false_true_false(( will_paginate @games
+));}\n<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'New game', new_game_path
+));}</p>\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/dan/Documents/School/spring11/csci446/src/project06/app/views/games/index.html.haml:22:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render_without_haml'
+/var/lib/gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render_without_haml'
+/var/lib/gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/dan/Documents/School/spring11/csci446/src/project06/app/views/games/index.html.haml:11: syntax error, unexpected tSTRING_BEG, expecting ')'
+...e.created_at.to_s(:longdate) "by game.author"
+                              ^) on line #11 of app/views/games/index.html.haml:
+8:     %tr
+9:       %td= h game.title
+10:       %td= h game.rating
+11:       %td= h game.created_at.to_s(:longdate) "by game.author"
+12:       %td= link_to 'Show', game
+13:       %td= link_to 'Edit', edit_game_path(game)
+14:       %td= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
+
+    app/views/games/index.html.haml:22:in `compile!'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (25.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:42:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.4ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:43:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mGame Load (0.4ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:43:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.3ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+
+ActionView::TemplateError (undefined method `author' for #<Game:0xb6df8aac>) on line #11 of app/views/games/index.html.haml:
+8:     %tr
+9:       %td= h game.title
+10:       %td= h game.rating
+11:       %td= h "#{game.created_at.to_s(:longdate)} by #{game.author}"
+12:       %td= link_to 'Show', game
+13:       %td= link_to 'Edit', edit_game_path(game)
+14:       %td= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
+
+    app/views/games/index.html.haml:11:in `_run_haml_app47views47games47index46html46haml'
+    app/views/games/index.html.haml:7:in `each'
+    app/views/games/index.html.haml:7:in `_run_haml_app47views47games47index46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (135.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (84.2ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateGames (20110228042250)
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE TABLE "games" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "author_name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110228042250')[0m
+Migrating to CreateMembers (20110228042359)
+  [4;35;1mSQL (0.8ms)[0m   [0mCREATE TABLE "members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110228042359')[0m
+Migrating to CreateMemberSessions (20110228065522)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "member_sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110228065522')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("games")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("member_sessions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("members")[0m
+  [4;36;1mGame Create (0.3ms)[0m   [0;1mINSERT INTO "games" ("rating", "created_at", "title", "author_name", "updated_at") VALUES('10!', '2011-03-07 02:54:10', 'yatzee!', 'dan', '2011-03-07 02:54:10')[0m
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:54:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mGame Load (0.4ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+
+ActionView::TemplateError (undefined method `author' for #<Game:0xb6ef9118>) on line #11 of app/views/games/index.html.haml:
+8:     %tr
+9:       %td= h game.title
+10:       %td= h game.rating
+11:       %td= h "#{game.created_at.to_s(:longdate)} by #{game.author}"
+12:       %td= link_to 'Show', game
+13:       %td= link_to 'Edit', edit_game_path(game)
+14:       %td= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
+
+    app/views/games/index.html.haml:11:in `_run_haml_app47views47games47index46html46haml'
+    app/views/games/index.html.haml:7:in `each'
+    app/views/games/index.html.haml:7:in `_run_haml_app47views47games47index46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (26.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
