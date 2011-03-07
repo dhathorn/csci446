@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  cattr_reader :per_page
+  @@per_page = 10
   acts_as_authentic do |c|
     validates_length_of_login_field_options :minimum => 6
     c.merge_validates_length_of_password_confirmation_field_options :minimum => 6

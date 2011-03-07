@@ -1,4 +1,8 @@
-%h1 Listing games 
+%h1
+  My Gamez
+  =link_to "Add a game", new_admin_game_path
+%p
+  =image_tag current_user.photo.url
 %table
   %tr
     %th Title
@@ -6,14 +10,9 @@
     %td Date Added
   - @games.each do |game|
     %tr
-      %td= h game.title
-      %td= h game.rating
-      %td= h "#{game.created_at.to_s(:longdate)} by #{game.user.same_name(current_user)}"
-      %td= link_to 'Show', [:admin, game]
-      %td= link_to 'Edit', edit_members_game_path(game)
-      %td= link_to 'Destroy', [:admin, game], :confirm => 'Are you sure?', :method => :delete
+      %td= link_to game.title, edit_admin_game_path(game)
+      %td= game.rating_text
+      %td= link_to "#{game.created_at.to_s(:longdate)} by #{game.user.same_name(current_user)}", edit_admin_user_path(game.user)
 %br/
 = page_entries_info @games
 = will_paginate @games
-%p= link_to 'New game', new_admin_game_path
-%p= link_to 'Edit Profile', edit_admin_user_path(current_user)

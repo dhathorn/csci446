@@ -6,7 +6,10 @@ authorization do
 
   role :member do
     includes :guest
-    has_permission_on :members_games, :to => :all
+    has_permission_on :members_games, :to => :read
+    has_permission_on :members_games, :to => :all do
+      if_attribute :user => is { user}
+    end
     has_permission_on :members_members, :to => :all
     has_permission_on :members_users, :to => :read
     has_permission_on :members_users, :to => :all
@@ -14,6 +17,7 @@ authorization do
 
   role :admin do
     includes :member
+    has_permission_on :members_games, :to => :all
     has_permission_on :admin_games, :to => :all
     has_permission_on :admin_admin, :to => :all
     has_permission_on :admin_users, :to => :all

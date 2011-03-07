@@ -3,7 +3,7 @@ class Admin::AdminController < ApplicationController
 
   def index
     @games = Game.paginate :page => params[:page], :order => 'created_at DESC'
-    render :template => 'games/index'
+    render :template => 'members/index'
   end
 
   private

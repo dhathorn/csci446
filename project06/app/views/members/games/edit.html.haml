@@ -6,11 +6,19 @@
     %br/
     = f.text_field :title
   %p
-    = f.label :rating
-    %br/
-    = f.text_field :rating
+    = f.radio_button :rating, 3
+    = f.label "Amazing"
+    %br
+    = f.radio_button :rating, 2
+    = f.label "Good"
+    %br
+    = f.radio_button :rating, 1
+    = f.label "Meh"
+    %br
+    = f.radio_button :rating, 0
+    = f.label "Bad!"
   %p
-    = f.submit 'Update'
+    = f.submit 'Save Changes'
 = link_to 'Show', [:members, @game]
 |
 \#{link_to 'Back', members_games_path}

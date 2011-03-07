@@ -1,5 +1,5 @@
 %h1 Editing member
-- form_for [:members, @user] do |f|
+- form_for [:members, @user], :html => { :multipart => true } do |f|
   = f.error_messages
   %p
     = f.label :username
@@ -29,6 +29,6 @@
     = f.label :photo
     = f.file_field :photo
   %p
-    = f.submit 'Update'
+    = f.submit 'Save Changes'
 |
 \#{link_to 'Back', members_user_path}

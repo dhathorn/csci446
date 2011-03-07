@@ -15,6 +15,7 @@ class CreateUsers < ActiveRecord::Migration
       t.integer :photo_file_size
       t.datetime :photo_updated_at
 
+      t.datetime :last_login_at
       t.timestamps
     end
   end

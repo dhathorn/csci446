@@ -1,10 +1,6 @@
 class Members::UsersController < Members::MembersController
   filter_resource_access
 
-  def show
-    @user = User.find(params[:id])
-  end
-
   def edit
     @user = User.find(current_user)
   end
@@ -12,8 +8,9 @@ class Members::UsersController < Members::MembersController
   def update
     @user = User.find(current_user)
     if @user.update_attributes(params[:user])
-      redirect_to([:members, @user], :notice => 'user was successfully updated.')
+      redirect_to(members_root_path, :notice => 'successfully updated profile.')
     else
+      flash[:error] = "Could not save profile"
       render :action => "edit"
     end
   end

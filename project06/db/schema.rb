@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(:version => 20110307111213) do
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
+    t.datetime "last_login_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

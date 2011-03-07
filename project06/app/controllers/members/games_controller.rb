@@ -20,8 +20,9 @@ class Members::GamesController < Members::MembersController
     @game = Game.new(params[:game])
     @game.user = current_user
     if @game.save
-     redirect_to([:members, @game], :notice => 'Game was successfully created.')
+     redirect_to(members_root_path, :notice => "successfully created #{@game.title}.")
     else
+      flash[:error] = "Could not create game"
       render :action => "new"
     end
   end
@@ -30,8 +31,9 @@ class Members::GamesController < Members::MembersController
     @game = Game.find(params[:id])
 
     if @game.update_attributes(params[:game])
-      redirect_to([:members, @game], :notice => 'Game was successfully updated.')
+     redirect_to(members_root_path, :notice => "successfully updated #{@game.title}.")
     else
+      flash[:error] = "Could not save changes"
       render :action => "edit" 
     end
   end

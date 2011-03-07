@@ -1,18 +1,17 @@
 %h1 Listing Members
 %table
   %tr
+    %th Name
     %th Username
-    %th First name
-    %th Last name
-    %th Email
+    %th Last Login
+    %th Number of games
   - @users.each do |user|
     %tr
+      %td= link_to user.long_name, edit_admin_user_path(user)
       %td= h user.username
-      %td= h user.first_name
-      %td= h user.last_name
-      %td= h user.email
-      %td= link_to 'Show', [:admin, user]
-      %td= link_to 'Edit', edit_admin_user_path(user)
-      %td= link_to 'Destroy', [:admin, user], :confirm => 'Are you sure?', :method => :delete
+      %td= user.last_login_at
+      %td= user.games.count
 %br/
+= page_entries_info @users
+= will_paginate @users
 = link_to 'New member', new_admin_user_path
