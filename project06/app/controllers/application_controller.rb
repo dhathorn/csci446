@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
-  helper_method :current_member, :current_member_session, :member_name
+  helper_method :current_user, :current_user_session, :user_name
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
   # Scrub sensitive parameters from your log
@@ -8,14 +8,14 @@ class ApplicationController < ActionController::Base
 
   private
 
-  def current_member_session
-    return @current_member_session if defined?(@current_member_session)
-    @current_member_session = MemberSession.find
+  def current_user_session
+    return @current_user_session if defined?(@current_user_session)
+    @current_user_session = userSession.find
   end
 
-  def current_member 
-    return @current_member if defined?(@current_member)
-    @current_member = current_member_session && current_member_session.record
+  def current_user 
+    return @current_user if defined?(@current_user)
+    @current_user = current_user_session && current_user_session.record
   end
 
 end

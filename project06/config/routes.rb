@@ -4,15 +4,15 @@ ActionController::Routing::Routes.draw do |map|
   map.login "login", :controller => 'member_sessions', :action => 'new'
   map.logout "logout", :controller => 'member_sessions', :action => 'destroy'
   
-  map.namespace :user do |user|
-    user.resources :members
-    user.resources :games
-    user.root :controller => 'games', :action => 'index'
+  map.namespace :members do |members|
+    members.resources :members
+    members.resources :games
+    members.root :controller => 'games', :action => 'index'
   end
 
   map.namespace :admin do |admin|
     admin.resources :members
-    admin.resoucres :games
+    #admin.resoucres :games
     admin.root :controller => 'admin', :action => 'index'
   end
   
