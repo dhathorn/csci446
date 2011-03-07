@@ -1,4 +1,4 @@
-class GamesController < ApplicationController
+class User::GamesController < User::UserController
   def index
     @games = Game.paginate :page => params[:page], :order => 'created_at DESC'
   end
