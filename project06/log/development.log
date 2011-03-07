@@ -2630,3 +2630,48 @@ ActionView::TemplateError (undefined method `author' for #<Game:0xb6ef9118>) on 
 Rendered rescues/_trace (26.9ms)
 Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 20:08:18) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.4ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+
+ActionView::TemplateError (undefined method `author' for #<Game:0xb70a7190>) on line #11 of app/views/games/index.html.haml:
+8:     %tr
+9:       %td= h game.title
+10:       %td= h game.rating
+11:       %td= h "#{game.created_at.to_s(:longdate)} by #{game.author}"
+12:       %td= link_to 'Show', game
+13:       %td= link_to 'Edit', edit_game_path(game)
+14:       %td= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
+
+    app/views/games/index.html.haml:11:in `_run_haml_app47views47games47index46html46haml'
+    app/views/games/index.html.haml:7:in `each'
+    app/views/games/index.html.haml:7:in `_run_haml_app47views47games47index46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (26.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 20:08:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mGame Load (0.4ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/games]

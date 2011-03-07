@@ -8,7 +8,7 @@
     %tr
       %td= h game.title
       %td= h game.rating
-      %td= h "#{game.created_at.to_s(:longdate)} by #{game.author}"
+      %td= h "#{game.created_at.to_s(:longdate)} by #{game.author_name}"
       %td= link_to 'Show', game
       %td= link_to 'Edit', edit_game_path(game)
       %td= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
