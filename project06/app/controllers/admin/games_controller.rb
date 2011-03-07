@@ -19,7 +19,7 @@ class Admin::GamesController < Admin::AdminController
     @game = Game.new(params[:game])
     @game.user_id = current_user
     if @game.save
-     redirect_to([:members, @game], :notice => 'Game was successfully created.')
+     redirect_to([:admin, @game], :notice => 'Game was successfully created.')
     else
       render :action => "new"
     end
@@ -29,7 +29,7 @@ class Admin::GamesController < Admin::AdminController
     @game = Game.find(params[:id])
 
     if @game.update_attributes(params[:game])
-      redirect_to([:members, @game], :notice => 'Game was successfully updated.')
+      redirect_to([:admin, @game], :notice => 'Game was successfully updated.')
     else
       render :action => "edit" 
     end

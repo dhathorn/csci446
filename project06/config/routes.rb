@@ -14,8 +14,9 @@ ActionController::Routing::Routes.draw do |map|
 
   map.namespace :admin do |admin|
     admin.resources :members
-    #admin.resoucres :games
-    admin.root :controller => 'admin', :action => 'index'
+    admin.resources :games
+    admin.resources :users
+    admin.root :controller => 'games', :action => 'index'
   end
   
   
