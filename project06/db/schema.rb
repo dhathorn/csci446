@@ -16,15 +16,21 @@ ActiveRecord::Schema.define(:version => 20110307061047) do
     t.string   "rating"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "member_id"
+    t.integer  "user_id"
   end
 
-  create_table "member_sessions", :force => true do |t|
+  create_table "roles", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "members", :force => true do |t|
+  create_table "user_sessions", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
     t.string   "username"
     t.string   "first_name"
     t.string   "last_name"
@@ -33,12 +39,6 @@ ActiveRecord::Schema.define(:version => 20110307061047) do
     t.string   "password_salt"
     t.string   "persistence_token"
     t.integer  "role_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "roles", :force => true do |t|
-    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

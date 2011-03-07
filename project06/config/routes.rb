@@ -1,8 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :member_sessions
+  map.resources :user_sessions
   map.root :controller => 'games'
   map.login "login", :controller => 'member_sessions', :action => 'new'
   map.logout "logout", :controller => 'member_sessions', :action => 'destroy'
+  map.resources :users
   
   map.namespace :members do |members|
     members.resources :members
