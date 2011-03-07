@@ -1,5 +1,5 @@
 class Admin::AdminController < ApplicationController
-  before_filter :require_member
+  before_filter :require_user
 
   def index
     @games = Game.paginate :page => params[:page], :order => 'created_at DESC'
@@ -8,8 +8,8 @@ class Admin::AdminController < ApplicationController
 
   private
 
-  def require_member
-    unless current_member
+  def require_user
+    unless current_user
       flash[:notice] = "You must log in!"
       redirect_to root_url
       return false

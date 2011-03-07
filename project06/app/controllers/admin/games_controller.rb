@@ -17,9 +17,9 @@ class Admin::GamesController < Admin::AdminController
 
   def create
     @game = Game.new(params[:game])
-    @game.member_id = current_member
+    @game.user_id = current_user
     if @game.save
-     redirect_to(@game, :notice => 'Game was successfully created.')
+     redirect_to([:members, @game], :notice => 'Game was successfully created.')
     else
       render :action => "new"
     end
@@ -29,7 +29,7 @@ class Admin::GamesController < Admin::AdminController
     @game = Game.find(params[:id])
 
     if @game.update_attributes(params[:game])
-      redirect_to(@game, :notice => 'Game was successfully updated.')
+      redirect_to([:members, @game], :notice => 'Game was successfully updated.')
     else
       render :action => "edit" 
     end
@@ -38,6 +38,6 @@ class Admin::GamesController < Admin::AdminController
   def destroy
     @game = Game.find(params[:id])
     @game.destroy
-    redirect_to(games_url)
+    redirect_to(members_games_url)
   end
 end

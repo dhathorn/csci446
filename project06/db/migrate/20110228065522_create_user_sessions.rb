@@ -1,4 +1,4 @@
-class CreateMemberSessions < ActiveRecord::Migration
+class CreateUserSessions < ActiveRecord::Migration
   def self.up
     create_table :user_sessions do |t|
 

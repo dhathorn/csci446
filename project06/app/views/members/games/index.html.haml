@@ -8,11 +8,12 @@
     %tr
       %td= h game.title
       %td= h game.rating
-      %td= h "#{game.created_at.to_s(:longdate)} by #{game.member.same_name(current_member)}"
-      %td= link_to 'Show', game
-      %td= link_to 'Edit', edit_game_path(game)
-      %td= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
+      %td= h "#{game.created_at.to_s(:longdate)} by #{game.user.same_name(current_user)}"
+      %td= link_to 'Show', [:members, game]
+      %td= link_to 'Edit', edit_members_game_path(game)
+      %td= link_to 'Destroy', [:members, game], :confirm => 'Are you sure?', :method => :delete
 %br/
 = page_entries_info @games
 = will_paginate @games
-%p= link_to 'New game', member_new_game_path
+%p= link_to 'New game', new_members_game_path
+%p= link_to 'Edit Profile', edit_members_user_path(current_user)
