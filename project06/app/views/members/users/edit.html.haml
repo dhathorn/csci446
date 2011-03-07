@@ -4,7 +4,15 @@
   %p
     = f.label :username
     %br/
-    = f.text_field :username
+    = f.text_field :username, :disabled => true
+  %p
+    = f.label :password
+    %br/
+    = f.password_field :password
+  %p
+    = f.label :password_confirmation
+    %br/
+    = f.password_field :password_confirmation
   %p
     = f.label :first_name
     %br/
@@ -18,7 +26,9 @@
     %br/
     = f.text_field :email
   %p
+    = f.label :photo
+    = f.file_field :photo
+  %p
     = f.submit 'Update'
-= link_to 'Show', @user
 |
 \#{link_to 'Back', members_user_path}

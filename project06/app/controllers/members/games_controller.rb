@@ -1,6 +1,7 @@
 class Members::GamesController < Members::MembersController
+  filter_resource_access
   def index
-    @games = Game.paginate :page => params[:page], :order => 'created_at DESC'
+    @games = current_user.games.paginate :page => params[:page], :order => 'created_at DESC'
   end
 
   def show
@@ -17,7 +18,7 @@ class Members::GamesController < Members::MembersController
 
   def create
     @game = Game.new(params[:game])
-    @game.user_id = current_user
+    @game.user = current_user
     if @game.save
      redirect_to([:members, @game], :notice => 'Game was successfully created.')
     else

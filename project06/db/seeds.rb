@@ -1,2 +1,6 @@
-Role.create([{:name => 'member'}, {:name =>'admin'}])
-Member.create([{:first_name => 'Dan', :last_name => 'H', :email => 'dhathorn@mines.edu', :username => 'dan', :crypted_password => '6b5b9e6fc85e97582dd38a91f0ed39ba643ee8429ada888523a9720f861952fc69b3381dd32579e7c5ba9dc9371fe2aef36b82c84f7911f33368f30ff2f594cd', :password_salt => '1xthZlrTAgnwKmHEU1p'}])
+Role.create([{:name => "Member"}, {:name => "Admin"}])
+User.create({:username => "administrator", :first_name => "Admin", :last_name => "Istrator", :email => 'root@mines.edu', :password => "password", :password_confirmation => "password", :role => Role.find_by_name('Admin')})
+User.create({:username => "member", :first_name => "Kitty", :last_name => "Hawk", :email => 'dhssthorn@mines.edu', :password => "password", :password_confirmation => "password", :role => Role.find_by_name('Member')})
+(0..10).each do
+  Game.create({:title => "Bridge", :rating => 3, :user_id => User.find_by_username("administrator")})
+end

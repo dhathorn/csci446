@@ -7,9 +7,17 @@
     = stylesheet_link_tag 'scaffold'
   %body
     %p
-    =link_to "Register", new_user_path 
-    = link_to "Login", login_path
-    = link_to "Logout", logout_path
+    - if(!current_user) 
+      = link_to("Login", login_path)
+      = link_to "Register", new_user_path 
+    - elsif(current_user.admin?) 
+      = render :partial => "/admin_top_bar"
+    - else
+      = render :partial => "/member_top_bar"
+
     %h1= link_to "Games", root_path
+    - if(permitted_to? :index, :admin_games)
+      =render :partial => '/admin/admin_bar'
     %p{:style => "color: green"}= notice
+    %p{:style => "color: red"}= flash[:error]
     = yield

@@ -2,7 +2,7 @@ class CreateGames < ActiveRecord::Migration
   def self.up
     create_table :games do |t|
       t.string :title
-      t.string :rating
+      t.integer :rating
       t.integer :user_id
       
       t.timestamps

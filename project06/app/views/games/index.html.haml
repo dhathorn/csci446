@@ -1,4 +1,5 @@
 %h1 Listing games 
+= will_paginate @games
 %table
   %tr
     %th Title
@@ -9,9 +10,5 @@
       %td= h game.title
       %td= h game.rating
       %td= h "#{game.created_at.to_s(:longdate)} by #{game.user.same_name(current_user)}"
-      %td= link_to 'Show', game
-      %td= link_to 'Edit', edit_game_path(game)
-      %td= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
 %br/
 = page_entries_info @games
-= will_paginate @games

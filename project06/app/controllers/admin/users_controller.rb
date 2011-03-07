@@ -1,4 +1,6 @@
 class Admin::UsersController < Admin::AdminController
+  filter_resource_access
+  
   def index
     @users = User.all
   end
@@ -18,7 +20,7 @@ class Admin::UsersController < Admin::AdminController
   def create
     @user = User.new(params[:user])
     if @user.save
-      redirect_to(@user, :notice => 'user was successfully created.')
+      redirect_to([:admin, @user], :notice => 'user was successfully created.')
     else
       render :action => "new"
     end
@@ -27,7 +29,7 @@ class Admin::UsersController < Admin::AdminController
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
-      redirect_to(@user, :notice => 'user was successfully updated.')
+      redirect_to([:admin, @user], :notice => 'user was successfully updated.')
     else
       render :action => "edit"
     end
