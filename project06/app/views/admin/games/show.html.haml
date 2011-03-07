@@ -1,0 +1,9 @@
+%p
+  %b Title:
+  = h @game.title
+%p
+  %b Rating:
+  = h @game.rating
+= link_to 'Edit', edit_game_path(@game)
+|
+\#{link_to 'Back', games_path}

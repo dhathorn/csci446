@@ -12,7 +12,7 @@ class Member::MembersController < ApplicationController
   end
 
   def edit
-    @member = current_user
+    @member = Member.find(params[:id])
   end
 
   def create
@@ -25,7 +25,7 @@ class Member::MembersController < ApplicationController
   end
 
   def update
-    @member = current_user
+    @member = Member.find(params[:id])
     if @member.update_attributes(params[:member])
       redirect_to(@member, :notice => 'Member was successfully updated.')
     else

@@ -1,0 +1,18 @@
+%h1 Listing games 
+%table
+  %tr
+    %th Title
+    %th Rating
+    %td Date Added
+  - @games.each do |game|
+    %tr
+      %td= h game.title
+      %td= h game.rating
+      %td= h "#{game.created_at.to_s(:longdate)} by #{game.member.same_name(current_member)}"
+      %td= link_to 'Show', game
+      %td= link_to 'Edit', edit_game_path(game)
+      %td= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
+%br/
+= page_entries_info @games
+= will_paginate @games
+%p= link_to 'New game', new_game_path

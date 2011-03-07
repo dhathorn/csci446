@@ -6,8 +6,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :games, :members
   
   map.namespace :member do |member|
-    member.resources :games, :members
-    member.root :controller => 'member', :action => 'index'
+    member.resources :members
+    member.root :controller => 'members', :action => 'index'
   end
 
   map.namespace :admin do |admin|
