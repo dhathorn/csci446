@@ -3,11 +3,15 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => 'games'
   map.login "login", :controller => 'member_sessions', :action => 'new'
   map.logout "logout", :controller => 'member_sessions', :action => 'destroy'
-  map.resources :members
-  map.resources :games
+  map.resources :games, :members
   
+  map.namespace :member do |member|
+    member.resources :games, :members
+    member.root :controller => 'member', :action => 'index'
+  end
+
   map.namespace :admin do |admin|
-    admin.resources :members
+    admin.resources :members, :games
     admin.root :controller => 'admin', :action => 'index'
   end
   
