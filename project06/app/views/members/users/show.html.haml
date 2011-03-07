@@ -1,15 +1,15 @@
 %p
   %b Username:
-  = h @member.username
+  = h @user.username
 %p
   %b First name:
-  = h @member.first_name
+  = h @user.first_name
 %p
   %b Last name:
-  = h @member.last_name
+  = h @user.last_name
 %p
   %b Email:
-  = h @member.email
-= link_to 'Edit', edit_member_path(@member)
+  = h @user.email
+= link_to 'Edit', edit_user_path(@user)
 |
-\#{link_to 'Back', members_path}
+\#{link_to 'Back', users_path}
