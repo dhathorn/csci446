@@ -21,6 +21,7 @@ authorization do
     has_permission_on :admin_games, :to => :all
     has_permission_on :admin_admin, :to => :all
     has_permission_on :admin_users, :to => :all
+    has_permission_on :admin_roles, :to => :all
   end
 
 end

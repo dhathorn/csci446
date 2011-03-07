@@ -1,0 +1,10 @@
+%h1 Editing member
+- form_for [:admin, @role] do |f|
+  = f.error_messages
+  %p
+    = f.label :name
+    %br/
+    = f.text_field :name
+    = f.submit 'Save Changes'
+|
+\#{link_to 'Back', admin_roles_path}

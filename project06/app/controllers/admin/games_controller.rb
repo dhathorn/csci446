@@ -16,6 +16,7 @@ class Admin::GamesController < Admin::AdminController
 
   def edit
     @game = Game.find(params[:id])
+    @users = User.all
   end
 
   def create
@@ -24,11 +25,13 @@ class Admin::GamesController < Admin::AdminController
     if @game.save
      redirect_to( admin_root_path, :notice => "Successfully added #{@game.title}")
     else
+      flash[:error] = "Could not create game"
       render :action => "new"
     end
   end
   
   def update
+    @users = User.all
     @game = Game.find(params[:id])
 
     if @game.update_attributes(params[:game])

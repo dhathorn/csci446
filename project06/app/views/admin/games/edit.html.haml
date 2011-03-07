@@ -6,11 +6,21 @@
     %br/
     = f.text_field :title
   %p
-    = f.label :rating
+    Rating
     %br/
-    = f.text_field :rating
+    = f.radio_button :rating, 3
+    = f.label "Amazing"
+    %br
+    = f.radio_button :rating, 2
+    = f.label "Good"
+    %br
+    = f.radio_button :rating, 1
+    = f.label "Meh"
+    %br
+    = f.radio_button :rating, 0
+    = f.label "Bad!"
   %p
-    = f.submit 'Update'
-= link_to 'Show', [:members, @game]
-|
-\#{link_to 'Back', admin_games_path}
+    = select(:game, :user_id, @users.collect { |p| [ p.long_name, p.id ] })
+  %p
+    = f.submit 'Save'
+= link_to 'Back', members_games_path
