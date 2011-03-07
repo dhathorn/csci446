@@ -2063,3 +2063,97 @@ Processing GamesController#index (for 127.0.0.1 at 2011-02-28 00:37:27) [GET]
 Rendering template within layouts/application
 Rendering games/index
 Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 16:40:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (1.2ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 112ms (View: 80, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 16:40:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mGame Load (0.4ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:05:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.3ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing GamesController#new (for 127.0.0.1 at 2011-03-06 19:05:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"games"}
+Rendering template within layouts/application
+Rendering games/new
+Completed in 32ms (View: 26, DB: 0) | 200 OK [http://localhost/games/new]
+
+
+Processing GamesController#create (for 127.0.0.1 at 2011-03-06 19:05:28) [POST]
+  Parameters: {"game"=>{"rating"=>"Good!", "title"=>"Test"}, "commit"=>"Create", "action"=>"create", "authenticity_token"=>"q3PKC7IO3ODEKOkbmMgOZOo3wXcPsb+rERZ9GErecbA=", "controller"=>"games"}
+  [4;35;1mGame Create (13.1ms)[0m   [0mINSERT INTO "games" ("rating", "created_at", "title", "updated_at") VALUES('Good!', '2011-03-07 02:05:28', 'Test', '2011-03-07 02:05:28')[0m
+Redirected to http://localhost:3000/games/1
+Completed in 121ms (DB: 13) | 302 Found [http://localhost/games]
+
+
+Processing GamesController#show (for 127.0.0.1 at 2011-03-06 19:05:29) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"games"}
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering games/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/games/1]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:05:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mGame Load (0.5ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:06:18) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (11.3ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 64ms (View: 4, DB: 11) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#show (for 127.0.0.1 at 2011-03-06 19:06:20) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"games"}
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering games/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/games/1]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:06:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.4ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#edit (for 127.0.0.1 at 2011-03-06 19:06:22) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"games"}
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering games/edit
+Completed in 40ms (View: 35, DB: 0) | 200 OK [http://localhost/games/1/edit]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 19:06:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.4ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/games]
