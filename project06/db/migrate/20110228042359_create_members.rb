@@ -8,6 +8,7 @@ class CreateMembers < ActiveRecord::Migration
       t.string :crypted_password
       t.string :password_salt
       t.string :persistence_token
+      t.integer :role_id
 
       t.timestamps
     end

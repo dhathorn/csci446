@@ -1,5 +1,6 @@
 class Member < ActiveRecord::Base
   acts_as_authentic
+  belongs_to :role
   has_many :games
 
   def same_name(current_member)
