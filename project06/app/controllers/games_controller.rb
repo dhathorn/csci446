@@ -17,6 +17,7 @@ class GamesController < ApplicationController
 
   def create
     @game = Game.new(params[:game])
+    @game.member_id = current_member
     if @game.save
      redirect_to(@game, :notice => 'Game was successfully created.')
     else

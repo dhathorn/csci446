@@ -12,7 +12,7 @@ class MembersController < ApplicationController
   end
 
   def edit
-    @member = Member.find(params[:id])
+    @member = current_user
   end
 
   def create
@@ -25,7 +25,7 @@ class MembersController < ApplicationController
   end
 
   def update
-    @member = Member.find(params[:id])
+    @member = current_user
     if @member.update_attributes(params[:member])
       redirect_to(@member, :notice => 'Member was successfully updated.')
     else
@@ -38,4 +38,5 @@ class MembersController < ApplicationController
     @member.destroy
     redirect_to(members_url)
   end
+
 end
