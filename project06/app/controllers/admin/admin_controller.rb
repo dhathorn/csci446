@@ -9,6 +9,10 @@ class Admin::AdminController < ApplicationController
   private
 
   def require_member
-    @current_user
+    unless current_member
+      flash[:notice] = "You must log in!"
+      redirect_to root_url
+      return false
+    end
   end
 end
