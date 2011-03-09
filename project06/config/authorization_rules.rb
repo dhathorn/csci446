@@ -1,11 +1,11 @@
 authorization do 
   role :guest do
     has_permission_on :games, :to => :read
-    has_permission_on :users, :to => [:new, :create]
+    has_permission_on :members_users, :to => [:new, :create]
   end
 
   role :member do
-    includes :guest
+    has_permission_on :games, :to => :read
     has_permission_on :members_games, :to => :read
     has_permission_on :members_games, :to => :all do
       if_attribute :user => is { user}
