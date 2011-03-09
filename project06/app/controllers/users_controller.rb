@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(params[:user])
-    if verify_recaptcha && @user.save
+    if verify_recaptcha(:model => @user) && @user.save
       redirect_to(members_root_path, :notice => "Welcome #{@user.long_name}")
     else
       flash[:error] = "Sorry, could not register you"

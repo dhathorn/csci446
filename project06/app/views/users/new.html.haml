@@ -2,7 +2,7 @@
 %p 
   Allready Registered?
   =link_to("Login.", new_user_session_path)
-- form_for(@user), :html => { :multipart => true } do |f|
+- form_for @user, :html => { :multipart => true } do |f|
   = f.error_messages
   %p
     = f.label :username
