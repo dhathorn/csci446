@@ -17,4 +17,5 @@ class Game < ActiveRecord::Base
       "Bad!"
     end
   end
+
 end
