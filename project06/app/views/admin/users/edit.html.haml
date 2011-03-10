@@ -28,6 +28,7 @@
   %p
     = f.label :photo
     = f.file_field :photo
+    =display_photo(@user)
   %p
     = f.label :role_id, "Role"
     = select(:user, :role_id, @roles.collect { |p| [ p.name, p.id ] })

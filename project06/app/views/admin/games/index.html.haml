@@ -2,7 +2,6 @@
   ="#{@games.count} total games"
   =link_to "Add a game", new_admin_game_path
 %p
-  =image_tag current_user.photo.url
 = will_paginate @games
 %table
   %tr
