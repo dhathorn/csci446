@@ -20,7 +20,7 @@
     = f.radio_button :rating, 0
     = f.label "Bad!"
   %p
-    = select(:game, :user_id, @users.collect { |p| [ p.long_name, p.id ] })
+    = select(:game, :user_id, @users.collect { |p| [ p.long_name, p.id ] }, {:selected => current_user.id})
   %p
     = f.submit 'Save'
 = link_to 'Back', members_games_path

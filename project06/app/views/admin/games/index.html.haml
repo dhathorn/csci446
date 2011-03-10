@@ -1,8 +1,9 @@
 %h1
-  My Gamez
+  ="#{@games.count} total games"
   =link_to "Add a game", new_admin_game_path
 %p
   =image_tag current_user.photo.url
+= will_paginate @games
 %table
   %tr
     %th Title
@@ -15,4 +16,3 @@
       %td= link_to "#{game.created_at.to_s(:longdate)} by #{game.user.same_name(current_user)}", edit_admin_user_path(game.user)
 %br/
 = page_entries_info @games
-= will_paginate @games

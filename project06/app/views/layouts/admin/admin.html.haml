@@ -1,0 +1,16 @@
+!!!
+%html{:lang => "en", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html;charset=UTF-8", "http-equiv" => "content-type"}/
+    %title
+      Games: #{controller.action_name}
+    = stylesheet_link_tag 'scaffold'
+  %body
+    %p
+      = render :partial => "/admin_top_bar"
+    %h1= (link_to "Games", root_path)+" Admin"
+    - if(permitted_to? :index, :admin_games)
+      =render :partial => '/admin/admin_bar'
+    %p{:style => "color: green"}= notice
+    %p{:style => "color: red"}= flash[:error]
+    = yield

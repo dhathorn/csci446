@@ -39,7 +39,7 @@ class User < ActiveRecord::Base
   def percent_rated
     if self.games.count != 0
       value = (self.games.each.count(&:rating).to_f / self.games.count.to_f) * 100
-      "#{"%.2f" % value}%"
+      "#{"%.0f" % value}%"
     else
       "none"
     end
