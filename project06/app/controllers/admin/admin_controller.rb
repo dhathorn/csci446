@@ -10,7 +10,7 @@ class Admin::AdminController < ApplicationController
 
   def permission_denied
     flash[:error] = "You don't have permission to do that"
-    redirect_to root_url
+    redirect_to members_root_url
   end
 
   private
