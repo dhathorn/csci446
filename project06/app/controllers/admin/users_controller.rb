@@ -5,10 +5,6 @@ class Admin::UsersController < Admin::AdminController
     @users = User.paginate :page => params[:page], :order => 'last_name DESC'
   end
 
-  def show
-    @user = User.find(params[:id])
-  end
-
   def new
     @user = User.new
   end

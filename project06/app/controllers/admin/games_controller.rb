@@ -5,10 +5,6 @@ class Admin::GamesController < Admin::AdminController
     @games = Game.paginate :page => params[:page], :order => 'created_at DESC'
   end
 
-  def show
-    @game = Game.find(params[:id])
-  end
-
   def new
     @users = User.all
     @game = Game.new
