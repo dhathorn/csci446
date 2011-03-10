@@ -1,7 +1,8 @@
 class Members::GamesController < Members::MembersController
   filter_resource_access
   def index
-    @total_games_for_user = current_user.games
+    @percent = current_user.percent_rated
+    @total_games_for_user = current_user.games.count
     @games = current_user.games.paginate :page => params[:page], :order => 'created_at DESC'
   end
 

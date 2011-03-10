@@ -17,4 +17,9 @@ class ApplicationController < ActionController::Base
     @current_user = current_user_session && current_user_session.record
   end
 
+  def permission_denied
+    flash[:error] = "Permission Denied"
+    redirect_to root_url
+  end
+
 end

@@ -35,4 +35,14 @@ class User < ActiveRecord::Base
   def add_member_role
     self.role_id ||= Role.find_by_name("Member")
   end
+  
+  def percent_rated
+    if self.games.count != 0
+      value = (self.games.each.count(&:rating).to_f / self.games.count.to_f) * 100
+      "#{"%.2f" % value}%"
+    else
+      "none"
+    end
+  end
+
 end

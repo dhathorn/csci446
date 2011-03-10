@@ -6,12 +6,11 @@ authorization do
 
   role :member do
     has_permission_on :games, :to => :read
-    has_permission_on :members_games, :to => :read
+    has_permission_on :members_games, :to => [:read, :new, :create]
     has_permission_on :members_games, :to => :all do
       if_attribute :user => is { user}
     end
     has_permission_on :members_members, :to => :all
-    has_permission_on :members_users, :to => :read
     has_permission_on :members_users, :to => :all
   end
 

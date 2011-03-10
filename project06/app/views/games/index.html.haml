@@ -8,7 +8,7 @@
   - @games.each do |game|
     %tr
       %td= h game.title
-      %td= h game.rating
+      %td= h game.rating_text
       %td= h "#{game.created_at.to_s(:longdate)} by #{game.user.same_name(current_user)}"
 %br/
 = page_entries_info @games
