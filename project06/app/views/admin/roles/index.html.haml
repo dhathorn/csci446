@@ -7,5 +7,6 @@
     %tr
       %td= link_to role.name, edit_admin_role_path(role)
       %td= role.users.count
+      %td= link_to "Destroy role", [:admin, role], :confirm => "Are you sure? don't do this to admin or member", :method => :delete
 %br/
 =link_to "New role", new_admin_role_path
