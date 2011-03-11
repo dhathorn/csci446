@@ -19,7 +19,7 @@ class Admin::RolesController < Admin::AdminController
     @users = User.all
     @role = Role.new(params[:role])
     if @role.save
-     redirect_to( admin_root_path, :notice => "Successfully added #{@role.title}")
+     redirect_to( admin_root_path, :notice => "Successfully added #{@role.name}")
     else
       flash[:error] = "Could not create role"
       render :action => "new"
